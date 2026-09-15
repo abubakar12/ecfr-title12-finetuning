@@ -1,0 +1,18 @@
+# Training stack (GPU node). The data stages (download/build) only need
+# requests + PyYAML and run on any machine.
+torch>=2.4.0
+transformers>=4.55.0,<5.0
+hf_transfer>=0.1.9
+huggingface-hub>=0.34.0,<1.0
+python-dotenv>=1.0.0,<2.0
+trl>=0.20.0,<0.24
+peft>=0.15.0,<0.20
+datasets>=3.2.0,<5.0
+accelerate>=1.4.0
+bitsandbytes>=0.45.0; platform_system == "Linux"
+requests>=2.31.0
+PyYAML>=6.0
+numpy>=1.26
+# Results notebook
+pandas>=2.0
+matplotlib>=3.8

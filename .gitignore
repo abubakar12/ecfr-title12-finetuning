@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.py[cod]
+
+# training artifacts and logs (published to HF, not git)
+outputs/
+results/generations_*.jsonl
+logs_*.txt
+nohup.out
+data/raw/
+*.smoke-bak
+.ipynb_checkpoints/
