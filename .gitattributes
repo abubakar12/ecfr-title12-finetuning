@@ -1,0 +1,4 @@
+# Snapshot and dataset hashes must survive Windows/Linux clones unchanged.
+# These files are immutable byte artifacts, not subject to EOL conversion.
+experiments/** -text -whitespace
+data/*.jsonl -text -whitespace

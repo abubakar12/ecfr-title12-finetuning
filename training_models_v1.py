@@ -15,8 +15,15 @@ STAGES = ["download", "build", "sft", "dpo", "grpo", "eval", "report"]
 
 
 def main() -> None:
+    # Phase 1 uses an isolated JSON configuration and stdlib-only data path.
+    import sys
+    from ecfr_pipeline.phase1 import COMMANDS, main as phase1_main
+    if len(sys.argv) > 1 and sys.argv[1] in COMMANDS:
+        phase1_main(sys.argv[1:])
+        return
     ap = argparse.ArgumentParser(
-        description="eCFR Title 12 fine-tuning pipeline (SFT / DPO / GRPO / eval)"
+        description="eCFR Title 12 fine-tuning pipeline (SFT / DPO / GRPO / eval)",
+        epilog="Isolated Phase 1 commands: " + ", ".join(COMMANDS) + ". Use COMMAND --help for their options.",
     )
     ap.add_argument(
         "command",

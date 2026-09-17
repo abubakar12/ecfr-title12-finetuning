@@ -13,3 +13,18 @@ nohup.out
 data/raw/
 *.smoke-bak
 .ipynb_checkpoints/
+
+# Keep frozen experimental source, canonical datasets, audits, and question data.
+# Exclude local environments, obsolete corpus builds, and generated model state.
+.venv*/
+venv/
+env/
+experiments/synthetic-training-smoke-*/
+experiments/**/corpus_versions/
+experiments/**/training/
+experiments/**/smoke/
+experiments/**/evaluation/private_mapping.jsonl
+*.safetensors
+*.pt
+*.pth
+*.tmp

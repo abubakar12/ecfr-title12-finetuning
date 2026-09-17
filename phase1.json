@@ -1,0 +1,8 @@
+{
+  "experiment_dir": "experiments/title12-chapter-I-v1",
+  "seed": 42,
+  "ecfr": {"title": 12, "chapter": "I", "date": "latest"},
+  "model": {"id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "revision": "main", "smoke_id": "HuggingFaceTB/SmolLM2-135M-Instruct"},
+  "pretrain": {"max_length": 4096, "overlap": 256, "epochs": 1, "learning_rate": 0.00002, "batch_size": 1, "grad_accum": 16, "warmup_ratio": 0.03, "lora_r": 16, "lora_alpha": 32, "lora_dropout": 0.05},
+  "evaluation": {"max_new_tokens": 768, "bootstrap_samples": 10000}
+}

@@ -1,5 +1,10 @@
 # eCFR Title 12 Regulation Assistant — LoRA Post-Training Pipeline
 
+**New: Phase 1 corpus and continued pretraining.** See [PHASE1.md](PHASE1.md)
+for the isolated, audited full-corpus experiment comparing base Instruct with
+continued pretraining, configured in `phase1.json`. The results below belong to
+the earlier post-training experiment, not the new continued-pretraining run.
+
 Fine-tunes **Llama-3.1-8B-Instruct** into a grounded banking-regulation
 assistant for Title 12 of the Code of Federal Regulations (OCC, Chapter I),
 and compares three post-training methods — **SFT**, **DPO**, and **GRPO** —
