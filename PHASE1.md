@@ -142,6 +142,52 @@ Both checkpoints use the same frozen model/tokenizer, prompt, greedy decoding, p
 
 The primary metric is the fraction of in-scope answers with every required claim correctly cited, no incorrect citations, and correct substance. Report macro citation precision and claim coverage, nonexistent-section counts, section/paragraph accuracy, outside-scope behavior, and a paired bootstrap 95% confidence interval for the primary delta. Regex checks are structural diagnostics, never substitutes for semantic review. Do not provide the checkpoint mapping until reviews are complete.
 
+## Save every trained model to Hugging Face
+
+Automatic publishing is enabled in `phase1.json`, `phase1.mac.json`, and the
+legacy `config.yaml`. Authenticate on the training machine with a write-capable
+token (and obtain access to the gated base model):
+
+```bash
+hf auth login
+python training_models_v1.py check-hub --config phase1.mac.json
+```
+
+Use `phase1.json` for the CUDA experiment. After a successful full training run
+and adapter reload check, `pretrain` uploads automatically. Smoke and preflight
+runs never upload. Normal legacy `sft`, `dpo`, and `grpo` commands also publish
+after saving successfully. This works independently of CUDA/MPS.
+
+Repositories default to **private**, in your authenticated user namespace, named
+`ecfr-title12-<stage>-<fingerprint>`. Different model artifacts receive different
+names; a retry uses the same name. Set `HF_REPO_NAMESPACE` for an organization,
+`HF_REPO_PREFIX` for another prefix, or `HF_REPO_PRIVATE=false` for public models.
+The namespace requires write access. These are environment variables; credentials
+must never be placed in tracked configuration. Set `hub.enabled` to false only
+when deliberately training offline.
+
+Each repository contains the final **LoRA adapter**, saved tokenizer, model card
+with loading code, and provenance with the exact base revision and artifact hashes.
+The base weights are still required for inference. The upload receipt
+`training/hub_upload.json` records the repository and exact Hub commit to use
+when loading later. Optimizer state and intermediate checkpoints stay local;
+keep them if you need to resume training. Evaluation answers and credentials
+are not uploaded.
+
+Authentication is checked before full training. If the eventual upload fails,
+the completed local model is retained and the command reports failure. Retry
+without retraining or a GPU:
+
+```bash
+python training_models_v1.py push-model --config phase1.mac.json
+# Legacy stage retry:
+python train_and_upload.py --upload-only --stage sft
+```
+
+Legacy upload requires a `completed.json` produced by the updated trainer;
+older folders without completion/provenance are not silently published.
+Hub publishing does not bypass corpus, benchmark, or training acceptance gates.
+
 ## Tests
 
 ```bash

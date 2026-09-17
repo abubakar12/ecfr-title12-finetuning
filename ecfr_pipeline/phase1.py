@@ -5,7 +5,7 @@ from pathlib import Path
 from . import corpus
 
 
-COMMANDS = ["build-corpus", "audit-corpus", "fetch-assets", "draft-benchmark", "tokenize-corpus", "freeze-benchmark", "pretrain", "eval-cpt", "score-cpt", "check-runtime"]
+COMMANDS = ["build-corpus", "audit-corpus", "fetch-assets", "draft-benchmark", "tokenize-corpus", "freeze-benchmark", "pretrain", "eval-cpt", "score-cpt", "check-runtime", "check-hub", "push-model"]
 
 
 def main(argv=None):
@@ -30,7 +30,12 @@ def main(argv=None):
         parser.error("This experiment is restricted to Title 12")
     if cfg["pretrain"]["max_length"] <= 0 or cfg["pretrain"]["overlap"] < 0:
         parser.error("Invalid sequence/overlap configuration")
-    if args.command == "check-runtime":
+    if args.command in {"check-hub", "push-model"}:
+        from . import hub
+        if args.smoke:
+            parser.error("Smoke models cannot be published")
+        hub.check(cfg) if args.command == "check-hub" else hub.publish(cfg)
+    elif args.command == "check-runtime":
         import json
         from .phase1_runtime import resolve
         print(json.dumps(resolve(cfg, args.smoke), indent=2))

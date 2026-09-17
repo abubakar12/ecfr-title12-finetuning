@@ -2,12 +2,16 @@
 from __future__ import annotations
 
 import json
+import math
 from pathlib import Path
 
 from . import common
 
 
 def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> Path:
+    from . import hub
+    if not smoke and hub.enabled(cfg):
+        hub.check(cfg)
     common.set_global_seed(cfg["seed"])
     runtime = common.detect_runtime(cfg, smoke)
     model_id = common.resolve_model_id(cfg, smoke, model_override)
@@ -68,7 +72,9 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> Pa
         processing_class=tok,
         peft_config=common.build_lora_config(cfg),
     )
-    trainer.train()
+    result = trainer.train()
+    if not math.isfinite(result.training_loss):
+        raise ValueError("Non-finite training loss; model will not be published")
 
     trainer.save_model(str(out_dir))
     tok.save_pretrained(str(out_dir))
@@ -87,4 +93,5 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> Pa
             "dataset_sha256": common.sha256_file(data_dir / "sft_train.jsonl"),
         },
     )
+    hub.finish_legacy(cfg, "sft", out_dir, trainer.model, smoke)
     return out_dir

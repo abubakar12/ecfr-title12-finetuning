@@ -1,5 +1,9 @@
 # All pipeline knobs live here. Edit this file, not the code.
 seed: 42
+hub:
+  enabled: true
+  private: true
+  repo_prefix: ecfr-title12
 
 runtime:
   device: auto   # auto | cuda | mps | cpu

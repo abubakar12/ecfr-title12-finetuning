@@ -83,7 +83,7 @@ cp .env.example .env            # add your HF_TOKEN
 
 python training_models_v1.py all             # download → build → sft → dpo → eval → report
 python training_models_v1.py grpo            # optional RL stage (~3-4x SFT cost)
-python train_and_upload.py --upload-only     # publish adapters to your HF namespace
+python train_and_upload.py --upload-only --stage sft  # retry a completed adapter upload
 
 # validate the whole loop first for cents:
 python training_models_v1.py all --smoke
@@ -92,6 +92,12 @@ python training_models_v1.py all --smoke
 Every stage writes a manifest (config hash, seed, library versions, dataset
 SHA-256) to `outputs/manifests/`, so any result can be traced to the exact
 inputs that produced it.
+
+Full CPT, SFT, DPO, and GRPO runs now automatically publish their final adapters
+and tokenizers to private Hugging Face repositories, one name per artifact
+fingerprint. Authenticate with `hf auth login` before training. Smoke runs stay
+local. See [publishing and loading instructions](PHASE1.md#save-every-trained-model-to-hugging-face)
+for configuration, saved revision receipts, and upload retries.
 
 ## Repository map
 

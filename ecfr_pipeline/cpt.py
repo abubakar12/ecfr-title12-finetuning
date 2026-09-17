@@ -143,6 +143,9 @@ class Collator:
 
 
 def train(cfg, smoke=False, resume=None, preflight_only=False):
+    from . import hub
+    if not smoke and not preflight_only and hub.enabled(cfg):
+        hub.check(cfg)
     from . import phase1_runtime as runtime_tools
     runtime_tools.configure_environment()
     import torch
@@ -246,3 +249,5 @@ def train(cfg, smoke=False, resume=None, preflight_only=False):
     corpus.write_json(target / "completed.json", {"training_loss": result.training_loss, "reload_loss": reload_loss,
                                                 "global_step": result.global_step, "run_sha256": corpus.file_hash(run_path),
                                                 "adapter_hashes": {f.name: corpus.file_hash(f) for f in (target / "adapter").iterdir() if f.is_file()}})
+    if not smoke and hub.enabled(cfg):
+        hub.publish(cfg)
