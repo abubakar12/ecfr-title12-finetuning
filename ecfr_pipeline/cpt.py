@@ -143,10 +143,12 @@ class Collator:
 
 
 def train(cfg, smoke=False, resume=None, preflight_only=False):
+    from . import phase1_runtime as runtime_tools
+    runtime_tools.configure_environment()
     import torch
     from datasets import Dataset
     from peft import LoraConfig, PeftModel, get_peft_model
-    from transformers import AutoModelForCausalLM, Trainer, TrainingArguments, set_seed
+    from transformers import Trainer, TrainingArguments, set_seed
     from .benchmark import verify_frozen
 
     if not smoke:
@@ -161,41 +163,38 @@ def train(cfg, smoke=False, resume=None, preflight_only=False):
         if (corpus.read_json(smoke_path)["run_sha256"] != corpus.file_hash(smoke_dir / "run.json")
                 or corpus.read_json(smoke_dir / "segments.lock.json")["documents_sha256"] != corpus.file_hash(Path(cfg["experiment_dir"]) / "documents.jsonl")):
             raise ValueError("Smoke run does not match the frozen corpus or its run manifest")
-        if not torch.cuda.is_available() or not torch.cuda.is_bf16_supported():
-            raise RuntimeError("Full run requires a CUDA GPU with BF16 support; no silent CPU/quantization fallback")
+    runtime = runtime_tools.resolve(cfg, smoke)
     set_seed(cfg["seed"])
     tok, lock, rows, length, target = prepare(cfg, smoke)
     versions = dict(sorted((dist.metadata["Name"].lower(), dist.version) for dist in importlib.metadata.distributions() if dist.metadata["Name"]))
-    run_config = {"configuration": cfg, "model": lock, "versions": versions, "smoke": smoke,
+    run_config = {"configuration": cfg, "model": lock, "versions": versions, "smoke": smoke, "runtime": runtime,
                   "segments_sha256": corpus.file_hash(target / "segments.jsonl")}
     run_path = target / "run.json"
     if run_path.exists() and corpus.read_json(run_path) != run_config:
         raise ValueError("Training configuration or dependencies changed")
     corpus.write_json(run_path, run_config)
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    model = AutoModelForCausalLM.from_pretrained(lock["id"], revision=lock["revision"],
-                                               torch_dtype=torch.float32 if smoke else torch.bfloat16,
-                                               attn_implementation="sdpa").to(device)
+    device = runtime["device"]
+    model = runtime_tools.load_model(lock, runtime)
     p = cfg["pretrain"]
     model = get_peft_model(model, LoraConfig(r=p["lora_r"], lora_alpha=p["lora_alpha"], lora_dropout=p["lora_dropout"],
                                            target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"], task_type="CAUSAL_LM"))
     model.config.use_cache = False
     model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={"use_reentrant": False})
+    model.train()  # Make the memory probe exercise training-time checkpointing/dropout.
     # Real maximum-length forward/backward plus optimizer allocation; restore adapter
     # weights and RNG so the preflight is not an unrecorded training step.
     adapter_state = {n: v.detach().cpu().clone() for n, v in model.named_parameters() if v.requires_grad}
-    probe = {k: torch.tensor([v], device=device) for k, v in {
+    probe = {k: torch.tensor([v] * p["batch_size"], device=device) for k, v in {
         "input_ids": [tok.bos_token_id or tok.eos_token_id] + [rows[0]["input_ids"][-2]] * (length - 1),
         "labels": [-100] + [rows[0]["input_ids"][-2]] * (length - 1), "attention_mask": [1] * length}.items()}
-    optimizer = torch.optim.AdamW([v for v in model.parameters() if v.requires_grad], lr=p["learning_rate"])
-    try:
+    optimizer = torch.optim.AdamW([v for v in model.parameters() if v.requires_grad], lr=p["learning_rate"], foreach=False)
+    with runtime_tools.memory_guard(runtime, "maximum-length forward/backward and optimizer preflight"):
         loss = model(**probe).loss
         if not torch.isfinite(loss):
             raise ValueError("Non-finite preflight loss")
         loss.backward()
         optimizer.step()
-    except torch.cuda.OutOfMemoryError as error:
-        raise RuntimeError("Maximum-length memory check failed; no configuration was changed") from error
+        runtime_tools.synchronize(runtime)
     with torch.no_grad():
         for name, value in model.named_parameters():
             if name in adapter_state:
@@ -203,8 +202,7 @@ def train(cfg, smoke=False, resume=None, preflight_only=False):
     model.zero_grad(set_to_none=True)
     del optimizer, probe, loss, adapter_state
     set_seed(cfg["seed"])
-    corpus.write_json(target / "preflight.json", {"passed": True, "length": length, "device": device,
-                                               "gpu": torch.cuda.get_device_name(0) if device == "cuda" else None})
+    corpus.write_json(target / "preflight.json", {"passed": True, "length": length, "batch_size": p["batch_size"], "runtime": runtime})
     if preflight_only:
         return
     if (target / "completed.json").exists():
@@ -214,13 +212,17 @@ def train(cfg, smoke=False, resume=None, preflight_only=False):
     args = TrainingArguments(output_dir=str(target / "checkpoints"), num_train_epochs=p["epochs"], max_steps=2 if smoke else -1,
                              per_device_train_batch_size=p["batch_size"], gradient_accumulation_steps=1 if smoke else p["grad_accum"],
                              learning_rate=p["learning_rate"], lr_scheduler_type="cosine", warmup_ratio=p["warmup_ratio"],
-                             bf16=not smoke, use_cpu=device == "cpu", gradient_checkpointing=True,
+                             **runtime_tools.trainer_options(runtime), gradient_checkpointing=True,
                              gradient_checkpointing_kwargs={"use_reentrant": False}, logging_steps=1 if smoke else 10,
                              save_strategy="steps", save_steps=1 if smoke else 100, save_total_limit=2,
                              report_to=[], seed=cfg["seed"], remove_unused_columns=False)
     data = [{"input_ids": r["input_ids"], "labels": r["labels"]} for r in rows]
-    trainer = Trainer(model=model, args=args, train_dataset=Dataset.from_list(data), data_collator=Collator(tok.pad_token_id))
-    result = trainer.train(resume_from_checkpoint=resume)
+    if args.device.type != device:
+        raise RuntimeError(f"Trainer selected {args.device.type}, expected {device}; check Accelerate environment settings")
+    trainer = Trainer(model=model, args=args, train_dataset=Dataset.from_list(data), data_collator=Collator(tok.pad_token_id),
+                      optimizer_cls_and_kwargs=(torch.optim.AdamW, {"lr": p["learning_rate"], "foreach": False}))
+    with runtime_tools.memory_guard(runtime, "training"):
+        result = trainer.train(resume_from_checkpoint=resume)
     if not math.isfinite(result.training_loss):
         raise ValueError("Training loss is not finite")
     trainer.save_model(str(target / "adapter"))

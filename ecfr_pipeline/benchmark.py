@@ -84,9 +84,10 @@ def verify_frozen(cfg):
 
 
 def generate(cfg):
+    from . import phase1_runtime as runtime_tools
+    runtime_tools.configure_environment()
     import torch
     from peft import PeftModel
-    from transformers import AutoModelForCausalLM
     from .cpt import tokenizer_for
     corpus.require_audit(cfg)
     questions = verify_frozen(cfg)
@@ -99,13 +100,17 @@ def generate(cfg):
             raise ValueError("Saved adapter/tokenizer changed")
     lock = corpus.read_json(directory / "training" / "model.lock.json")
     tok = tokenizer_for(lock)
-    if not torch.cuda.is_available() or not torch.cuda.is_bf16_supported():
-        raise RuntimeError("Matched BF16 evaluation requires CUDA; no implicit quantization")
+    runtime = runtime_tools.resolve(cfg)
+    trained = corpus.read_json(directory / "training" / "run.json").get("runtime")
+    # Older phase-one manifests were CUDA/BF16 only.
+    if trained is None:
+        trained = {"device": "cuda", "precision": "bf16", "attention": "sdpa", "mps_fallback": runtime["mps_fallback"]}
+    runtime_tools.check_evaluation_runtime(trained, runtime)
     output = directory / "evaluation"
     if (output / "generations.jsonl").exists():
         raise ValueError("Generations already frozen")
     system = f"Answer using {corpus.scope(cfg)} as of {corpus.read_json(directory / 'snapshot.json')['date']}. Cite support for each regulatory claim. Identify requests outside this scope."
-    model = AutoModelForCausalLM.from_pretrained(lock["id"], revision=lock["revision"], torch_dtype=torch.bfloat16, attn_implementation="sdpa").to("cuda")
+    model = runtime_tools.load_model(lock, runtime)
     generations = []
     for checkpoint in ("base", "cpt"):
         if checkpoint == "cpt":
@@ -113,10 +118,10 @@ def generate(cfg):
         model.eval()
         for row in questions:
             messages = [{"role": "system", "content": system}, {"role": "user", "content": row["question"]}]
-            ids = tok.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt").to("cuda")
+            ids = tok.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt").to(runtime["device"])
             if ids.shape[1] + cfg["evaluation"]["max_new_tokens"] > 4096:
                 raise ValueError("Evaluation prompt exceeds budget; no silent truncation")
-            with torch.no_grad():
+            with torch.no_grad(), runtime_tools.memory_guard(runtime, "evaluation generation"):
                 result = model.generate(input_ids=ids, attention_mask=torch.ones_like(ids), do_sample=False,
                                         max_new_tokens=cfg["evaluation"]["max_new_tokens"], pad_token_id=tok.pad_token_id,
                                         eos_token_id=tok.eos_token_id)
@@ -143,7 +148,7 @@ def generate(cfg):
         mapping.append({"review_id": review_id, "question_id": q["id"], "checkpoint": row["checkpoint"]})
     corpus.write_rows(output / "blind_review.jsonl", blind)
     corpus.write_rows(output / "private_mapping.jsonl", mapping)
-    corpus.write_json(output / "generation.lock.json", {"model": lock, "system_prompt": system, "decoding": cfg["evaluation"],
+    corpus.write_json(output / "generation.lock.json", {"model": lock, "runtime": runtime, "system_prompt": system, "decoding": cfg["evaluation"],
                       "benchmark_sha256": corpus.file_hash(directory / "benchmark.jsonl"),
                       "generations_sha256": corpus.file_hash(output / "generations.jsonl"),
                       "mapping_sha256": corpus.file_hash(output / "private_mapping.jsonl"),

@@ -4,6 +4,8 @@
 for the isolated, audited full-corpus experiment comparing base Instruct with
 continued pretraining, configured in `phase1.json`. The results below belong to
 the earlier post-training experiment, not the new continued-pretraining run.
+Phase 1 supports NVIDIA CUDA and Apple Silicon MPS, with an M5 Pro setup guide
+and a separate `phase1.mac.json` configuration in [PHASE1.md](PHASE1.md).
 
 Fine-tunes **Llama-3.1-8B-Instruct** into a grounded banking-regulation
 assistant for Title 12 of the Code of Federal Regulations (OCC, Chapter I),

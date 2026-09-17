@@ -5,7 +5,7 @@ from pathlib import Path
 from . import corpus
 
 
-COMMANDS = ["build-corpus", "audit-corpus", "fetch-assets", "draft-benchmark", "tokenize-corpus", "freeze-benchmark", "pretrain", "eval-cpt", "score-cpt"]
+COMMANDS = ["build-corpus", "audit-corpus", "fetch-assets", "draft-benchmark", "tokenize-corpus", "freeze-benchmark", "pretrain", "eval-cpt", "score-cpt", "check-runtime"]
 
 
 def main(argv=None):
@@ -15,17 +15,26 @@ def main(argv=None):
     parser.add_argument("--refresh", action="store_true", help="Requires a new experiment directory")
     parser.add_argument("--rebuild-corpus", action="store_true", help="Archive and rebuild derived corpus before benchmark freeze")
     parser.add_argument("--smoke", action="store_true")
+    parser.add_argument("--device", choices=["auto", "cuda", "mps", "cpu"])
+    parser.add_argument("--precision", choices=["auto", "bf16", "fp32"])
     parser.add_argument("--resume", help="Explicit Trainer checkpoint directory")
     parser.add_argument("--preflight-only", action="store_true")
     parser.add_argument("--inventory-only", action="store_true", help="Inventory graphic URLs without downloading")
     parser.add_argument("--input", help="Reviewed benchmark or completed blind reviews JSONL")
     args = parser.parse_args(argv)
     cfg = corpus.read_json(Path(args.config))
+    for key in ("device", "precision"):
+        if getattr(args, key) is not None:
+            cfg.setdefault("runtime", {})[key] = getattr(args, key)
     if cfg["ecfr"]["title"] != 12:
         parser.error("This experiment is restricted to Title 12")
     if cfg["pretrain"]["max_length"] <= 0 or cfg["pretrain"]["overlap"] < 0:
         parser.error("Invalid sequence/overlap configuration")
-    if args.command == "build-corpus":
+    if args.command == "check-runtime":
+        import json
+        from .phase1_runtime import resolve
+        print(json.dumps(resolve(cfg, args.smoke), indent=2))
+    elif args.command == "build-corpus":
         result = corpus.build(cfg, args.refresh, args.rebuild_corpus)
         if not result["passed"]:
             raise SystemExit("Corpus audit failed; inspect audit.json")

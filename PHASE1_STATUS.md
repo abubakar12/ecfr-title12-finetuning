@@ -20,17 +20,18 @@ Artifacts are under `experiments/title12-chapter-I-v1/`: `snapshot.json`, `sourc
 
 ## Validation performed
 
-- **18 unit tests passed**, covering source preservation, snapshot tampering, chapter filtering, appendix citations, reviewed graphics, segmentation, padding/overlap masks, benchmark freeze validation, blinded review integrity, and paired scoring.
+- **26 unit tests passed**, covering source preservation, snapshot tampering, chapter filtering, appendix citations, reviewed graphics, segmentation, padding/overlap masks, benchmark freeze validation, blinded review integrity, paired scoring, and CUDA/MPS runtime selection and comparison safeguards.
 - The actual SmolLM2 135M Instruct smoke run completed two optimizer steps on an explicitly synthetic fixture. Training loss was **5.307999**, and reloaded-adapter loss was **5.272771**, both finite.
 - Smoke model revision: `12fd25f77366fa6b3b4b768ec3050bf629380bac`.
 - Adapter weights, tokenizer, optimizer, scheduler, RNG state, and manifests were saved under `experiments/synthetic-training-smoke-v2/smoke/` (the earlier v1 run is also preserved). This synthetic run does not satisfy the real experiment's corpus gate.
 - Training dependencies were installed in `.venv-phase1`; pinned direct and resolved Windows dependency lists are checked in.
+- The shared runtime passed a fresh CPU tiny-model training/reload test after MPS support was added. `requirements-phase1.macos.lock.txt` was resolved for Apple Silicon / Python 3.12; it has not been installed or hardware-tested on a Mac here.
 
 ## Remaining prerequisites for the actual experiment
 
 1. Obtain and verify text transcriptions for all 81 graphics, rebuild the derived corpus, and pass its audit.
 2. Complete and verify the 100 answer keys and claim rubrics, then freeze the benchmark.
-3. Run the corpus smoke check and maximum-length BF16 check on the A40 with access to the official Meta model, then perform the full one-epoch run.
+3. Run the corpus smoke check and maximum-length BF16 check on the chosen A40 or Apple Silicon Mac with access to the official Meta model, then perform the full one-epoch run.
 4. Generate both checkpoints' responses, complete blinded semantic review, and score the paired comparison.
 
-No A40 is connected to this workspace. No production adapter or base-versus-CPT performance claim is supplied. See `PHASE1.md` for the commands and artifact contracts.
+No A40 or Apple Silicon GPU is connected to this workspace. The code now supports CUDA and MPS (including capability detection for M5 Pro), with a separate `phase1.mac.json` configuration. Mac hardware validation must run on the user's machine. No production adapter or base-versus-CPT performance claim is supplied. See `PHASE1.md` for the commands and artifact contracts.

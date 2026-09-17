@@ -86,11 +86,48 @@ python training_models_v1.py pretrain
 
 The first model access resolves its requested revision to a commit SHA and freezes both model and tokenizer to that commit. Smoke and production have distinct directories and model locks. Actual installed library versions are recorded and cannot change on resume. Keep the resolved environment alongside the run (`pip freeze > environment.txt`).
 
-Production defaults: BF16 LoRA, rank 16, alpha 32, dropout 0.05, attention and MLP projections, one epoch, learning rate 2e-5, batch size 1, gradient accumulation 16, cosine decay, 3% warmup, seed 42, and gradient checkpointing. These are pilot defaults rather than an optimized recipe.
+Production defaults: BF16 LoRA, rank 16, alpha 32, dropout 0.05, attention and MLP projections, one epoch, learning rate 2e-5, batch size 1, gradient accumulation 16, cosine decay, 3% warmup, seed 42, and gradient checkpointing. These are pilot defaults rather than an optimized recipe. Runtime selection is CUDA, then Apple Silicon MPS; CPU is allowed only for smoke tests. `--device` and `--precision` override the runtime settings explicitly.
 
 Segments have a maximum of 4,096 tokens including identity headers and special tokens. Sections that fit remain intact. Long sections split preferentially at paragraph ends, with up to 256 prior body tokens used only as context. Tokenization is performed once per body, retaining final partial segments. Header, overlap, and padding labels are masked. Every body token is a target once per epoch. Source token and character spans make coverage mechanically checkable. Unrelated sections are not packed together.
 
 Every training invocation performs a maximum-length forward/backward and optimizer allocation check, then restores adapter weights and RNG. Insufficient GPU memory fails explicitly. The smoke run performs two optimizer steps, saves an adapter, reloads it, and checks finite loss. Production requires the smoke completion record and the frozen benchmark. Resume an interrupted run with `--resume path/to/checkpoint-N`. The final adapter is the predetermined last epoch, not selected on evaluation scores. Training loss is not held-out perplexity.
+
+## Apple Silicon / M5 Pro
+
+The Phase 1 code supports the Mac GPU through [PyTorch MPS](https://docs.pytorch.org/docs/2.8/notes/mps.html). Use native **arm64 Python 3.12**, not an Intel Python running under Rosetta, and a macOS/PyTorch combination that passes the runtime check. This code path is capability-based and does not require a chip-name allowlist. It has not been hardware-tested on an M5 Pro in this workspace.
+
+```bash
+git pull
+python3.12 -m venv .venv-phase1
+source .venv-phase1/bin/activate
+pip install -r requirements-phase1.macos.lock.txt
+python training_models_v1.py check-runtime --config phase1.mac.json
+
+# Can run now, even while the real corpus audit is blocked:
+python scripts/smoke_phase1.py --device mps --precision bf16 \
+  --experiment-dir experiments/synthetic-training-smoke-mac-v1
+```
+
+Use a separate Mac experiment directory with the exact frozen corpus. In a fresh clone, before starting any training, copy the checked-in dataset:
+
+```bash
+cp -R experiments/title12-chapter-I-v1 experiments/title12-chapter-I-mac-v1
+python training_models_v1.py audit-corpus --config phase1.mac.json
+```
+
+Do not copy an existing run's `training/`, `smoke/`, or `evaluation/` directories. The checked-in source directory excludes those generated artifacts. Complete the image transcriptions and benchmark review in the Mac experiment directory; then:
+
+```bash
+python training_models_v1.py freeze-benchmark --config phase1.mac.json --input reviewed_questions.jsonl
+python training_models_v1.py pretrain --config phase1.mac.json --smoke
+python training_models_v1.py pretrain --config phase1.mac.json --preflight-only
+python training_models_v1.py pretrain --config phase1.mac.json
+python training_models_v1.py eval-cpt --config phase1.mac.json
+```
+
+On MPS, the base weights use the requested dtype (BF16 by default), LoRA parameters retain PEFT's FP32 promotion, and Trainer AMP/GradScaler and pinned host memory are disabled for compatibility with the pinned libraries. The optimizer uses non-fused AdamW with `foreach=False`. SDPA and gradient checkpointing are retained. Both comparison checkpoints must use the recorded backend, precision, and attention implementation. Runtime/platform details are saved in training and evaluation manifests.
+
+The 8B model requires roughly 16 GB just for 16-bit weights, plus adapters, activations, optimizer state, and macOS. A chip name alone cannot guarantee enough memory. The actual maximum-length check determines whether the configured run fits. A memory failure never silently shortens sequences, changes precision, or selects another model. Keep the Metal memory safety limit enabled. If necessary, create a new configuration with a smaller sequence length or model and label it as a different experiment. `--precision fp32` is available for explicit dtype troubleshooting but uses more memory. CPU fallback for unsupported MPS operations defaults off; explicitly enabling `PYTORCH_ENABLE_MPS_FALLBACK=1` is recorded in the run manifest.
 
 ## Generate, review, and compare
 

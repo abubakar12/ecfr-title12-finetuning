@@ -8,7 +8,6 @@ import argparse
 import os
 
 # must be set before torch initializes; harmless on non-Mac platforms
-os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
 STAGES = ["download", "build", "sft", "dpo", "grpo", "eval", "report"]
@@ -21,6 +20,7 @@ def main() -> None:
     if len(sys.argv) > 1 and sys.argv[1] in COMMANDS:
         phase1_main(sys.argv[1:])
         return
+    os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")
     ap = argparse.ArgumentParser(
         description="eCFR Title 12 fine-tuning pipeline (SFT / DPO / GRPO / eval)",
         epilog="Isolated Phase 1 commands: " + ", ".join(COMMANDS) + ". Use COMMAND --help for their options.",

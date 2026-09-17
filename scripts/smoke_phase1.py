@@ -14,9 +14,12 @@ from ecfr_pipeline import corpus, cpt
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--experiment-dir", default="experiments/synthetic-training-smoke-v1")
+    parser.add_argument("--device", choices=["auto", "cuda", "mps", "cpu"], default="auto")
+    parser.add_argument("--precision", choices=["auto", "bf16", "fp32"], default="auto")
     args = parser.parse_args()
     cfg = corpus.read_json(Path("phase1.json"))
     cfg["experiment_dir"] = args.experiment_dir
+    cfg["runtime"] = {"device": args.device, "precision": args.precision}
     directory = Path(cfg["experiment_dir"])
     if (directory / "snapshot.json").exists():
         raise ValueError("Use a new synthetic experiment directory; existing artifacts are preserved")
