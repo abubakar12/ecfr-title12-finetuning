@@ -10,7 +10,7 @@ import os
 # must be set before torch initializes; harmless on non-Mac platforms
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
-STAGES = ["download", "build", "sft", "dpo", "grpo", "eval", "report"]
+STAGES = ["download", "build", "cpt", "sft", "dpo", "grpo", "eval", "report"]
 
 
 def main() -> None:
@@ -28,7 +28,7 @@ def main() -> None:
     ap.add_argument(
         "command",
         choices=STAGES + ["all"],
-        help="'all' runs download,build,sft,dpo,eval (grpo is opt-in: run it explicitly)",
+        help="'all' runs download,build,cpt,sft,dpo,grpo,eval,report",
     )
     ap.add_argument("--config", default="config.yaml")
     ap.add_argument(
@@ -61,7 +61,7 @@ def main() -> None:
     common.ensure_dirs(cfg)
 
     steps = (
-        ["download", "build", "sft", "dpo", "eval", "report"]
+        ["download", "build", "cpt", "sft", "dpo", "grpo", "eval", "report"]
         if args.command == "all"
         else [args.command]
     )
@@ -74,6 +74,10 @@ def main() -> None:
             from ecfr_pipeline import build_dataset
 
             build_dataset.run(cfg, smoke=args.smoke, model_override=args.model)
+        elif step == "cpt":
+            from ecfr_pipeline import train_cpt
+
+            train_cpt.run(cfg, smoke=args.smoke, model_override=args.model)
         elif step == "sft":
             from ecfr_pipeline import train_sft
 

@@ -47,8 +47,35 @@ def _flat_text(el) -> str:
     return re.sub(r"\s+", " ", " ".join(el.itertext())).strip()
 
 
+ROMAN = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100}
+
+
+def _roman_key(numeral: str) -> int:
+    total, prev = 0, 0
+    for ch in reversed((numeral or "").upper()):
+        val = ROMAN.get(ch, 0)
+        total, prev = (total - val, prev) if val < prev else (total + val, val)
+    return total
+
+
+def _chapter_index(root) -> dict:
+    """Map id(section element) -> (chapter number, agency name) from the DIV3 CHAPTER ancestors."""
+    index = {}
+    for chap in root.iter():
+        if chap.get("TYPE") != "CHAPTER":
+            continue
+        number = re.sub(r"\s*\[reserved\]\s*", "", chap.get("N") or "", flags=re.I).strip()
+        head = chap.find("HEAD")
+        name = _flat_text(head) if head is not None else ""
+        name = re.split(r"[\u2014\u2013-]", name, maxsplit=1)[-1].strip() if "CHAPTER" in name.upper() else name
+        for div in chap.iter("DIV8"):
+            index[id(div)] = (number, name.title())
+    return index
+
+
 def parse_sections(xml_path: Path) -> list:
     root = ET.parse(xml_path).getroot()
+    chapters = _chapter_index(root)
     records = []
     for div in root.iter("DIV8"):
         if div.get("TYPE") != "SECTION":
@@ -61,10 +88,13 @@ def parse_sections(xml_path: Path) -> list:
         heading = re.sub(r"^§+\s*[\dA-Za-z.\-]+\s*", "", heading_raw).strip().rstrip(".")
         paragraphs = [_flat_text(p) for p in div.iter() if p.tag in PARA_TAGS]
         text = "\n".join(p for p in paragraphs if p)
+        chapter, chapter_name = chapters.get(id(div), (None, None))
         records.append(
             {
                 "section": ident,
                 "part": ident.split(".")[0],
+                "chapter": chapter,
+                "chapter_name": chapter_name,
                 "citation": f"12 CFR § {ident}",
                 "heading": heading,
                 "reserved": "[reserved]" in heading_raw.lower(),
@@ -84,7 +114,9 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> Pa
     out = Path(cfg["paths"]["data_dir"]) / "sections.jsonl"
     common.save_jsonl(out, records)
     reserved = sum(r["reserved"] for r in records)
-    print(f"[download] parsed {len(records)} sections ({reserved} reserved) -> {out}")
+    chapters = sorted({r["chapter"] for r in records if r["chapter"]}, key=_roman_key)
+    print(f"[download] parsed {len(records)} sections ({reserved} reserved) across "
+          f"{len(chapters)} chapters [{', '.join(chapters)}] -> {out}")
     common.write_manifest(
         cfg,
         "download",
@@ -94,6 +126,7 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> Pa
             "sections_jsonl": str(out),
             "sections_sha256": common.sha256_file(out),
             "n_sections": len(records),
+            "chapters": chapters,
         },
     )
     return out

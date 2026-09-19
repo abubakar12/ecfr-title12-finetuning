@@ -75,6 +75,9 @@ def build_examples(section: dict, cfg: dict, heading_is_unique: bool = True) -> 
             "id": f"{section['section']}::{kind}{suffix}",
             "type": kind,
             "section": section["section"],
+            "part": section.get("part"),
+            "chapter": section.get("chapter"),
+            "chapter_name": section.get("chapter_name"),
             "expected_citation": section["section"],
             "messages": [
                 {"role": "system", "content": system},
@@ -149,6 +152,7 @@ def build_dpo_pairs(train_examples: list, rng: random.Random, cfg: dict) -> list
                     "id": f"{ex['id']}::dpo::{kind}",
                     "corruption": kind,
                     "section": sec,
+                    "chapter": ex.get("chapter"),
                     "prompt": ex["messages"][:2],
                     "chosen": [ex["messages"][2]],
                     "rejected": [{"role": "assistant", "content": bad}],
@@ -157,7 +161,32 @@ def build_dpo_pairs(train_examples: list, rng: random.Random, cfg: dict) -> list
     return pairs
 
 
-def _write_dataset_card(cfg, data_dir, splits, examples, dpo_pairs, eval_rows, hashes):
+def cpt_document(section: dict) -> dict:
+    """One continued-pretraining document per section: header line + regulation text."""
+    chapter = f" (Chapter {section['chapter']}, {section['chapter_name']})" if section.get("chapter") else ""
+    text = f"{section['citation']} {section['heading']}{chapter}\n{section['text']}"
+    return {"id": section["section"], "section": section["section"], "chapter": section.get("chapter"),
+            "text": text, "word_count": len(text.split())}
+
+
+def stratified_eval_sample(rows: list, cap: int, rng: random.Random) -> list:
+    """Round-robin over chapters so small chapters are represented, not drowned by Chapters I-III."""
+    by_chapter = defaultdict(list)
+    for r in rows:
+        by_chapter[r.get("chapter") or "?"].append(r)
+    for bucket in by_chapter.values():
+        rng.shuffle(bucket)
+    order = sorted(by_chapter)
+    picked = []
+    while len(picked) < cap and any(by_chapter.values()):
+        for ch in order:
+            if by_chapter[ch] and len(picked) < cap:
+                picked.append(by_chapter[ch].pop())
+    rng.shuffle(picked)
+    return picked
+
+
+def _write_dataset_card(cfg, data_dir, splits, examples, dpo_pairs, eval_rows, hashes, cpt_docs):
     e = cfg["ecfr"]
     lines = [
         "# eCFR Fine-Tuning Dataset Card",
@@ -179,13 +208,28 @@ def _write_dataset_card(cfg, data_dir, splits, examples, dpo_pairs, eval_rows, h
     ]
     for name in ("train", "val", "test"):
         lines.append(f"| {name} | {len(splits[name])} | {len(examples[name])} |")
+    lines += ["", "## Coverage by chapter", "",
+              "| chapter | agency | sections | sft train | sft val | eval |", "|---|---|---|---|---|---|"]
+    all_secs = [s for secs in splits.values() for s in secs]
+    names = {s.get("chapter"): s.get("chapter_name") for s in all_secs}
+    for ch in sorted(names, key=lambda c: (c is None, len(c or ""), c or "")):
+        n_sec = sum(1 for s in all_secs if s.get("chapter") == ch)
+        n_tr = sum(1 for ex in examples["train"] if ex.get("chapter") == ch)
+        n_va = sum(1 for ex in examples["val"] if ex.get("chapter") == ch)
+        n_ev = sum(1 for r in eval_rows if r.get("chapter") == ch)
+        lines.append(f"| {ch or '?'} | {names[ch] or ''} | {n_sec} | {n_tr} | {n_va} | {n_ev} |")
+    cpt_words = {k: sum(d["word_count"] for d in v) for k, v in cpt_docs.items()}
+    lines += ["", "## Continued-pretraining corpus (train + val sections only; test sections stay held out)", "",
+              f"- cpt_train.jsonl: {len(cpt_docs['train'])} documents, {cpt_words['train']:,} words",
+              f"- cpt_val.jsonl: {len(cpt_docs['val'])} documents, {cpt_words['val']:,} words"]
     type_counts = Counter(ex["type"] for ex in examples["train"])
     lines += ["", "## Train question types", ""]
     lines += [f"- {t}: {n}" for t, n in sorted(type_counts.items())]
     corr_counts = Counter(p["corruption"] for p in dpo_pairs)
     lines += ["", f"## DPO pairs: {len(dpo_pairs)} (train sections only)", ""]
     lines += [f"- {k}: {n}" for k, n in sorted(corr_counts.items())]
-    lines += ["", f"## Eval set: {len(eval_rows)} examples (capped at {cfg['dataset']['max_eval_examples']})", ""]
+    lines += ["", f"## Eval set: {len(eval_rows)} examples (capped at {cfg['dataset']['max_eval_examples']}, "
+              "round-robin across chapters)", ""]
     lines += ["## Artifact hashes (sha256)", ""]
     lines += [f"- {name}: `{digest}`" for name, digest in hashes.items()]
     lines.append("")
@@ -247,20 +291,25 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> No
             "id": ex["id"],
             "type": ex["type"],
             "section": ex["section"],
+            "part": ex.get("part"),
+            "chapter": ex.get("chapter"),
+            "chapter_name": ex.get("chapter_name"),
             "expected_citation": ex["expected_citation"],
             "prompt_messages": ex["messages"][:2],
             "reference": ex["messages"][2]["content"],
         }
         for ex in examples["test"]
     ]
-    rng.shuffle(eval_rows)
-    eval_rows = eval_rows[: ds_cfg["max_eval_examples"]]
+    eval_rows = stratified_eval_sample(eval_rows, ds_cfg["max_eval_examples"], rng)
+    cpt_docs = {name: [cpt_document(s) for s in splits[name]] for name in ("train", "val")}
 
     files = {
         "sft_train.jsonl": examples["train"],
         "sft_val.jsonl": examples["val"],
         "dpo_train.jsonl": dpo_pairs,
         "eval_test.jsonl": eval_rows,
+        "cpt_train.jsonl": cpt_docs["train"],
+        "cpt_val.jsonl": cpt_docs["val"],
     }
     hashes = {}
     for fname, rows in files.items():
@@ -271,11 +320,14 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> No
     for fname, rows in files.items():
         assert rows, f"{fname} is empty — dataset build produced no rows"
 
-    _write_dataset_card(cfg, data_dir, splits, examples, dpo_pairs, eval_rows, hashes)
+    _write_dataset_card(cfg, data_dir, splits, examples, dpo_pairs, eval_rows, hashes, cpt_docs)
+    eval_chapters = Counter(r.get("chapter") for r in eval_rows)
     print(f"[build] sections used: {len(usable)} "
           f"(train/val/test = {len(splits['train'])}/{len(splits['val'])}/{len(splits['test'])})")
+    print(f"[build] eval examples per chapter: {dict(sorted(eval_chapters.items(), key=lambda kv: str(kv[0])))}")
     common.write_manifest(
         cfg,
         "build",
-        {"files": hashes, "sections": {k: len(v) for k, v in splits.items()}},
+        {"files": hashes, "sections": {k: len(v) for k, v in splits.items()},
+         "eval_per_chapter": {str(k): v for k, v in eval_chapters.items()}},
     )

@@ -52,7 +52,7 @@ def finish_legacy(cfg, stage, directory, model, smoke):
 
 
 def publish(cfg, stage="cpt"):
-    if stage == "cpt":
+    if stage == "cpt" and "experiment_dir" in cfg:  # Phase-1 CPT (frozen experiment corpus)
         root = Path(cfg["experiment_dir"]) / "training"
         directory = root / "adapter"
         completed = corpus.read_json(root / "completed.json")
@@ -65,7 +65,7 @@ def publish(cfg, stage="cpt"):
                       "run_sha256": completed["run_sha256"],
                       "corpus": corpus.read_json(root.parent / "corpus.lock.json"),
                       "snapshot_date": corpus.read_json(root.parent / "snapshot.json")["date"]}
-    elif stage in {"sft", "dpo", "grpo"}:
+    elif stage in {"cpt", "sft", "dpo", "grpo"}:
         directory = Path(cfg["paths"]["outputs_dir"]) / f"{stage}-adapter"
         root = directory
         completed = corpus.read_json(root / "completed.json")

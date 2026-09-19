@@ -35,6 +35,19 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> Pa
 
     s = cfg["sft"]
     out_dir = Path(cfg["paths"]["outputs_dir"]) / "sft-adapter"
+    cpt_dir = Path(cfg["paths"]["outputs_dir"]) / "cpt-adapter"
+    peft_cfg = common.build_lora_config(cfg)
+    init_from = None
+    if s.get("init_from_cpt", True) and (cpt_dir / "adapter_config.json").exists():
+        # Continue training the CPT adapter (chain CPT -> SFT) instead of a fresh LoRA.
+        model = common.prepare_for_kbit_if_needed(model, runtime)
+        if runtime["gradient_checkpointing"] and hasattr(model, "enable_input_require_grads"):
+            model.enable_input_require_grads()
+        model = common.load_peft_adapter(model, cpt_dir, trainable=True)
+        peft_cfg, init_from = None, str(cpt_dir)
+        print(f"[sft] initialized from CPT adapter {cpt_dir}")
+    else:
+        print("[sft] training a fresh LoRA on the base model (no CPT adapter)")
     # Loss over the full sequence (prompts are short/templated; completion-only
     # masking needs {% generation %} chat-template support Llama does not ship).
     args = SFTConfig(
@@ -70,7 +83,7 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> Pa
         train_dataset=train_ds,
         eval_dataset=val_ds,
         processing_class=tok,
-        peft_config=common.build_lora_config(cfg),
+        peft_config=peft_cfg,
     )
     result = trainer.train()
     if not math.isfinite(result.training_loss):
@@ -88,6 +101,7 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None) -> Pa
             "smoke": smoke,
             "runtime": runtime,
             "adapter_dir": str(out_dir),
+            "init_from": init_from,
             "n_train": len(train_ds),
             "n_val": len(val_ds),
             "dataset_sha256": common.sha256_file(data_dir / "sft_train.jsonl"),

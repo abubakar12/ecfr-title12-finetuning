@@ -17,18 +17,19 @@ from . import common, metrics
 
 
 def _score(recs: list) -> dict:
-    per_type = defaultdict(list)
+    per_type, per_chapter = defaultdict(list), defaultdict(list)
     for r in recs:
         found = metrics.extract_sections(r["completion"])
         hit = metrics.citation_correct(r["completion"], r["expected_citation"])
-        per_type[r["type"]].append(
-            {
-                "citation": float(hit),
-                "wrong_citation": float(bool(found) and not hit),
-                "token_f1": metrics.token_f1(r["completion"], r["reference"]),
-                "rouge_l": metrics.rouge_l(r["completion"], r["reference"]),
-            }
-        )
+        item = {
+            "citation": float(hit),
+            "wrong_citation": float(bool(found) and not hit),
+            "token_f1": metrics.token_f1(r["completion"], r["reference"]),
+            "rouge_l": metrics.rouge_l(r["completion"], r["reference"]),
+            "words": len(r["completion"].split()),
+        }
+        per_type[r["type"]].append(item)
+        per_chapter[str(r.get("chapter") or "?")].append(item)
 
     def agg(items: list) -> dict:
         n = len(items)
@@ -38,10 +39,13 @@ def _score(recs: list) -> dict:
             "wrong_citation_rate": round(sum(i["wrong_citation"] for i in items) / n, 4),
             "token_f1": round(sum(i["token_f1"] for i in items) / n, 4),
             "rouge_l": round(sum(i["rouge_l"] for i in items) / n, 4),
+            "avg_words": round(sum(i["words"] for i in items) / n, 1),
         }
 
     all_rows = [i for items in per_type.values() for i in items]
-    return {"overall": agg(all_rows), "per_type": {t: agg(v) for t, v in sorted(per_type.items())}}
+    return {"overall": agg(all_rows),
+            "per_type": {t: agg(v) for t, v in sorted(per_type.items())},
+            "per_chapter": {c: agg(v) for c, v in sorted(per_chapter.items(), key=lambda kv: (len(kv[0]), kv[0]))}}
 
 
 def _write_report(results: dict, path: Path) -> None:
@@ -79,6 +83,15 @@ def _write_report(results: dict, path: Path) -> None:
             for n in names
         ]
         lines.append("| " + " | ".join(row) + " |")
+
+    chapters = list(next(iter(results.values())).get("per_chapter", {}))
+    for metric in ("citation_accuracy", "token_f1"):
+        lines += ["", f"## {metric} by chapter (12 CFR)", "",
+                  "| chapter | n | " + " | ".join(names) + " |", "|---|---|" + "---|" * len(names)]
+        for c in chapters:
+            n_c = results[names[0]]["per_chapter"][c]["n"]
+            row = [c, str(n_c)] + [f"{results[n]['per_chapter'].get(c, {}).get(metric, float('nan')):.4f}" for n in names]
+            lines.append("| " + " | ".join(row) + " |")
     path.write_text("\n".join(lines) + "\n")
 
 
@@ -152,6 +165,7 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None,
     out_root = Path(cfg["paths"]["outputs_dir"])
     adapter_dirs = {
         "base": None,
+        "cpt": out_root / "cpt-adapter",
         "sft": out_root / "sft-adapter",
         "dpo": out_root / "dpo-adapter",
         "grpo": out_root / "grpo-adapter",
@@ -188,7 +202,7 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None,
         print(
             f"[eval] {name}: cite_acc={o['citation_accuracy']:.3f} "
             f"wrong_cite={o['wrong_citation_rate']:.3f} "
-            f"f1={o['token_f1']:.3f} rougeL={o['rouge_l']:.3f} (n={o['n']})"
+            f"f1={o['token_f1']:.3f} rougeL={o['rouge_l']:.3f} words={o['avg_words']} (n={o['n']})"
         )
 
     payload = {
@@ -196,6 +210,7 @@ def run(cfg: dict, smoke: bool = False, model_override: str | None = None,
         "model_id": model_id,
         "smoke": smoke,
         "n_eval": len(rows),
+        "chapters": {str(r.get("chapter") or "?"): r.get("chapter_name") for r in rows},
         "runtime": runtime,
         "checkpoints": results,
     }

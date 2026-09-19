@@ -39,7 +39,7 @@ dataset:
   max_answer_words: 220
   max_definition_words: 80
   dpo_pairs_per_section: 2
-  max_eval_examples: 200     # eval costs real money; cap the test set
+  max_eval_examples: 300     # eval costs real money; cap the test set (sampled round-robin across chapters)
   split: {train: 8, val: 1, test: 1}   # hash buckets out of 10, assigned per section
 
 lora:
@@ -48,7 +48,18 @@ lora:
   dropout: 0.05
   target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
 
+cpt:                         # continued pretraining on raw regulation text (train+val sections)
+  epochs: 2
+  learning_rate: 1.0e-4
+  per_device_batch: 2
+  grad_accum: 8              # effective batch 16 x 2048 tokens (packed)
+  max_length: 2048
+  warmup_ratio: 0.03
+  logging_steps: 10
+  eval_steps: 200
+
 sft:
+  init_from_cpt: true        # continue the CPT adapter (chain CPT -> SFT); false = fresh LoRA on base
   epochs: 2
   learning_rate: 2.0e-4
   per_device_batch: 2
@@ -84,7 +95,7 @@ grpo:
 eval:
   max_new_tokens: 256
   batch_size: 8
-  checkpoints: [base, sft, dpo, grpo]   # grpo is skipped automatically if never trained
+  checkpoints: [base, cpt, sft, dpo, grpo]   # stages without an adapter are skipped automatically
 
 smoke:
   max_steps: 5

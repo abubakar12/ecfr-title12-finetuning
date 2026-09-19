@@ -5,10 +5,10 @@
 __pycache__/
 *.py[cod]
 
-# training artifacts and logs (published to HF, not git)
+# training artifacts and logs (published to HF, not git); eval generations ARE kept (small, audit trail)
 outputs/
-results/generations_*.jsonl
 logs_*.txt
+*.log
 nohup.out
 data/raw/
 *.smoke-bak
