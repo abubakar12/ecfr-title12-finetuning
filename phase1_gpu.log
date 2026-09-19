@@ -1,4 +1,4 @@
-== python training_models_v1.py check-runtime --config phase1.gpu.json (2026-09-19T11:21:22Z)
+== python training_models_v1.py check-runtime --config phase1.gpu.json (2026-09-19T19:32:58Z)
 {
   "device": "cuda",
   "precision": "bf16",
@@ -10,18 +10,18 @@
   "mps_fallback": false,
   "gpu": "NVIDIA A40"
 }
-== python training_models_v1.py check-hub --config phase1.gpu.json (2026-09-19T11:21:25Z)
+== python training_models_v1.py check-hub --config phase1.gpu.json (2026-09-19T19:33:01Z)
 [hub] destination: abubakarilyas624/ecfr-title12-<stage>-<fingerprint>; private=True
-== python training_models_v1.py audit-corpus --config phase1.gpu.json (2026-09-19T11:21:25Z)
+== python training_models_v1.py audit-corpus --config phase1.gpu.json (2026-09-19T19:33:05Z)
 {
   "passed": true,
   "documents": 1128,
   "inventory_elements": 18747,
   "body_characters": 4196453
 }
-== python training_models_v1.py auto-score-cpt --config phase1.gpu.json (2026-09-19T11:21:29Z)
+== python training_models_v1.py auto-score-cpt --config phase1.gpu.json (2026-09-19T19:33:09Z)
 `torch_dtype` is deprecated! Use `dtype` instead!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 129.29it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 134.75it/s]
 response-001: claims 2/3 contradiction=False citations 0/9 nonexistent=0
 response-002: claims 2/3 contradiction=False citations 0/5 nonexistent=0
 response-003: claims 0/2 contradiction=False citations 0/5 nonexistent=0

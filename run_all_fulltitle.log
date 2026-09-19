@@ -1,47 +1,37 @@
 nohup: ignoring input
-== download (2026-09-19T11:20:47Z)
+== download (2026-09-19T19:13:15Z)
 [download] cached snapshot: data/raw/title12_full_2025-01-01.xml
-[download] parsed 7199 sections (263 reserved) -> data/sections.jsonl
+[download] parsed 7199 sections (263 reserved) across 16 chapters [I, II, III, IV, VI, VII, VIII, X, XI, XII, XIII, XIV, XV, XVI, XVII, XVIII] -> data/sections.jsonl
 [download] manifest -> outputs/manifests/download_manifest.json
-== build (2026-09-19T11:20:54Z)
+== build (2026-09-19T19:13:22Z)
 [build] sft_train.jsonl: 14722 rows
 [build] sft_val.jsonl: 1797 rows
 [build] dpo_train.jsonl: 10374 rows
-[build] eval_test.jsonl: 200 rows
+[build] eval_test.jsonl: 300 rows
+[build] cpt_train.jsonl: 5187 rows
+[build] cpt_val.jsonl: 638 rows
 [build] sections used: 6505 (train/val/test = 5187/638/680)
+[build] eval examples per chapter: {'I': 30, 'II': 30, 'III': 30, 'IV': 30, 'VI': 30, 'VII': 30, 'X': 29, 'XI': 12, 'XII': 29, 'XIII': 6, 'XIV': 9, 'XV': 3, 'XVII': 3, 'XVIII': 29}
 [build] manifest -> outputs/manifests/build_manifest.json
-== sft (2026-09-19T11:21:02Z)
-Traceback (most recent call last):
-  File "/workspace/ecfr-title12-finetuning/training_models_v1.py", line 100, in <module>
-    main()
-  File "/workspace/ecfr-title12-finetuning/training_models_v1.py", line 80, in main
-    train_sft.run(cfg, smoke=args.smoke, model_override=args.model)
-  File "/workspace/ecfr-title12-finetuning/ecfr_pipeline/train_sft.py", line 14, in run
-    hub.check(cfg)
-  File "/workspace/ecfr-title12-finetuning/ecfr_pipeline/hub.py", line 36, in check
-    _, namespace, prefix, private = connection(cfg)
-                                    ^^^^^^^^^^^^^^^
-  File "/workspace/ecfr-title12-finetuning/ecfr_pipeline/hub.py", line 22, in connection
-    account = api.whoami()  # HF_TOKEN or `hf auth login`; never write credentials.
-              ^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/hf_api.py", line 1797, in whoami
-    headers=self._build_hf_headers(token=effective_token),
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/hf_api.py", line 9518, in _build_hf_headers
-    return build_hf_headers(
-           ^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
-    return f(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_headers.py", line 126, in build_hf_headers
-    token_to_send = get_token_to_send(token)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_headers.py", line 159, in get_token_to_send
-    raise LocalTokenNotFoundError(
-huggingface_hub.errors.LocalTokenNotFoundError: Token is required (`token=True`), but no token found. You need to provide a token or be logged in to Hugging Face with `hf auth login` or `huggingface_hub.login`. See https://huggingface.co/settings/tokens.
+== cpt (2026-09-19T19:13:31Z)
+[hub] destination: abubakarilyas624/ecfr-title12-<stage>-<fingerprint>; private=True
+[runtime] {'requested': 'auto', 'device': 'cuda', 'vram_gb': 44.4, 'use_4bit': False, 'bf16': True, 'fp16': False, 'torch_dtype': 'bfloat16', 'optim': 'adamw_torch', 'attn_implementation': 'sdpa', 'pin_memory': True, 'gradient_checkpointing': True}
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 5187 examples [00:00, 54803.40 examples/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 638 examples [00:00, 63563.65 examples/s]
+Map:   0%|          | 0/5187 [00:00<?, ? examples/s]Map:  22%|██▏       | 1137/5187 [00:00<00:00, 11201.07 examples/s]Map:  54%|█████▎    | 2780/5187 [00:00<00:00, 14249.65 examples/s]Map:  90%|█████████ | 4692/5187 [00:00<00:00, 16460.37 examples/s]Map: 100%|██████████| 5187/5187 [00:00<00:00, 15880.30 examples/s]
+[cpt] documents=5187 (3,032,566 words) val=638 model=meta-llama/Meta-Llama-3.1-8B-Instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.35it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.30it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.30it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.89it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.62it/s]
+Adding EOS to train dataset:   0%|          | 0/5187 [00:00<?, ? examples/s]Adding EOS to train dataset:  58%|█████▊    | 3000/5187 [00:00<00:00, 28615.87 examples/s]Adding EOS to train dataset: 100%|██████████| 5187/5187 [00:00<00:00, 30689.86 examples/s]
+Tokenizing train dataset:   0%|          | 0/5187 [00:00<?, ? examples/s]Tokenizing train dataset:   1%|          | 26/5187 [00:00<00:22, 231.49 examples/s]Tokenizing train dataset:   1%|▏         | 68/5187 [00:00<00:17, 286.79 examples/s]Tokenizing train dataset:   3%|▎         | 144/5187 [00:00<00:11, 452.15 examples/s]Tokenizing train dataset:   4%|▍         | 199/5187 [00:00<00:10, 473.75 examples/s]Tokenizing train dataset:   6%|▋         | 337/5187 [00:00<00:06, 765.29 examples/s]Tokenizing train dataset:   8%|▊         | 432/5187 [00:00<00:05, 823.18 examples/s]Tokenizing train dataset:  10%|█         | 526/5187 [00:00<00:06, 725.97 examples/s]Tokenizing train dataset:  13%|█▎        | 658/5187 [00:00<00:05, 768.08 examples/s]Tokenizing train dataset:  15%|█▌        | 786/5187 [00:01<00:04, 887.83 examples/s]Tokenizing train dataset:  17%|█▋        | 885/5187 [00:01<00:05, 807.47 examples/s]Tokenizing train dataset:  19%|█▊        | 970/5187 [00:01<00:05, 723.12 examples/s]Tokenizing train dataset:  20%|██        | 1052/5187 [00:01<00:09, 426.91 examples/s]Tokenizing train dataset:  22%|██▏       | 1135/5187 [00:01<00:08, 452.21 examples/s]Tokenizing train dataset:  23%|██▎       | 1196/5187 [00:02<00:08, 479.75 examples/s]Tokenizing train dataset:  25%|██▍       | 1271/5187 [00:02<00:08, 482.38 examples/s]Tokenizing train dataset:  26%|██▌       | 1337/5187 [00:02<00:09, 420.81 examples/s]Tokenizing train dataset:  27%|██▋       | 1390/5187 [00:02<00:08, 431.73 examples/s]Tokenizing train dataset:  28%|██▊       | 1462/5187 [00:02<00:07, 489.46 examples/s]Tokenizing train dataset:  29%|██▉       | 1522/5187 [00:02<00:07, 513.61 examples/s]Tokenizing train dataset:  30%|███       | 1579/5187 [00:02<00:06, 525.43 examples/s]Tokenizing train dataset:  32%|███▏      | 1658/5187 [00:03<00:06, 511.48 examples/s]Tokenizing train dataset:  33%|███▎      | 1714/5187 [00:03<00:06, 520.86 examples/s]Tokenizing train dataset:  35%|███▌      | 1839/5187 [00:03<00:04, 703.51 examples/s]Tokenizing train dataset:  38%|███▊      | 1996/5187 [00:03<00:04, 788.22 examples/s]Tokenizing train dataset:  41%|████▏     | 2141/5187 [00:03<00:03, 826.54 examples/s]Tokenizing train dataset:  44%|████▎     | 2258/5187 [00:03<00:03, 887.66 examples/s]Tokenizing train dataset:  46%|████▌     | 2372/5187 [00:03<00:04, 672.08 examples/s]Tokenizing train dataset:  47%|████▋     | 2462/5187 [00:04<00:03, 714.85 examples/s]Tokenizing train dataset:  49%|████▉     | 2563/5187 [00:04<00:03, 698.80 examples/s]Tokenizing train dataset:  52%|█████▏    | 2693/5187 [00:04<00:03, 677.79 examples/s]Tokenizing train dataset:  54%|█████▍    | 2823/5187 [00:04<00:03, 723.49 examples/s]Tokenizing train dataset:  57%|█████▋    | 2973/5187 [00:04<00:02, 880.07 examples/s]Tokenizing train dataset:  61%|██████    | 3143/5187 [00:04<00:02, 910.22 examples/s]Tokenizing train dataset:  63%|██████▎   | 3266/5187 [00:04<00:01, 975.06 examples/s]Tokenizing train dataset:  65%|██████▌   | 3396/5187 [00:05<00:02, 844.36 examples/s]Tokenizing train dataset:  68%|██████▊   | 3509/5187 [00:05<00:02, 811.70 examples/s]Tokenizing train dataset:  70%|███████   | 3638/5187 [00:05<00:01, 912.95 examples/s]Tokenizing train dataset:  73%|███████▎  | 3783/5187 [00:05<00:01, 1036.42 examples/s]Tokenizing train dataset:  75%|███████▌  | 3898/5187 [00:05<00:01, 1054.81 examples/s]Tokenizing train dataset:  78%|███████▊  | 4044/5187 [00:05<00:01, 899.25 examples/s] Tokenizing train dataset:  81%|████████  | 4181/5187 [00:06<00:01, 631.21 examples/s]Tokenizing train dataset:  83%|████████▎ | 4306/5187 [00:06<00:01, 733.94 examples/s]Tokenizing train dataset:  85%|████████▌ | 4414/5187 [00:06<00:00, 797.73 examples/s]Tokenizing train dataset:  88%|████████▊ | 4539/5187 [00:06<00:00, 892.25 examples/s]Tokenizing train dataset:  90%|████████▉ | 4650/5187 [00:06<00:00, 809.49 examples/s]Tokenizing train dataset:  92%|█████████▏| 4767/5187 [00:06<00:00, 797.10 examples/s]Tokenizing train dataset:  94%|█████████▍| 4889/5187 [00:06<00:00, 882.77 examples/s]Tokenizing train dataset:  96%|█████████▋| 5000/5187 [00:07<00:00, 818.17 examples/s]Tokenizing train dataset:  98%|█████████▊| 5090/5187 [00:07<00:00, 832.12 examples/s]Tokenizing train dataset: 100%|█████████▉| 5184/5187 [00:07<00:00, 854.65 examples/s]Tokenizing train dataset: 100%|██████████| 5187/5187 [00:07<00:00, 714.68 examples/s]
+Packing train dataset:   0%|          | 0/5187 [00:00<?, ? examples/s]Packing train dataset: 100%|██████████| 5187/5187 [00:00<00:00, 481782.56 examples/s]
+Adding EOS to eval dataset:   0%|          | 0/638 [00:00<?, ? examples/s]Adding EOS to eval dataset: 100%|██████████| 638/638 [00:00<00:00, 30119.49 examples/s]
+Tokenizing eval dataset:   0%|          | 0/638 [00:00<?, ? examples/s]Tokenizing eval dataset:  10%|▉         | 63/638 [00:00<00:00, 613.29 examples/s]Tokenizing eval dataset:  23%|██▎       | 145/638 [00:00<00:00, 724.84 examples/s]Tokenizing eval dataset:  42%|████▏     | 265/638 [00:00<00:00, 730.50 examples/s]Tokenizing eval dataset:  63%|██████▎   | 404/638 [00:00<00:00, 805.62 examples/s]Tokenizing eval dataset:  79%|███████▊  | 501/638 [00:00<00:00, 850.89 examples/s]Tokenizing eval dataset:  93%|█████████▎| 595/638 [00:00<00:00, 847.72 examples/s]Tokenizing eval dataset: 100%|██████████| 638/638 [00:00<00:00, 744.56 examples/s]
+Packing eval dataset:   0%|          | 0/638 [00:00<?, ? examples/s]Packing eval dataset: 100%|██████████| 638/638 [00:00<00:00, 244268.91 examples/s]
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'eos_token_id': 128009, 'pad_token_id': 128004}.
+  0%|          | 0/238 [00:00<?, ?it/s]  0%|          | 1/238 [00:27<1:48:14, 27.40s/it]  1%|          | 2/238 [00:54<1:46:49, 27.16s/it]  1%|▏         | 3/238 [01:21<1:46:11, 27.11s/it]  2%|▏         | 4/238 [01:48<1:45:40, 27.10s/it]  2%|▏         | 5/238 [02:15<1:45:17, 27.11s/it]  3%|▎         | 6/238 [02:42<1:44:52, 27.12s/it]  3%|▎         | 7/238 [03:11<1:46:10, 27.58s/it]  3%|▎         | 8/238 [03:38<1:45:12, 27.45s/it]  4%|▍         | 9/238 [04:05<1:44:23, 27.35s/it]  4%|▍         | 10/238 [04:32<1:43:41, 27.29s/it]                                                  {'loss': 1.3586, 'grad_norm': 0.2902028262615204, 'learning_rate': 9.99953357982261e-05, 'entropy': 1.3239264979958534, 'num_tokens': 327415.0, 'mean_token_accuracy': 0.6750123918056488, 'epoch': 0.08}
+  4%|▍         | 10/238 [04:32<1:43:41, 27.29s/it]  5%|▍         | 11/238 [05:00<1:43:16, 27.30s/it]  5%|▌         | 12/238 [05:27<1:42:43, 27.27s/it]  5%|▌         | 13/238 [05:54<1:42:10, 27.25s/it]  6%|▌         | 14/238 [06:21<1:41:42, 27.24s/it]  6%|▋         | 15/238 [06:48<1:41:12, 27.23s/it]  7%|▋         | 16/238 [07:16<1:40:40, 27.21s/it]  7%|▋         | 17/238 [07:43<1:40:11, 27.20s/it]  8%|▊         | 18/238 [08:10<1:39:40, 27.18s/it]  8%|▊         | 19/238 [08:37<1:39:19, 27.21s/it]  8%|▊         | 20/238 [09:06<1:40:13, 27.58s/it]                                                  {'loss': 1.2761, 'grad_norm': 0.20017804205417633, 'learning_rate': 9.943668375077925e-05, 'entropy': 1.2742025144398212, 'num_tokens': 654223.0, 'mean_token_accuracy': 0.6860336653888226, 'epoch': 0.17}
+  8%|▊         | 20/238 [09:06<1:40:13, 27.58s/it]  9%|▉         | 21/238 [09:33<1:39:23, 27.48s/it]  9%|▉         | 22/238 [10:00<1:38:33, 27.38s/it] 10%|▉         | 23/238 [10:27<1:37:58, 27.34s/it] 10%|█         | 24/238 [10:54<1:37:19, 27.29s/it] 11%|█         | 25/238 [11:22<1:36:46, 27.26s/it] 11%|█         | 26/238 [11:49<1:36:11, 27.22s/it] 11%|█▏        | 27/238 [12:16<1:35:38, 27.20s/it] 12%|█▏        | 28/238 [12:43<1:35:08, 27.18s/it] 12%|█▏        | 29/238 [13:12<1:36:07, 27.60s/it] 13%|█▎        | 30/238 [13:39<1:35:12, 27.46s/it]                                                  {'loss': 1.2758, 'grad_norm': 0.21198523044586182, 'learning_rate': 9.795711982285316e-05, 'entropy': 1.279926035553217, 'num_tokens': 981645.0, 'mean_token_accuracy': 0.6847996726632118, 'epoch': 0.25}
+ 13%|█▎        | 30/238 [13:39<1:35:12, 27.46s/it] 13%|█▎        | 31/238 [14:06<1:34:24, 27.36s/it] 13%|█▎        | 32/238 [14:33<1:33:44, 27.30s/it] 14%|█▍        | 33/238 [15:00<1:33:08, 27.26s/it] 14%|█▍        | 34/238 [15:27<1:32:35, 27.23s/it] 15%|█▍        | 35/238 [15:55<1:32:05, 27.22s/it] 15%|█▌        | 36/238 [16:22<1:31:36, 27.21s/it] 16%|█▌        | 37/238 [16:49<1:31:07, 27.20s/it] 16%|█▌        | 38/238 [17:16<1:30:39, 27.20s/it] 16%|█▋        | 39/238 [17:43<1:30:10, 27.19s/it] 17%|█▋        | 40/238 [18:10<1:29:41, 27.18s/it]                                                  {'loss': 1.2709, 'grad_norm': 0.20599506795406342, 'learning_rate': 9.558420549098268e-05, 'entropy': 1.2809834122657775, 'num_tokens': 1309325.0, 'mean_token_accuracy': 0.6851978607475757, 'epoch': 0.34}
+ 17%|█▋        | 40/238 [18:10<1:29:41, 27.18s/it] 17%|█▋        | 41/238 [18:38<1:29:12, 27.17s/it] 18%|█▊        | 42/238 [19:05<1:28:46, 27.18s/it] 18%|█▊        | 43/238 [19:32<1:28:25, 27.21s/it] 18%|█▊        | 44/238 [19:59<1:27:56, 27.20s/it] 19%|█▉        | 45/238 [20:26<1:27:27, 27.19s/it] 19%|█▉        | 46/238 [20:54<1:26:57, 27.18s/it] 20%|█▉        | 47/238 [21:21<1:26:28, 27.17s/it]
