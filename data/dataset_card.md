@@ -1,8 +1,8 @@
 # eCFR Fine-Tuning Dataset Card
 
-- Source: eCFR Title 12, Chapter I
+- Source: eCFR Title 12 (full title)
 - Snapshot date (point-in-time): 2025-01-01
-- Seed: 42  |  Config hash: 98e9d30f648f
+- Seed: 42  |  Config hash: 8344d7a30f48
 
 ## Filtering
 - Dropped reserved sections and sections with < 200 chars of text.
@@ -14,28 +14,28 @@
 
 | split | sections | sft examples |
 |---|---|---|
-| train | 803 | 2539 |
-| val | 102 | 318 |
-| test | 101 | 314 |
+| train | 5187 | 14722 |
+| val | 638 | 1797 |
+| test | 680 | 1959 |
 
 ## Train question types
 
-- citation_lookup: 652
-- definition: 281
-- overview: 803
-- provisions: 803
+- citation_lookup: 2668
+- definition: 1680
+- overview: 5187
+- provisions: 5187
 
-## DPO pairs: 1606 (train sections only)
+## DPO pairs: 10374 (train sections only)
 
-- vague: 522
-- wrong_citation: 546
-- wrong_section: 538
+- vague: 3468
+- wrong_citation: 3407
+- wrong_section: 3499
 
 ## Eval set: 200 examples (capped at 200)
 
 ## Artifact hashes (sha256)
 
-- sft_train.jsonl: `4682001475f0c846b2c13161d447312dc33d3e5c2dd579bc84091f182750f093`
-- sft_val.jsonl: `4396d2bb80cba565b16bd043b7a730da15acb6c921b08b414727013890640bd8`
-- dpo_train.jsonl: `090b1ca70212597b122486f3cf1d2a7f13b0481f24ee9545db591b38a29e61c8`
-- eval_test.jsonl: `96d109e5737d4dcd13d2e1d6dc50aed2b6a3ece78c46bd2d411e7e10546ba816`
+- sft_train.jsonl: `694f083e8822eb63a033ba72e76701e99e6713b2d2677c6a978e927f24f59c75`
+- sft_val.jsonl: `684851a29f380972486716f17c76f5415e7158fa130c698e737a3ba2a309cce2`
+- dpo_train.jsonl: `f0a379b0deb7c18f41901ecc07c78852555c2534bfa10ec41dc97b2fce83f09a`
+- eval_test.jsonl: `864dfeefae65d3e0cf1f5ce25912cdeb45b873f6246dc08736deb68d2de42550`

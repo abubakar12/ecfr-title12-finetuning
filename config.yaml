@@ -15,7 +15,7 @@ runtime:
 ecfr:
   date: "2025-01-01"   # point-in-time snapshot; pinning it makes every run reproducible
   title: 12
-  chapter: "I"         # OCC, parts 1-199 (~5 MB). Set to null to pull the whole title (~40 MB).
+  chapter: null        # null = whole title (~40 MB); "I" = OCC only, parts 1-199 (~5 MB)
 
 paths:
   data_dir: data

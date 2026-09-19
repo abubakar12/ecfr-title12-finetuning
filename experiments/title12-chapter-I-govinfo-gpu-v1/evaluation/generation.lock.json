@@ -1,0 +1,32 @@
+{
+  "model": {
+    "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "requested_revision": "main"
+  },
+  "runtime": {
+    "device": "cuda",
+    "precision": "bf16",
+    "attention": "sdpa",
+    "platform": "Linux",
+    "machine": "x86_64",
+    "macos": "",
+    "torch": "2.8.0+cu128",
+    "mps_fallback": false,
+    "gpu": "NVIDIA A40"
+  },
+  "system_prompt": "Answer using Title 12, Chapter I as of 2026-09-15. Cite support for each regulatory claim. Identify requests outside this scope.",
+  "decoding": {
+    "max_new_tokens": 768,
+    "bootstrap_samples": 10000,
+    "judge": {
+      "provider": "local",
+      "max_new_tokens": 4
+    }
+  },
+  "benchmark_sha256": "7ae8f79573bb0743f6c0de689026e9a8b522dcf0dbcb0a058fe2346d3b30874c",
+  "generations_sha256": "56d43d8e91cf1601197328c4cdc516dd6a2e5e537b43c40dadc5eb2d879ed43e",
+  "mapping_sha256": "8f1acf372b713f1c4469bf428c760d24831c41d60c0d26d36b6850bc0eca3a34",
+  "blind_sha256": "e0e7e7cf4ddcd9f4e5b3aee92da00bc5cc4986d41663104651672b084432d69e"
+}

@@ -1,0 +1,47 @@
+nohup: ignoring input
+== download (2026-09-19T11:20:47Z)
+[download] cached snapshot: data/raw/title12_full_2025-01-01.xml
+[download] parsed 7199 sections (263 reserved) -> data/sections.jsonl
+[download] manifest -> outputs/manifests/download_manifest.json
+== build (2026-09-19T11:20:54Z)
+[build] sft_train.jsonl: 14722 rows
+[build] sft_val.jsonl: 1797 rows
+[build] dpo_train.jsonl: 10374 rows
+[build] eval_test.jsonl: 200 rows
+[build] sections used: 6505 (train/val/test = 5187/638/680)
+[build] manifest -> outputs/manifests/build_manifest.json
+== sft (2026-09-19T11:21:02Z)
+Traceback (most recent call last):
+  File "/workspace/ecfr-title12-finetuning/training_models_v1.py", line 100, in <module>
+    main()
+  File "/workspace/ecfr-title12-finetuning/training_models_v1.py", line 80, in main
+    train_sft.run(cfg, smoke=args.smoke, model_override=args.model)
+  File "/workspace/ecfr-title12-finetuning/ecfr_pipeline/train_sft.py", line 14, in run
+    hub.check(cfg)
+  File "/workspace/ecfr-title12-finetuning/ecfr_pipeline/hub.py", line 36, in check
+    _, namespace, prefix, private = connection(cfg)
+                                    ^^^^^^^^^^^^^^^
+  File "/workspace/ecfr-title12-finetuning/ecfr_pipeline/hub.py", line 22, in connection
+    account = api.whoami()  # HF_TOKEN or `hf auth login`; never write credentials.
+              ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/hf_api.py", line 1797, in whoami
+    headers=self._build_hf_headers(token=effective_token),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/hf_api.py", line 9518, in _build_hf_headers
+    return build_hf_headers(
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_headers.py", line 126, in build_hf_headers
+    token_to_send = get_token_to_send(token)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_headers.py", line 159, in get_token_to_send
+    raise LocalTokenNotFoundError(
+huggingface_hub.errors.LocalTokenNotFoundError: Token is required (`token=True`), but no token found. You need to provide a token or be logged in to Hugging Face with `hf auth login` or `huggingface_hub.login`. See https://huggingface.co/settings/tokens.
