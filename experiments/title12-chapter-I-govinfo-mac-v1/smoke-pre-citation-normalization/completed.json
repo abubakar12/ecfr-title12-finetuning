@@ -1,0 +1,18 @@
+{
+  "training_loss": 1.8306205868721008,
+  "reload_loss": 2.2061071395874023,
+  "global_step": 2,
+  "run_sha256": "bd42689b7a47de9c967fe8defaca4908bc8e58effd7516435a05db7f3aaf1562",
+  "adapter_hashes": {
+    "adapter_model.safetensors": "3f12cc0822f3f3a3c8524ea21197aedd7a34c41dc738702a2ca0831a9e5f9562",
+    "tokenizer_config.json": "5dbff37e2d5899f5f69d86116f80733e11a790f703fd59855e2aef5717533ac5",
+    "special_tokens_map.json": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+    "tokenizer.json": "7d27c493c729a66ecefc837280b05d948b1ed50d130eebdbf911b1b36cf38ed7",
+    "README.md": "fa9272157886541edbc891c0d3e976692761aa66599362f2778da699d48b16b3",
+    "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+    "training_args.bin": "9898919bdeb1a65f8a43a4bd21396964e934d5c9e787ad2e31120de53bd3d5e9",
+    "adapter_config.json": "a19a073ffc3a4e498ac5395bbae5732c73697f6a33eb799c1014c5e38520ee5b",
+    "chat_template.jinja": "872be49dbb638044ad01b60388f48d469ff2980e5f0dccdc22ec907db54d0788",
+    "vocab.json": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+  }
+}

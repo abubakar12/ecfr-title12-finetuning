@@ -1,0 +1,29 @@
+{
+  "model": {
+    "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "requested_revision": "main"
+  },
+  "runtime": {
+    "device": "mps",
+    "precision": "bf16",
+    "attention": "sdpa",
+    "platform": "Darwin",
+    "machine": "arm64",
+    "macos": "26.6.2",
+    "torch": "2.8.0",
+    "mps_fallback": false,
+    "gpu": "Apple Silicon (MPS)",
+    "recommended_working_set_bytes": 40200896512
+  },
+  "system_prompt": "Answer using Title 12, Chapter I as of 2026-09-15. Cite support for each regulatory claim. Identify requests outside this scope.",
+  "decoding": {
+    "max_new_tokens": 768,
+    "bootstrap_samples": 10000
+  },
+  "benchmark_sha256": "7ae8f79573bb0743f6c0de689026e9a8b522dcf0dbcb0a058fe2346d3b30874c",
+  "generations_sha256": "4c677413021b22da8a2e78a932a1d62da6728681f32f441b31bf87e29e7f3aaf",
+  "mapping_sha256": "8f1acf372b713f1c4469bf428c760d24831c41d60c0d26d36b6850bc0eca3a34",
+  "blind_sha256": "590b0aad4dbf1f14a1d941928a6c77f0538c5597a2409f4e48d772a40a86bf51"
+}

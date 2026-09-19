@@ -1,0 +1,10 @@
+{
+  "sha256": "7ae8f79573bb0743f6c0de689026e9a8b522dcf0dbcb0a058fe2346d3b30874c",
+  "documents_sha256": "31aa3e16b4d40f4d786135ee6d23ea43b3cc8113af65d4c17d92396023825011",
+  "counts": {
+    "factual": 40,
+    "application": 30,
+    "policy": 20,
+    "outside_scope": 10
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "body_tokens": 3846,
+  "segments": 12,
+  "max_length": 512,
+  "overlap": 32,
+  "model": {
+    "id": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "tokenizer_revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+    "requested_revision": "main"
+  },
+  "documents_sha256": "fd471373dabd30abbd6b952fe99e2be05317a2e05091fc8fd452d278c813d6b9",
+  "segments_sha256": "6adcf870f70c0413a80980f4b8898e4a395948f3793e205775ecc11e07bb2436"
+}

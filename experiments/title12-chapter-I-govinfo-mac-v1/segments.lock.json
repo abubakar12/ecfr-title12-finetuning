@@ -1,0 +1,14 @@
+{
+  "body_tokens": 838107,
+  "segments": 1151,
+  "max_length": 4096,
+  "overlap": 256,
+  "model": {
+    "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "requested_revision": "main"
+  },
+  "documents_sha256": "31aa3e16b4d40f4d786135ee6d23ea43b3cc8113af65d4c17d92396023825011",
+  "segments_sha256": "cfcecd551df7694d9d8bac17dcb79af873fb81c5dc868daafa9452669cdd2cfe"
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Title 12, Chapter I",
+  "title": 12,
+  "chapter": "I",
+  "date": "2026-09-15",
+  "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-09-15/title-12.xml?chapter=I",
+  "params": {
+    "chapter": "I"
+  },
+  "retrieved_at": "2026-09-17T09:55:17.574757+00:00",
+  "sha256": "98ffa09e23ce7836f3e0aa2b9fee4be88f0ed7a5ec08d4c0578dadb9f4e11a4c",
+  "titles_sha256": "d84f46de37431ee563a66f7fa25a84edb1500b7b1417204afb627d818c4fb520"
+}

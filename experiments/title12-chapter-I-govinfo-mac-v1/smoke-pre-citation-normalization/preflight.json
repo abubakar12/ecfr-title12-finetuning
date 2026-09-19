@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "length": 512,
+  "batch_size": 1,
+  "runtime": {
+    "device": "mps",
+    "precision": "bf16",
+    "attention": "sdpa",
+    "platform": "Darwin",
+    "machine": "arm64",
+    "macos": "26.6.2",
+    "torch": "2.8.0",
+    "mps_fallback": false,
+    "gpu": "Apple Silicon (MPS)",
+    "recommended_working_set_bytes": 40200896512
+  }
+}
