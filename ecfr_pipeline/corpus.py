@@ -7,17 +7,19 @@ import json
 import re
 import shutil
 import copy
+import io
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import zipfile
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
 API = "https://www.ecfr.gov/api/versioner/v1"
-METADATA = {"AUTH", "SOURCE", "CITA", "EDNOTE", "EFFDNOT", "XREF"}
+METADATA = {"AUTH", "SOURCE", "CITA", "EDNOTE", "EFFDNOT", "XREF", "CFRTOC"}
 KNOWN = set("HEAD P FP HD HED PS SPACE E SU SUB SUP I B XREF EXTRACT NOTE NOTES FTNT FTNT1 FTNT2 FNOTE TABLE GPOTABLE TTYPE BOXHD CHED RHED RHD ROW ENT TAB TABC TNOTE TTITLE TD TR TH THEAD TBODY COLGROUP COL LI OL UL MATH MathML math mrow mi mo mn msup msub mfrac mtext mtable mtr mtd img IMG GPH SECTNO SUBJECT PRTPAGE APPRO FINDING A C link br BR STRONG EM SPAN a span".split()) | METADATA
-KNOWN |= set("FTREF HD1 HD2 HD3 FP1-2 FP-2 FP-1 P-1 PSPACE FP-DASH EDNOTE FR EXAMPLE EFFDNOT DIV CAPTION TFOOT sup sub strong em".split())
+KNOWN |= set("FTREF HD1 HD2 HD3 FP1-2 FP-2 FP-1 P-1 PSPACE FP-DASH EDNOTE FR EXAMPLE EFFDNOT DIV CAPTION TFOOT sup sub strong em CHAPTI PG PTHD RESERVED".split())
 
 
 def digest(value: bytes) -> str:
@@ -62,7 +64,9 @@ def get(url):
 
 def validate_xml(raw, cfg):
     root = ET.fromstring(raw)
-    if not any(x.get("TYPE") == "TITLE" and x.get("N") == str(cfg["ecfr"]["title"]) for x in root.iter()):
+    title_number = str(cfg["ecfr"]["title"])
+    if not any(x.get("TYPE") == "TITLE" and (x.get("N") == title_number or x.get("NODE", "").split(":", 1)[0] == title_number)
+               for x in root.iter()):
         raise ValueError("Response does not contain the requested CFR title")
     chapters = {x.get("N") for x in root.iter() if x.get("TYPE") == "CHAPTER"}
     wanted = cfg["ecfr"].get("chapter")
@@ -91,8 +95,8 @@ def freeze_snapshot(cfg, refresh=False):
     metadata = get(f"{API}/titles.json")
     title = next(t for t in json.loads(metadata)["titles"] if t["number"] == e["title"])
     date = title["up_to_date_as_of"] if e["date"] == "latest" else e["date"]
-    params = {"chapter": e["chapter"]} if e.get("chapter") else {}
-    url = f"{API}/full/{date}/title-{e['title']}.xml"
+    url = e.get("source_url") or f"{API}/full/{date}/title-{e['title']}.xml"
+    params = {} if e.get("source_url") else ({"chapter": e["chapter"]} if e.get("chapter") else {})
     if params:
         url += "?" + urllib.parse.urlencode(params)
     raw = get(url)
@@ -138,7 +142,7 @@ def render(el):
     return text(el)
 
 
-def parse(raw, snapshot, transcriptions=None):
+def parse(raw, snapshot, transcriptions=None, exclude_image_sections=False):
     root = ET.fromstring(raw)
     transcriptions = transcriptions or {}
     records, issues, inventory = [], [], []
@@ -159,8 +163,18 @@ def parse(raw, snapshot, transcriptions=None):
         if structural:
             own = [c for c in el if not is_div(c)]
             if kind in {"SECTION", "APPENDIX"} or any(tag(c) not in METADATA | {"HEAD"} for c in own):
+                image_sources = sorted({graphic.get("src") or graphic.get("GID") or "" for child in own for graphic in child.iter()
+                                        if tag(graphic) in {"GPH", "IMG", "img"}})
+                if exclude_image_sections and kind in {"SECTION", "APPENDIX"} and image_sources:
+                    inventory.append({"location": path, "classification": "excluded_scope", "reason": "section contains images",
+                                      "image_sources": image_sources, "sha256": digest(ET.tostring(el))})
+                    return
                 ident = el.get("N", "")
                 heading = current.get((kind or "").lower(), {}).get("heading", "")
+                if kind == "SECTION":
+                    ident = re.sub(r"^§+\s*", "", ident)
+                if kind == "APPENDIX" and not ident and heading:
+                    ident = heading
                 part = current.get("part", {}).get("number", "")
                 if kind == "SECTION":
                     citation = f"{title} CFR § {ident}"
@@ -289,11 +303,21 @@ def fetch_assets(cfg, download=True):
     if not download:
         print(f"Inventoried {len(rows)} graphic sources; no images downloaded")
         return
+    archive_url = cfg["ecfr"].get("graphics_url")
+    archive = zipfile.ZipFile(io.BytesIO(get(archive_url))) if archive_url else None
+    archive_names = {Path(name).name: name for name in archive.namelist()} if archive else {}
     for row in rows:
         local = asset_dir / row["filename"]
         if not local.exists():
             try:
-                content = get(row["url"])
+                source_name = Path(urllib.parse.urlparse(row["src"]).path).name
+                if archive:
+                    if source_name not in archive_names:
+                        raise ValueError(f"Graphic is missing from archive: {source_name}")
+                    content = archive.read(archive_names[source_name])
+                    row["url"] = f"{archive_url}#{source_name}"
+                else:
+                    content = get(row["url"])
                 if not content.startswith((b"GIF87a", b"GIF89a", b"\x89PNG", b"\xff\xd8")):
                     raise ValueError(f"Image endpoint returned non-image content: {row['url']}")
                 local.write_bytes(content)
@@ -324,12 +348,14 @@ def build(cfg, refresh=False, rebuild=False):
         for name in ("documents.jsonl", "inventory.jsonl", "corpus.lock.json", "parse_issues.json", "audit.json", "dataset_card.md"):
             if (directory / name).exists():
                 shutil.copy2(directory / name, archive / name)
-    records, inventory, issues = parse((directory / "source.xml").read_bytes(), snapshot, asset_transcriptions(directory))
+    exclude_image_sections = cfg["ecfr"].get("exclude_image_sections", False)
+    records, inventory, issues = parse((directory / "source.xml").read_bytes(), snapshot, asset_transcriptions(directory), exclude_image_sections)
     write_rows(directory / "documents.jsonl", records)
     write_rows(directory / "inventory.jsonl", inventory)
     write_json(directory / "parse_issues.json", issues)
     write_json(directory / "corpus.lock.json", {"source_sha256": snapshot["sha256"], "documents_sha256": file_hash(directory / "documents.jsonl"),
-                                              "inventory_sha256": file_hash(directory / "inventory.jsonl")})
+                                              "inventory_sha256": file_hash(directory / "inventory.jsonl"),
+                                              "exclude_image_sections": exclude_image_sections})
     return audit(cfg)
 
 
@@ -344,8 +370,11 @@ def audit(cfg):
         issues.append({"reason": "scope_mismatch"})
     if digest(raw) != snapshot["sha256"] or digest(raw) != lock["source_sha256"]:
         issues.append({"reason": "source_hash_mismatch"})
-    documents, inventory, parsed_issues = parse(raw, snapshot, asset_transcriptions(directory))
+    exclude_image_sections = cfg["ecfr"].get("exclude_image_sections", False)
+    documents, inventory, parsed_issues = parse(raw, snapshot, asset_transcriptions(directory), exclude_image_sections)
     issues.extend(parsed_issues)
+    if lock.get("exclude_image_sections", False) != exclude_image_sections:
+        issues.append({"reason": "corpus_policy_mismatch", "setting": "exclude_image_sections"})
     for name, expected, key in [("documents.jsonl", documents, "documents_sha256"), ("inventory.jsonl", inventory, "inventory_sha256")]:
         if read_rows(directory / name) != expected or file_hash(directory / name) != lock[key]:
             issues.append({"reason": "derived_content_mismatch", "file": name})

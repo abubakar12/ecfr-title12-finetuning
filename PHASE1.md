@@ -136,7 +136,14 @@ python training_models_v1.py eval-cpt
 # Give only blind_review.jsonl to the reviewer; keep private_mapping.jsonl private.
 # Save the completed review as a separate file.
 python training_models_v1.py score-cpt --input completed_reviews.jsonl
+# Or, without a human reviewer: deterministic citation checks plus an LLM judge
+# (evaluation.judge in the config: {"provider": "local"} reuses the frozen base
+# model; {"provider": "openai", "model": "..."} uses OPENAI_API_KEY). Writes
+# evaluation/auto_review.jsonl (+ cached auto_judgments.jsonl) and then scores it.
+python training_models_v1.py auto-score-cpt
 ```
+
+Automatic review is a proxy: the judge sees the evidence passage, each required claim, and the answer (never the checkpoint), and Chapter I citations (parts 1-199) absent from the frozen corpus are counted as nonexistent. Spot-check `auto_review.jsonl` before quoting its numbers.
 
 Both checkpoints use the same frozen model/tokenizer, prompt, greedy decoding, precision, and 768-token output budget, with no retrieval. Generation records and blinded packets are frozen. Reviewers count claims supported by correct citations, correctly used citations, and total citations, and assess substantive correctness and citation granularity. For outside-scope prompts, assess whether the answer recognizes the scope limitation. A correct answer from broader prior knowledge is not evidence of learning Chapter I.
 

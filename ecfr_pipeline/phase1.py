@@ -5,7 +5,7 @@ from pathlib import Path
 from . import corpus
 
 
-COMMANDS = ["build-corpus", "audit-corpus", "fetch-assets", "draft-benchmark", "tokenize-corpus", "freeze-benchmark", "pretrain", "eval-cpt", "score-cpt", "check-runtime", "check-hub", "push-model"]
+COMMANDS = ["build-corpus", "audit-corpus", "fetch-assets", "draft-benchmark", "tokenize-corpus", "freeze-benchmark", "pretrain", "eval-cpt", "score-cpt", "auto-score-cpt", "check-runtime", "check-hub", "push-model"]
 
 
 def main(argv=None):
@@ -21,6 +21,7 @@ def main(argv=None):
     parser.add_argument("--preflight-only", action="store_true")
     parser.add_argument("--inventory-only", action="store_true", help="Inventory graphic URLs without downloading")
     parser.add_argument("--input", help="Reviewed benchmark or completed blind reviews JSONL")
+    parser.add_argument("--output", help="auto-score-cpt: where to write the automatic review (default evaluation/auto_review.jsonl)")
     args = parser.parse_args(argv)
     cfg = corpus.read_json(Path(args.config))
     for key in ("device", "precision"):
@@ -56,6 +57,9 @@ def main(argv=None):
     elif args.command == "pretrain":
         from .cpt import train
         train(cfg, args.smoke, args.resume, args.preflight_only)
+    elif args.command == "auto-score-cpt":
+        from . import autoscore
+        autoscore.run(cfg, args.output)
     else:
         from . import benchmark
         if args.command in {"freeze-benchmark", "score-cpt"} and not args.input:

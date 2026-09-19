@@ -1,0 +1,4575 @@
+{
+  "passed": true,
+  "scope": "Title 12, Chapter I",
+  "date": "2026-09-15",
+  "issues": [],
+  "documents": 1128,
+  "inventory_elements": 18747,
+  "reserved": 45,
+  "body_characters": 4196453,
+  "duplicates_retained": [
+    [
+      "12 CFR § 3.4-3.9",
+      "12 CFR § 3.13-3.19",
+      "12 CFR § 3.23-3.29",
+      "12 CFR § 3.39-3.40",
+      "12 CFR § 3.46-3.50",
+      "12 CFR § 3.54-3.60",
+      "12 CFR § 3.64-3.99",
+      "12 CFR § 3.125-3.130",
+      "12 CFR § 3.137-3.140",
+      "12 CFR § 3.146-3.150",
+      "12 CFR § 3.156-3.160",
+      "12 CFR § 3.163-3.170",
+      "12 CFR § 3.174-3.200",
+      "12 CFR § 3.213-3.299",
+      "12 CFR § 3.303",
+      "12 CFR § 4.92",
+      "12 CFR § 5.6",
+      "12 CFR § 7.1005",
+      "12 CFR § 7.1009",
+      "12 CFR § 7.4006",
+      "12 CFR § 7.4009",
+      "12 CFR § 25.20",
+      "12 CFR § 34.84",
+      "12 CFR § 41.80-41.82",
+      "12 CFR Appendixes A-I to Part 41 [Reserved]",
+      "12 CFR § 44.8-44.9",
+      "12 CFR § 44.17-44.19",
+      "12 CFR § 141.2",
+      "12 CFR § 141.8",
+      "12 CFR § 141.15-141.19",
+      "12 CFR § 141.22",
+      "12 CFR § 145.2",
+      "12 CFR § 157.12-157.13",
+      "12 CFR § 160.210",
+      "12 CFR § 160.220",
+      "12 CFR § 161.3",
+      "12 CFR § 161.6",
+      "12 CFR § 161.8",
+      "12 CFR § 161.26-161.31",
+      "12 CFR § 161.39",
+      "12 CFR § 161.41",
+      "12 CFR § 161.45",
+      "12 CFR § 161.51",
+      "12 CFR § 163.4",
+      "12 CFR § 163.39",
+      "12 CFR § 163.171"
+    ]
+  ],
+  "lengths": [
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV8[4]",
+      "characters": 1806
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV8[5]",
+      "characters": 7343
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV8[6]",
+      "characters": 4372
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV8[7]",
+      "characters": 3086
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV8[8]",
+      "characters": 1103
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV8[9]",
+      "characters": 95
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV8[10]",
+      "characters": 1102
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV8[11]",
+      "characters": 837
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV7[12]/DIV8[2]",
+      "characters": 3030
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV7[12]/DIV8[3]",
+      "characters": 2243
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV7[12]/DIV8[4]",
+      "characters": 1500
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[2]/DIV7[12]/DIV8[5]",
+      "characters": 1468
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[3]/DIV8[4]",
+      "characters": 635
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[3]/DIV8[5]",
+      "characters": 894
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[3]/DIV8[6]",
+      "characters": 1476
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[3]/DIV8[7]",
+      "characters": 340
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[3]/DIV8[8]",
+      "characters": 1004
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[4]/DIV8[3]",
+      "characters": 9941
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[4]/DIV8[4]",
+      "characters": 102710
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[4]/DIV8[5]",
+      "characters": 5447
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[4]/DIV8[6]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[5]/DIV8[3]",
+      "characters": 27406
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[5]/DIV8[4]",
+      "characters": 18159
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[5]/DIV8[5]",
+      "characters": 7420
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[5]/DIV8[6]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[6]/DIV8[3]",
+      "characters": 21413
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[6]/DIV8[4]",
+      "characters": 7432
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[6]/DIV8[5]",
+      "characters": 47749
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[6]/DIV8[6]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV8[3]",
+      "characters": 633
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[4]/DIV8[2]",
+      "characters": 1244
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[4]/DIV8[3]",
+      "characters": 16534
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[4]/DIV8[4]",
+      "characters": 3299
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[5]/DIV8[2]",
+      "characters": 4751
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[5]/DIV8[3]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[6]/DIV8[2]",
+      "characters": 6729
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[6]/DIV8[3]",
+      "characters": 17163
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[6]/DIV8[5]",
+      "characters": 1627
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[6]/DIV8[6]",
+      "characters": 1178
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[6]/DIV8[7]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[7]/DIV8[2]",
+      "characters": 3739
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[7]/DIV8[4]",
+      "characters": 4428
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[7]/DIV8[5]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[8]/DIV8[2]",
+      "characters": 1975
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[8]/DIV8[3]",
+      "characters": 2714
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[8]/DIV8[4]",
+      "characters": 24042
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[7]/DIV7[8]/DIV8[5]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV8[3]",
+      "characters": 2546
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV8[4]",
+      "characters": 27101
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[5]/DIV8[2]",
+      "characters": 5209
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[5]/DIV8[3]",
+      "characters": 24391
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[5]/DIV8[4]",
+      "characters": 1645
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[5]/DIV8[5]",
+      "characters": 3472
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[5]/DIV8[6]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[6]/DIV8[5]",
+      "characters": 14207
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[6]/DIV8[7]",
+      "characters": 5344
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[6]/DIV8[8]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[7]/DIV8[2]",
+      "characters": 6721
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[7]/DIV8[3]",
+      "characters": 17958
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[7]/DIV8[7]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[8]/DIV8[2]",
+      "characters": 2996
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[8]/DIV8[4]",
+      "characters": 7452
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[8]/DIV8[5]",
+      "characters": 4455
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[8]/DIV8[6]",
+      "characters": 925
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[8]/DIV8[7]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[9]/DIV8[2]",
+      "characters": 2383
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[9]/DIV8[3]",
+      "characters": 1258
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[9]/DIV8[4]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[10]/DIV8[2]",
+      "characters": 226
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[10]/DIV8[3]",
+      "characters": 5299
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[10]/DIV8[4]",
+      "characters": 34635
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[8]/DIV7[10]/DIV8[5]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[3]",
+      "characters": 3205
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[4]",
+      "characters": 11353
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[5]",
+      "characters": 9912
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[6]",
+      "characters": 5719
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[7]",
+      "characters": 6748
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[8]",
+      "characters": 2336
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[9]",
+      "characters": 2873
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[10]",
+      "characters": 5014
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[11]",
+      "characters": 5153
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[12]",
+      "characters": 27614
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[14]",
+      "characters": 7002
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[9]/DIV8[15]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[10]/DIV8[3]",
+      "characters": 7991
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[10]/DIV8[4]",
+      "characters": 17942
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[10]/DIV8[5]",
+      "characters": 664
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[10]/DIV8[6]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[10]/DIV8[7]",
+      "characters": 2311
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[10]/DIV8[8]",
+      "characters": 697
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[11]/DIV8[3]",
+      "characters": 799
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[11]/DIV8[4]",
+      "characters": 1785
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[11]/DIV8[5]",
+      "characters": 1101
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[11]/DIV8[6]",
+      "characters": 3839
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[11]/DIV8[7]",
+      "characters": 338
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[12]/DIV8[3]",
+      "characters": 1082
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[13]/DIV8[3]",
+      "characters": 1599
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[13]/DIV8[4]",
+      "characters": 230
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[13]/DIV8[5]",
+      "characters": 1475
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[13]/DIV8[6]",
+      "characters": 504
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[13]/DIV8[7]",
+      "characters": 436
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[13]/DIV8[8]",
+      "characters": 575
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[13]/DIV8[9]",
+      "characters": 434
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[4]/DIV6[14]/DIV8[3]",
+      "characters": 6455
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[4]/DIV8[2]",
+      "characters": 153
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[4]/DIV8[3]",
+      "characters": 490
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[4]/DIV8[4]",
+      "characters": 650
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[4]/DIV8[5]",
+      "characters": 692
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[4]/DIV8[6]",
+      "characters": 2361
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[4]/DIV8[7]",
+      "characters": 2388
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[4]/DIV8[8]",
+      "characters": 3292
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[4]/DIV8[9]",
+      "characters": 2340
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[5]/DIV8[2]",
+      "characters": 1201
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[5]/DIV8[3]",
+      "characters": 4760
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[5]/DIV8[4]",
+      "characters": 226
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[5]/DIV8[5]",
+      "characters": 3455
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[5]/DIV8[6]",
+      "characters": 10626
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[5]/DIV8[7]",
+      "characters": 6653
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[5]/DIV8[8]",
+      "characters": 9750
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[5]/DIV8[9]",
+      "characters": 1107
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[2]",
+      "characters": 2720
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[3]",
+      "characters": 2993
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[4]",
+      "characters": 2328
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[5]",
+      "characters": 1172
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[6]",
+      "characters": 3857
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[7]",
+      "characters": 1619
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[8]",
+      "characters": 6357
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[9]",
+      "characters": 1230
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[10]",
+      "characters": 1408
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV8[11]",
+      "characters": 834
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[6]/DIV9[12]",
+      "characters": 5226
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[7]/DIV8[2]",
+      "characters": 635
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[7]/DIV8[3]",
+      "characters": 2793
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[7]/DIV8[4]",
+      "characters": 783
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[7]/DIV8[5]",
+      "characters": 1612
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[7]/DIV8[6]",
+      "characters": 1492
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[7]/DIV8[7]",
+      "characters": 241
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[8]/DIV8[3]",
+      "characters": 261
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[8]/DIV8[4]",
+      "characters": 2669
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[8]/DIV8[5]",
+      "characters": 538
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[8]/DIV8[6]",
+      "characters": 412
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[8]/DIV8[7]",
+      "characters": 2463
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[9]/DIV8[3]",
+      "characters": 264
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[9]/DIV8[4]",
+      "characters": 167
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[9]/DIV8[5]",
+      "characters": 167
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[9]/DIV8[6]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[9]/DIV9[7]",
+      "characters": 4131
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[5]/DIV6[10]/DIV8[3]",
+      "characters": 4787
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV8[4]",
+      "characters": 467
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[3]",
+      "characters": 792
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[4]",
+      "characters": 9153
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[5]",
+      "characters": 2530
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[6]",
+      "characters": 494
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[7]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[8]",
+      "characters": 574
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[9]",
+      "characters": 3030
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[10]",
+      "characters": 2066
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[11]",
+      "characters": 1140
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[12]",
+      "characters": 4329
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[13]",
+      "characters": 351
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[5]/DIV8[14]",
+      "characters": 6903
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[6]/DIV8[2]",
+      "characters": 25583
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[6]/DIV8[3]",
+      "characters": 25209
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[6]/DIV8[4]",
+      "characters": 43843
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[6]/DIV8[5]",
+      "characters": 10869
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[6]/DIV8[6]",
+      "characters": 8677
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[6]/DIV8[7]",
+      "characters": 3395
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[6]/DIV8[8]",
+      "characters": 9801
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[2]",
+      "characters": 9313
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[3]",
+      "characters": 9231
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[4]",
+      "characters": 4256
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[5]",
+      "characters": 56932
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[6]",
+      "characters": 23278
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[7]",
+      "characters": 9330
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[8]",
+      "characters": 10440
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[9]",
+      "characters": 5947
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[10]",
+      "characters": 18573
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[7]/DIV8[11]",
+      "characters": 19507
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[2]",
+      "characters": 5148
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[3]",
+      "characters": 1619
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[4]",
+      "characters": 4982
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[5]",
+      "characters": 4725
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[6]",
+      "characters": 8515
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[7]",
+      "characters": 17767
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[8]",
+      "characters": 5966
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[9]",
+      "characters": 29553
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[10]",
+      "characters": 13611
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[11]",
+      "characters": 964
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[12]",
+      "characters": 4719
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[13]",
+      "characters": 10630
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[14]",
+      "characters": 10858
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[15]",
+      "characters": 13037
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[8]/DIV8[16]",
+      "characters": 19918
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[9]/DIV8[2]",
+      "characters": 437
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[9]/DIV8[3]",
+      "characters": 298
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[9]/DIV8[4]",
+      "characters": 118
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[9]/DIV8[5]",
+      "characters": 614
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[9]/DIV8[6]",
+      "characters": 3223
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[9]/DIV8[7]",
+      "characters": 210
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[9]/DIV8[8]",
+      "characters": 721
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[9]/DIV8[9]",
+      "characters": 662
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[6]/DIV6[10]/DIV8[2]",
+      "characters": 2053
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[4]/DIV8[2]",
+      "characters": 3402
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[4]/DIV8[3]",
+      "characters": 4629
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[4]/DIV8[4]",
+      "characters": 2242
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[4]/DIV8[5]",
+      "characters": 8843
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[4]/DIV8[6]",
+      "characters": 8979
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[4]/DIV8[7]",
+      "characters": 3744
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[5]/DIV8[2]",
+      "characters": 361
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[5]/DIV8[3]",
+      "characters": 2388
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[5]/DIV8[4]",
+      "characters": 1184
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[5]/DIV8[5]",
+      "characters": 409
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[5]/DIV8[6]",
+      "characters": 388
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[7]/DIV6[5]/DIV8[7]",
+      "characters": 897
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[2]",
+      "characters": 2702
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[3]",
+      "characters": 426
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[4]",
+      "characters": 3538
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[5]",
+      "characters": 1644
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[6]",
+      "characters": 891
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[7]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[8]",
+      "characters": 676
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[9]",
+      "characters": 251
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[10]",
+      "characters": 106
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[11]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[12]",
+      "characters": 991
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[13]",
+      "characters": 342
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[14]",
+      "characters": 4423
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[15]",
+      "characters": 455
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[16]",
+      "characters": 1490
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[17]",
+      "characters": 4844
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[18]",
+      "characters": 2058
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[19]",
+      "characters": 391
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[20]",
+      "characters": 368
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[21]",
+      "characters": 1053
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[22]",
+      "characters": 2028
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[23]",
+      "characters": 1128
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[24]",
+      "characters": 4504
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[25]",
+      "characters": 5274
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[26]",
+      "characters": 12451
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[27]",
+      "characters": 778
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[28]",
+      "characters": 966
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[29]",
+      "characters": 522
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[4]/DIV8[30]",
+      "characters": 6141
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[2]",
+      "characters": 2106
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[3]",
+      "characters": 6923
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[4]",
+      "characters": 328
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[5]",
+      "characters": 1796
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[6]",
+      "characters": 351
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[7]",
+      "characters": 4003
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[8]",
+      "characters": 572
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[9]",
+      "characters": 933
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[10]",
+      "characters": 993
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[11]",
+      "characters": 249
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[12]",
+      "characters": 242
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[13]",
+      "characters": 616
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[14]",
+      "characters": 282
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[15]",
+      "characters": 959
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[16]",
+      "characters": 2088
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[17]",
+      "characters": 219
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[18]",
+      "characters": 1747
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[19]",
+      "characters": 685
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[20]",
+      "characters": 305
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[21]",
+      "characters": 262
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[22]",
+      "characters": 489
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[23]",
+      "characters": 797
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[5]/DIV8[24]",
+      "characters": 2688
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[6]/DIV8[2]",
+      "characters": 3204
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[6]/DIV8[3]",
+      "characters": 3873
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[7]/DIV8[2]",
+      "characters": 4052
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[7]/DIV8[3]",
+      "characters": 2937
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[7]/DIV8[4]",
+      "characters": 2449
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[7]/DIV8[5]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[7]/DIV8[6]",
+      "characters": 2505
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[7]/DIV8[7]",
+      "characters": 3665
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[7]/DIV8[8]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[7]/DIV8[9]",
+      "characters": 728
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[3]",
+      "characters": 130
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[4]",
+      "characters": 1106
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[5]",
+      "characters": 3628
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[6]",
+      "characters": 288
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[7]",
+      "characters": 2499
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[8]",
+      "characters": 1276
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[9]",
+      "characters": 1380
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[10]",
+      "characters": 1125
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[11]",
+      "characters": 283
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[12]",
+      "characters": 242
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[8]/DIV6[8]/DIV8[13]",
+      "characters": 344
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[9]/DIV8[4]",
+      "characters": 177
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[9]/DIV8[5]",
+      "characters": 12527
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[9]/DIV8[6]",
+      "characters": 6422
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[9]/DIV8[7]",
+      "characters": 3281
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[9]/DIV8[8]",
+      "characters": 677
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[2]",
+      "characters": 539
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[3]",
+      "characters": 3662
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[4]",
+      "characters": 695
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[5]",
+      "characters": 1159
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[6]",
+      "characters": 878
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[7]",
+      "characters": 702
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[8]",
+      "characters": 2382
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[9]",
+      "characters": 611
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[10]",
+      "characters": 1885
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[11]",
+      "characters": 2427
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[12]",
+      "characters": 101
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[13]",
+      "characters": 2963
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[14]",
+      "characters": 1018
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[15]",
+      "characters": 1404
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[16]",
+      "characters": 501
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[17]",
+      "characters": 326
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[18]",
+      "characters": 738
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[19]",
+      "characters": 25486
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[4]/DIV8[20]",
+      "characters": 2138
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[5]/DIV8[2]",
+      "characters": 225
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[10]/DIV7[5]/DIV8[3]",
+      "characters": 2535
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[11]/DIV8[4]",
+      "characters": 730
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[11]/DIV8[5]",
+      "characters": 1112
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[12]/DIV8[4]",
+      "characters": 1054
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[12]/DIV8[5]",
+      "characters": 2909
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[12]/DIV8[6]",
+      "characters": 3023
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[12]/DIV8[7]",
+      "characters": 372
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[13]/DIV8[4]",
+      "characters": 2701
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[13]/DIV8[5]",
+      "characters": 7115
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[13]/DIV8[6]",
+      "characters": 2430
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[13]/DIV8[7]",
+      "characters": 5954
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[13]/DIV8[8]",
+      "characters": 3153
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[13]/DIV8[9]",
+      "characters": 213
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[13]/DIV8[10]",
+      "characters": 3691
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[13]/DIV8[11]",
+      "characters": 355
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[13]/DIV8[12]",
+      "characters": 2692
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[14]/DIV8[4]",
+      "characters": 298
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[14]/DIV8[5]",
+      "characters": 972
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[14]/DIV8[6]",
+      "characters": 223
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[14]/DIV8[7]",
+      "characters": 403
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[14]/DIV8[8]",
+      "characters": 436
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[14]/DIV7[9]/DIV8[2]",
+      "characters": 7911
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[15]/DIV8[4]",
+      "characters": 888
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[15]/DIV8[5]",
+      "characters": 3922
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[15]/DIV8[6]",
+      "characters": 2758
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[15]/DIV8[7]",
+      "characters": 6947
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[15]/DIV8[8]",
+      "characters": 1032
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[15]/DIV8[9]",
+      "characters": 354
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[15]/DIV9[10]",
+      "characters": 507
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[4]",
+      "characters": 534
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[5]",
+      "characters": 2721
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[6]",
+      "characters": 1681
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[7]",
+      "characters": 1709
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[8]",
+      "characters": 1510
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[9]",
+      "characters": 2269
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[10]",
+      "characters": 1810
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[11]",
+      "characters": 680
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[12]",
+      "characters": 1248
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[13]",
+      "characters": 271
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[14]",
+      "characters": 2182
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[15]",
+      "characters": 601
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[16]",
+      "characters": 3804
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[17]",
+      "characters": 808
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[18]",
+      "characters": 932
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[19]",
+      "characters": 572
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[20]",
+      "characters": 257
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[21]",
+      "characters": 1017
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[17]/DIV8[22]",
+      "characters": 383
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV8[4]",
+      "characters": 515
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[2]",
+      "characters": 4180
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[3]",
+      "characters": 374
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[4]",
+      "characters": 2754
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[5]",
+      "characters": 181
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[6]",
+      "characters": 1644
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[7]",
+      "characters": 1779
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[8]",
+      "characters": 1999
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[9]",
+      "characters": 1250
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[10]",
+      "characters": 3061
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[11]",
+      "characters": 1305
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[12]",
+      "characters": 3271
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[13]",
+      "characters": 2027
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[14]",
+      "characters": 503
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[15]",
+      "characters": 812
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[16]",
+      "characters": 554
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[17]",
+      "characters": 273
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[18]",
+      "characters": 466
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[19]",
+      "characters": 1490
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[20]",
+      "characters": 2071
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[21]",
+      "characters": 1129
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[22]",
+      "characters": 425
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[23]",
+      "characters": 1058
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[24]",
+      "characters": 1587
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[25]",
+      "characters": 2275
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[26]",
+      "characters": 5242
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[27]",
+      "characters": 2716
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[28]",
+      "characters": 4498
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[29]",
+      "characters": 1374
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[30]",
+      "characters": 2552
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[31]",
+      "characters": 390
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[32]",
+      "characters": 1929
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[33]",
+      "characters": 1126
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[34]",
+      "characters": 1217
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[35]",
+      "characters": 2454
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[36]",
+      "characters": 2445
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[37]",
+      "characters": 3764
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[38]",
+      "characters": 1636
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[39]",
+      "characters": 1545
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[40]",
+      "characters": 1471
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[41]",
+      "characters": 1868
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[5]/DIV8[42]",
+      "characters": 444
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[6]/DIV8[2]",
+      "characters": 716
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[6]/DIV8[3]",
+      "characters": 141
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[6]/DIV8[4]",
+      "characters": 542
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[7]/DIV8[2]",
+      "characters": 954
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[7]/DIV8[3]",
+      "characters": 3326
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[7]/DIV8[4]",
+      "characters": 5975
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[7]/DIV8[5]",
+      "characters": 2412
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[8]/DIV8[2]",
+      "characters": 6481
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[8]/DIV8[3]",
+      "characters": 6904
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[8]/DIV8[4]",
+      "characters": 2824
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[8]/DIV8[5]",
+      "characters": 1054
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[10]/DIV8[2]",
+      "characters": 559
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[10]/DIV8[3]",
+      "characters": 2018
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[11]/DIV8[2]",
+      "characters": 4850
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[11]/DIV8[3]",
+      "characters": 1353
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[12]/DIV8[2]",
+      "characters": 794
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[12]/DIV8[3]",
+      "characters": 494
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[12]/DIV8[4]",
+      "characters": 599
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[12]/DIV8[5]",
+      "characters": 1903
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[12]/DIV8[6]",
+      "characters": 823
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[12]/DIV8[7]",
+      "characters": 463
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[2]",
+      "characters": 863
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[3]",
+      "characters": 1597
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[4]",
+      "characters": 2663
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[5]",
+      "characters": 645
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[6]",
+      "characters": 241
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[7]",
+      "characters": 748
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[8]",
+      "characters": 2333
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[9]",
+      "characters": 1761
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[10]",
+      "characters": 810
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[11]",
+      "characters": 753
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[12]",
+      "characters": 1123
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[13]/DIV8[13]",
+      "characters": 568
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[2]",
+      "characters": 1054
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[3]",
+      "characters": 2033
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[4]",
+      "characters": 1617
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[5]",
+      "characters": 2665
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[6]",
+      "characters": 1073
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[7]",
+      "characters": 250
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[8]",
+      "characters": 801
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[9]",
+      "characters": 286
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[10]",
+      "characters": 1070
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[11]",
+      "characters": 1115
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[12]",
+      "characters": 4045
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[13]",
+      "characters": 147
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[14]",
+      "characters": 132
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[15]",
+      "characters": 356
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[14]/DIV8[16]",
+      "characters": 545
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[15]/DIV8[2]",
+      "characters": 492
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[15]/DIV8[3]",
+      "characters": 6316
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[15]/DIV8[4]",
+      "characters": 604
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[16]/DIV8[2]",
+      "characters": 439
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[16]/DIV8[3]",
+      "characters": 6037
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[17]/DIV8[2]",
+      "characters": 911
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[18]/DIV8[2]",
+      "characters": 442
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[18]/DIV8[3]",
+      "characters": 552
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[18]/DIV8[4]",
+      "characters": 9386
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[18]/DIV8[5]",
+      "characters": 1464
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[18]/DIV8[6]",
+      "characters": 1187
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[18]/DIV8[7]",
+      "characters": 1298
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[19]/DIV8[2]",
+      "characters": 404
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[19]/DIV8[3]",
+      "characters": 1669
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[19]/DIV8[4]",
+      "characters": 733
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[19]/DIV8[5]",
+      "characters": 1523
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[19]/DIV8[6]",
+      "characters": 276
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[18]/DIV6[19]/DIV9[7]",
+      "characters": 274244
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[19]/DIV6[3]/DIV8[3]",
+      "characters": 686
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[19]/DIV6[3]/DIV8[4]",
+      "characters": 495
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[19]/DIV6[3]/DIV8[5]",
+      "characters": 2359
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[19]/DIV6[3]/DIV8[6]",
+      "characters": 337
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[19]/DIV6[4]/DIV8[2]",
+      "characters": 13221
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[19]/DIV6[5]/DIV8[2]",
+      "characters": 2910
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[4]",
+      "characters": 540
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[5]",
+      "characters": 5921
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[6]",
+      "characters": 4098
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[7]",
+      "characters": 1255
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[8]",
+      "characters": 7397
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[9]",
+      "characters": 865
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[10]",
+      "characters": 2772
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[11]",
+      "characters": 1594
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[12]",
+      "characters": 3705
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV8[13]",
+      "characters": 1256
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV9[14]",
+      "characters": 4363
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[20]/DIV9[15]",
+      "characters": 991
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[4]/DIV8[2]",
+      "characters": 456
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[4]/DIV8[3]",
+      "characters": 2753
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[4]/DIV8[4]",
+      "characters": 1199
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[4]/DIV8[5]",
+      "characters": 2091
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[4]/DIV8[6]",
+      "characters": 168
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[4]/DIV8[7]",
+      "characters": 791
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[5]/DIV8[2]",
+      "characters": 660
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[5]/DIV8[3]",
+      "characters": 233
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[5]/DIV8[4]",
+      "characters": 1168
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[6]/DIV8[2]",
+      "characters": 458
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[6]/DIV8[3]",
+      "characters": 1205
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[21]/DIV6[6]/DIV8[4]",
+      "characters": 1210
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[22]/DIV8[4]",
+      "characters": 1183
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[22]/DIV8[5]",
+      "characters": 3661
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[22]/DIV8[6]",
+      "characters": 401
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[22]/DIV8[7]",
+      "characters": 958
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[22]/DIV8[8]",
+      "characters": 4222
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[22]/DIV8[9]",
+      "characters": 3370
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[22]/DIV8[10]",
+      "characters": 775
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[4]/DIV8[3]",
+      "characters": 3321
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[4]/DIV8[4]",
+      "characters": 23000
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[4]/DIV8[5]",
+      "characters": 19815
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[4]/DIV8[6]",
+      "characters": 2765
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[4]/DIV8[7]",
+      "characters": 2481
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[5]/DIV8[3]",
+      "characters": 2892
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[5]/DIV8[4]",
+      "characters": 3468
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[5]/DIV8[5]",
+      "characters": 2372
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[5]/DIV8[6]",
+      "characters": 267
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[5]/DIV8[7]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[3]",
+      "characters": 13859
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[4]",
+      "characters": 23564
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[5]",
+      "characters": 16224
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[6]",
+      "characters": 15683
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[7]",
+      "characters": 4038
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[8]",
+      "characters": 10416
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[9]",
+      "characters": 28081
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[10]",
+      "characters": 12776
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[11]",
+      "characters": 5088
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[12]",
+      "characters": 4627
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[6]/DIV8[13]",
+      "characters": 2300
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[7]/DIV8[3]",
+      "characters": 35108
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[7]/DIV8[4]",
+      "characters": 7854
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[7]/DIV8[5]",
+      "characters": 686
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[7]/DIV8[6]",
+      "characters": 240
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[7]/DIV8[7]",
+      "characters": 1919
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[8]/DIV8[3]",
+      "characters": 3965
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV8[3]",
+      "characters": 985
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV8[4]",
+      "characters": 3716
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV8[5]",
+      "characters": 939
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV8[6]",
+      "characters": 1377
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV8[7]",
+      "characters": 1769
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV9[10]",
+      "characters": 18432
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV9[11]",
+      "characters": 13429
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV9[12]",
+      "characters": 7628
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV9[13]",
+      "characters": 5886
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[23]/DIV6[9]/DIV9[14]",
+      "characters": 111440
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[24]/DIV8[4]",
+      "characters": 719
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[24]/DIV8[5]",
+      "characters": 6442
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[24]/DIV8[6]",
+      "characters": 1416
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[24]/DIV8[7]",
+      "characters": 3312
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[24]/DIV8[8]",
+      "characters": 807
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[24]/DIV8[9]",
+      "characters": 1374
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[24]/DIV8[10]",
+      "characters": 892
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[24]/DIV8[11]",
+      "characters": 629
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[4]/DIV8[2]",
+      "characters": 522
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[4]/DIV8[3]",
+      "characters": 1182
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[4]/DIV8[4]",
+      "characters": 898
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[4]/DIV8[5]",
+      "characters": 710
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[4]/DIV8[6]",
+      "characters": 289
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[2]",
+      "characters": 727
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[3]",
+      "characters": 7171
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[4]",
+      "characters": 9593
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[5]",
+      "characters": 1996
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[6]",
+      "characters": 860
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[7]",
+      "characters": 3955
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[8]",
+      "characters": 4946
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[9]",
+      "characters": 280
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[10]",
+      "characters": 2039
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[11]",
+      "characters": 364
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[12]",
+      "characters": 2852
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[13]",
+      "characters": 138
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[14]",
+      "characters": 1416
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[15]",
+      "characters": 227
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[16]",
+      "characters": 2086
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[17]",
+      "characters": 586
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[5]/DIV8[18]",
+      "characters": 303
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[6]/DIV8[2]",
+      "characters": 576
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[6]/DIV8[3]",
+      "characters": 1525
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[6]/DIV8[4]",
+      "characters": 4961
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[6]/DIV8[5]",
+      "characters": 513
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[26]/DIV6[6]/DIV8[6]",
+      "characters": 1513
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV8[5]",
+      "characters": 808
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV8[6]",
+      "characters": 1655
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV8[7]",
+      "characters": 1521
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV8[8]",
+      "characters": 3368
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV8[9]",
+      "characters": 4167
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV8[10]",
+      "characters": 938
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV9[11]",
+      "characters": 13317
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV9[12]",
+      "characters": 30851
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV9[13]",
+      "characters": 15755
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[28]/DIV9[14]",
+      "characters": 36746
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[29]/DIV8[4]",
+      "characters": 126
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[29]/DIV8[5]",
+      "characters": 370
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[29]/DIV8[6]",
+      "characters": 1857
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[29]/DIV9[7]",
+      "characters": 1874
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[29]/DIV9[8]",
+      "characters": 10217
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV8[4]",
+      "characters": 2603
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV8[5]",
+      "characters": 22391
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV8[6]",
+      "characters": 24428
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV8[7]",
+      "characters": 1637
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV8[8]",
+      "characters": 9790
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV8[9]",
+      "characters": 1854
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV8[10]",
+      "characters": 5551
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV8[11]",
+      "characters": 1036
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV8[12]",
+      "characters": 13917
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[30]/DIV9[13]",
+      "characters": 6672
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[3]/DIV8[3]",
+      "characters": 945
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[3]/DIV8[4]",
+      "characters": 946
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[3]/DIV8[5]",
+      "characters": 1598
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[3]/DIV8[6]",
+      "characters": 3382
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[3]/DIV8[7]",
+      "characters": 588
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[3]/DIV8[8]",
+      "characters": 353
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[3]/DIV8[9]",
+      "characters": 1184
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[4]/DIV8[3]",
+      "characters": 605
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[4]/DIV8[4]",
+      "characters": 1142
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[4]/DIV8[5]",
+      "characters": 1446
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[4]/DIV8[6]",
+      "characters": 563
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[4]/DIV8[7]",
+      "characters": 236
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[4]/DIV8[8]",
+      "characters": 605
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[5]/DIV8[3]",
+      "characters": 1401
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[5]/DIV8[4]",
+      "characters": 5460
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[5]/DIV8[5]",
+      "characters": 5226
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[5]/DIV8[6]",
+      "characters": 1041
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[5]/DIV8[7]",
+      "characters": 1591
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[5]/DIV8[8]",
+      "characters": 790
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[5]/DIV8[9]",
+      "characters": 325
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[6]/DIV8[3]",
+      "characters": 258
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[6]/DIV8[4]",
+      "characters": 1411
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[6]/DIV9[5]",
+      "characters": 21152
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[7]/DIV8[3]",
+      "characters": 779
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[7]/DIV8[4]",
+      "characters": 2222
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[7]/DIV8[5]",
+      "characters": 3120
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[7]/DIV8[6]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[7]/DIV8[7]",
+      "characters": 1166
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[7]/DIV8[8]",
+      "characters": 2084
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[9]/DIV8[3]",
+      "characters": 2148
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[9]/DIV8[4]",
+      "characters": 275
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[9]/DIV8[5]",
+      "characters": 14597
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[9]/DIV9[6]",
+      "characters": 1192
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[9]/DIV9[7]",
+      "characters": 957
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[9]/DIV9[8]",
+      "characters": 37173
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[10]/DIV8[3]",
+      "characters": 1606
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[10]/DIV8[4]",
+      "characters": 5966
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[10]/DIV8[5]",
+      "characters": 1869
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[10]/DIV8[6]",
+      "characters": 2392
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[10]/DIV8[7]",
+      "characters": 1272
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[10]/DIV8[8]",
+      "characters": 1458
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[10]/DIV8[9]",
+      "characters": 331
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[11]/DIV8[3]",
+      "characters": 1090
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[11]/DIV8[4]",
+      "characters": 6966
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[32]/DIV6[11]/DIV8[5]",
+      "characters": 645
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[4]",
+      "characters": 1430
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[5]",
+      "characters": 7152
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[6]",
+      "characters": 10495
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[7]",
+      "characters": 2692
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[8]",
+      "characters": 933
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[9]",
+      "characters": 6252
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[10]",
+      "characters": 11688
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[11]",
+      "characters": 456
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[12]",
+      "characters": 2138
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[13]",
+      "characters": 1597
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[33]/DIV8[14]",
+      "characters": 4772
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV8[4]",
+      "characters": 970
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV8[5]",
+      "characters": 2246
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV8[6]",
+      "characters": 1152
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV8[7]",
+      "characters": 633
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV8[8]",
+      "characters": 574
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV8[9]",
+      "characters": 3540
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV8[10]",
+      "characters": 2893
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV8[11]",
+      "characters": 750
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV9[12]",
+      "characters": 2042
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[35]/DIV9[13]",
+      "characters": 3323
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[37]/DIV6[5]/DIV8[2]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[37]/DIV6[5]/DIV8[3]",
+      "characters": 1075
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[37]/DIV6[6]/DIV8[3]",
+      "characters": 5378
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[37]/DIV6[6]/DIV8[4]",
+      "characters": 2458
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[37]/DIV6[6]/DIV8[5]",
+      "characters": 319
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[37]/DIV6[6]/DIV9[6]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[37]/DIV6[6]/DIV9[7]",
+      "characters": 15254
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[4]/DIV8[2]",
+      "characters": 1260
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[4]/DIV8[3]",
+      "characters": 10338
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[5]/DIV8[2]",
+      "characters": 1105
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[5]/DIV8[3]",
+      "characters": 11270
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[5]/DIV8[4]",
+      "characters": 17548
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[5]/DIV8[5]",
+      "characters": 12280
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[5]/DIV8[6]",
+      "characters": 14323
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[5]/DIV8[7]",
+      "characters": 1635
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[5]/DIV8[8]",
+      "characters": 9417
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[5]/DIV8[9]",
+      "characters": 6898
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[6]/DIV8[2]",
+      "characters": 3885
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[6]/DIV8[3]",
+      "characters": 8295
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[2]",
+      "characters": 3560
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[3]",
+      "characters": 10541
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[4]",
+      "characters": 3686
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[5]",
+      "characters": 7040
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[6]",
+      "characters": 15593
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[7]",
+      "characters": 7119
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[8]",
+      "characters": 13018
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[9]",
+      "characters": 5840
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[10]",
+      "characters": 841
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[39]/DIV6[7]/DIV8[11]",
+      "characters": 1918
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[4]/DIV8[2]",
+      "characters": 2448
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[4]/DIV8[3]",
+      "characters": 14114
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[5]/DIV8[2]",
+      "characters": 18779
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[5]/DIV8[3]",
+      "characters": 14243
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[5]/DIV8[4]",
+      "characters": 8047
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[5]/DIV8[5]",
+      "characters": 10676
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[5]/DIV8[6]",
+      "characters": 3402
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[5]/DIV8[7]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[6]/DIV8[2]",
+      "characters": 43334
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[6]/DIV8[3]",
+      "characters": 7150
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[6]/DIV8[4]",
+      "characters": 20376
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[6]/DIV8[5]",
+      "characters": 10092
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[6]/DIV8[6]",
+      "characters": 4097
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[6]/DIV8[7]",
+      "characters": 3420
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[6]/DIV8[8]",
+      "characters": 1640
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[6]/DIV8[9]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[7]/DIV8[2]",
+      "characters": 11481
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV6[7]/DIV8[3]",
+      "characters": 1105
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[40]/DIV9[9]",
+      "characters": 18825
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[5]",
+      "characters": 17050
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[6]",
+      "characters": 21087
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[7]",
+      "characters": 2154
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[8]",
+      "characters": 1539
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[9]",
+      "characters": 4319
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[10]",
+      "characters": 11386
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[11]",
+      "characters": 2595
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[12]",
+      "characters": 12611
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[13]",
+      "characters": 10014
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[14]",
+      "characters": 1203
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[15]",
+      "characters": 3972
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV8[16]",
+      "characters": 387
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV9[17]",
+      "characters": 1761
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[41]/DIV9[18]",
+      "characters": 1994
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[42]/DIV8[4]",
+      "characters": 436
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[42]/DIV8[5]",
+      "characters": 1306
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[42]/DIV8[6]",
+      "characters": 1721
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[42]/DIV8[7]",
+      "characters": 2368
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[42]/DIV8[8]",
+      "characters": 2172
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[42]/DIV8[9]",
+      "characters": 1913
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[42]/DIV8[10]",
+      "characters": 858
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[42]/DIV8[11]",
+      "characters": 3406
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[43]/DIV8[4]",
+      "characters": 648
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[43]/DIV8[5]",
+      "characters": 15330
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[43]/DIV8[6]",
+      "characters": 6813
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[43]/DIV8[7]",
+      "characters": 2440
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[43]/DIV8[8]",
+      "characters": 9460
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[43]/DIV8[9]",
+      "characters": 6836
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[43]/DIV8[10]",
+      "characters": 905
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[43]/DIV8[11]",
+      "characters": 2601
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[4]",
+      "characters": 1278
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[5]",
+      "characters": 6307
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[6]",
+      "characters": 800
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[7]",
+      "characters": 2157
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[8]",
+      "characters": 2297
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[9]",
+      "characters": 8955
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[10]",
+      "characters": 10781
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[11]",
+      "characters": 121
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[12]",
+      "characters": 3540
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[13]",
+      "characters": 4566
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[14]",
+      "characters": 1416
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[15]",
+      "characters": 726
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[16]",
+      "characters": 4834
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[17]",
+      "characters": 798
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[18]",
+      "characters": 1468
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[19]",
+      "characters": 4152
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[44]/DIV8[20]",
+      "characters": 374
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[4]/DIV8[2]",
+      "characters": 1424
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[4]/DIV8[3]",
+      "characters": 1582
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[4]/DIV8[4]",
+      "characters": 42757
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[4]/DIV8[5]",
+      "characters": 3735
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[5]/DIV8[2]",
+      "characters": 1186
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[6]/DIV8[2]",
+      "characters": 6764
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[6]/DIV8[3]",
+      "characters": 5146
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[6]/DIV8[4]",
+      "characters": 6713
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[7]/DIV8[2]",
+      "characters": 5719
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[7]/DIV8[3]",
+      "characters": 5961
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[7]/DIV8[4]",
+      "characters": 30274
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[7]/DIV8[5]",
+      "characters": 13018
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[7]/DIV8[6]",
+      "characters": 943
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[8]/DIV8[2]",
+      "characters": 2860
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[9]/DIV8[2]",
+      "characters": 2468
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[3]",
+      "characters": 711
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[4]",
+      "characters": 1280
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[5]",
+      "characters": 1797
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[6]",
+      "characters": 336
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[7]",
+      "characters": 6925
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[8]",
+      "characters": 4162
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[9]",
+      "characters": 10752
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[10]",
+      "characters": 8476
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[11]",
+      "characters": 1092
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[11]/DIV8[12]",
+      "characters": 2028
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[12]/DIV8[3]",
+      "characters": 2457
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[46]/DIV6[13]/DIV8[2]",
+      "characters": 2256
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[47]/DIV8[4]",
+      "characters": 667
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[47]/DIV8[5]",
+      "characters": 849
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[47]/DIV8[6]",
+      "characters": 367
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[47]/DIV8[7]",
+      "characters": 1691
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[47]/DIV8[8]",
+      "characters": 483
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[47]/DIV8[9]",
+      "characters": 1533
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[47]/DIV8[10]",
+      "characters": 2309
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[47]/DIV8[11]",
+      "characters": 1528
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[47]/DIV8[12]",
+      "characters": 828
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[48]/DIV8[4]",
+      "characters": 290
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[48]/DIV8[5]",
+      "characters": 1969
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[48]/DIV8[6]",
+      "characters": 219
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[48]/DIV8[7]",
+      "characters": 772
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[48]/DIV8[8]",
+      "characters": 527
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[49]/DIV8[4]",
+      "characters": 536
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[49]/DIV8[5]",
+      "characters": 2076
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[49]/DIV8[6]",
+      "characters": 420
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[49]/DIV8[7]",
+      "characters": 1139
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[51]/DIV8[4]",
+      "characters": 750
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[51]/DIV8[5]",
+      "characters": 235
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[52]/DIV8[4]",
+      "characters": 716
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[52]/DIV8[5]",
+      "characters": 1708
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[52]/DIV8[6]",
+      "characters": 1287
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[52]/DIV8[7]",
+      "characters": 2205
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[52]/DIV8[8]",
+      "characters": 1473
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[52]/DIV8[9]",
+      "characters": 1140
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[52]/DIV8[10]",
+      "characters": 713
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[52]/DIV8[11]",
+      "characters": 239
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[54]/DIV8[4]",
+      "characters": 617
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[54]/DIV8[5]",
+      "characters": 1444
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[54]/DIV8[6]",
+      "characters": 1115
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[54]/DIV8[9]",
+      "characters": 272
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[54]/DIV8[10]",
+      "characters": 2625
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[54]/DIV8[11]",
+      "characters": 604
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[54]/DIV8[12]",
+      "characters": 9107
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[54]/DIV8[13]",
+      "characters": 290
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[54]/DIV8[14]",
+      "characters": 721
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[4]",
+      "characters": 159
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[5]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[6]",
+      "characters": 362
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[7]",
+      "characters": 378
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[8]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[9]",
+      "characters": 142
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[10]",
+      "characters": 134
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[11]",
+      "characters": 137
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[12]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[13]",
+      "characters": 163
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[14]",
+      "characters": 172
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[15]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[16]",
+      "characters": 812
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[17]",
+      "characters": 369
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[56]/DIV8[18]",
+      "characters": 101
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[58]/DIV8[4]",
+      "characters": 1943
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[59]/DIV8[4]",
+      "characters": 4401
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[60]/DIV8[4]",
+      "characters": 300
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[60]/DIV8[5]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[60]/DIV8[6]",
+      "characters": 2199
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[60]/DIV8[7]",
+      "characters": 450
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[60]/DIV8[8]",
+      "characters": 784
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[60]/DIV8[9]",
+      "characters": 320
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV8[4]",
+      "characters": 127
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV8[5]",
+      "characters": 96
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV8[6]",
+      "characters": 973
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV8[7]",
+      "characters": 497
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV8[8]",
+      "characters": 85
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV8[9]",
+      "characters": 1598
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[10]/DIV8[2]",
+      "characters": 357
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV8[2]",
+      "characters": 682
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV8[3]",
+      "characters": 596
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV8[4]",
+      "characters": 2108
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV8[5]",
+      "characters": 871
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[6]/DIV8[2]",
+      "characters": 309
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[6]/DIV8[3]",
+      "characters": 169
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[6]/DIV8[4]",
+      "characters": 205
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[6]/DIV8[5]",
+      "characters": 278
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[6]/DIV8[6]",
+      "characters": 74
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[7]/DIV8[2]",
+      "characters": 130
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[7]/DIV8[3]",
+      "characters": 230
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[7]/DIV8[4]",
+      "characters": 260
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[8]/DIV8[2]",
+      "characters": 184
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[8]/DIV8[3]",
+      "characters": 168
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[8]/DIV8[4]",
+      "characters": 317
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[8]/DIV8[5]",
+      "characters": 280
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[9]/DIV8[2]",
+      "characters": 633
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[10]/DIV8[2]",
+      "characters": 425
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[10]/DIV8[3]",
+      "characters": 379
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[10]/DIV8[4]",
+      "characters": 450
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[10]/DIV8[5]",
+      "characters": 685
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[11]/DIV8[2]",
+      "characters": 592
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[11]/DIV8[3]",
+      "characters": 538
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[11]/DIV8[4]",
+      "characters": 1734
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[11]/DIV8[5]",
+      "characters": 186
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[11]/DIV8[6]",
+      "characters": 146
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[12]/DIV8[2]",
+      "characters": 162
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[12]/DIV8[3]",
+      "characters": 218
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[12]/DIV8[4]",
+      "characters": 245
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[13]/DIV8[2]",
+      "characters": 159
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[13]/DIV8[3]",
+      "characters": 166
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[13]/DIV8[4]",
+      "characters": 78
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[14]/DIV8[2]",
+      "characters": 647
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[14]/DIV8[3]",
+      "characters": 469
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[14]/DIV8[4]",
+      "characters": 138
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[14]/DIV8[5]",
+      "characters": 584
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[11]/DIV7[14]/DIV8[6]",
+      "characters": 488
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[12]/DIV8[2]",
+      "characters": 406
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[12]/DIV8[3]",
+      "characters": 220
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[12]/DIV8[4]",
+      "characters": 339
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[13]/DIV8[2]",
+      "characters": 312
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[13]/DIV7[3]/DIV8[2]",
+      "characters": 217
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[13]/DIV7[3]/DIV8[3]",
+      "characters": 254
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[13]/DIV7[3]/DIV8[4]",
+      "characters": 180
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[13]/DIV7[4]/DIV8[2]",
+      "characters": 296
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[13]/DIV7[4]/DIV8[3]",
+      "characters": 193
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[14]/DIV8[2]",
+      "characters": 568
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[14]/DIV8[3]",
+      "characters": 130
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[14]/DIV8[4]",
+      "characters": 381
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[14]/DIV8[5]",
+      "characters": 576
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[62]/DIV6[14]/DIV8[6]",
+      "characters": 40
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV8[4]",
+      "characters": 174
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV8[5]",
+      "characters": 1926
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV8[6]",
+      "characters": 342
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV8[7]",
+      "characters": 7619
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[8]/DIV8[2]",
+      "characters": 1992
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[8]/DIV8[3]",
+      "characters": 643
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[9]/DIV8[2]",
+      "characters": 305
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[9]/DIV8[3]",
+      "characters": 746
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[9]/DIV8[4]",
+      "characters": 4983
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[9]/DIV8[5]",
+      "characters": 3611
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[9]/DIV8[6]",
+      "characters": 182
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[10]/DIV8[2]",
+      "characters": 1910
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[11]/DIV8[2]",
+      "characters": 1814
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[63]/DIV6[11]/DIV8[3]",
+      "characters": 2062
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[65]/DIV8[4]",
+      "characters": 128
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[65]/DIV8[5]",
+      "characters": 748
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[65]/DIV8[6]",
+      "characters": 574
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[67]/DIV8[4]",
+      "characters": 76
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[67]/DIV8[5]",
+      "characters": 265
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[67]/DIV8[6]",
+      "characters": 204
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[67]/DIV8[7]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[67]/DIV8[8]",
+      "characters": 328
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[67]/DIV8[9]",
+      "characters": 141
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[67]/DIV8[10]",
+      "characters": 388
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[4]",
+      "characters": 775
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[5]",
+      "characters": 204
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[6]",
+      "characters": 3740
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[7]",
+      "characters": 9355
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[8]",
+      "characters": 1060
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[9]",
+      "characters": 945
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[10]",
+      "characters": 1273
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[11]",
+      "characters": 287
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[12]",
+      "characters": 2320
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[13]",
+      "characters": 215
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[14]",
+      "characters": 2424
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[15]",
+      "characters": 6071
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[16]",
+      "characters": 2029
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[17]",
+      "characters": 1486
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[18]",
+      "characters": 2858
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[19]",
+      "characters": 431
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[20]",
+      "characters": 22711
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[21]",
+      "characters": 2905
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[22]",
+      "characters": 1657
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[23]",
+      "characters": 355
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[24]",
+      "characters": 718
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[25]",
+      "characters": 745
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[26]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[69]/DIV8[27]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[4]",
+      "characters": 151
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[5]",
+      "characters": 304
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[6]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[7]",
+      "characters": 1173
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[8]",
+      "characters": 2179
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[9]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[10]",
+      "characters": 130
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[11]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[12]",
+      "characters": 126
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[13]",
+      "characters": 59
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[14]",
+      "characters": 977
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[15]",
+      "characters": 1090
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[16]",
+      "characters": 78
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[17]",
+      "characters": 285
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[18]",
+      "characters": 373
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[19]",
+      "characters": 121
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[20]",
+      "characters": 346
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[21]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[22]",
+      "characters": 262
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[23]",
+      "characters": 61
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[24]",
+      "characters": 628
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[25]",
+      "characters": 236
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[26]",
+      "characters": 740
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[27]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[28]",
+      "characters": 239
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[29]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[30]",
+      "characters": 257
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[31]",
+      "characters": 876
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[32]",
+      "characters": 719
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[33]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[34]",
+      "characters": 249
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[35]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[36]",
+      "characters": 269
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[37]",
+      "characters": 343
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[38]",
+      "characters": 378
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[70]/DIV8[39]",
+      "characters": 1643
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[71]/DIV8[3]",
+      "characters": 251
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[4]/DIV8[2]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[4]/DIV8[3]",
+      "characters": 182
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[5]/DIV8[2]",
+      "characters": 324
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[5]/DIV8[3]",
+      "characters": 833
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[5]/DIV8[4]",
+      "characters": 94
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[5]/DIV8[5]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[5]/DIV8[6]",
+      "characters": 2676
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[6]/DIV8[2]",
+      "characters": 9643
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[6]/DIV8[3]",
+      "characters": 3832
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[6]/DIV8[4]",
+      "characters": 2615
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[8]/DIV8[2]",
+      "characters": 4220
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[8]/DIV8[3]",
+      "characters": 0
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[8]/DIV8[4]",
+      "characters": 2914
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[8]/DIV8[5]",
+      "characters": 1070
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[9]/DIV8[2]",
+      "characters": 18579
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[9]/DIV8[3]",
+      "characters": 942
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[72]/DIV6[9]/DIV8[4]",
+      "characters": 968
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[74]/DIV8[4]",
+      "characters": 1208
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[74]/DIV8[5]",
+      "characters": 389
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[74]/DIV8[6]",
+      "characters": 2247
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[74]/DIV8[7]",
+      "characters": 210
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[74]/DIV8[8]",
+      "characters": 379
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[75]/DIV8[4]",
+      "characters": 1595
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[75]/DIV8[5]",
+      "characters": 711
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[75]/DIV8[6]",
+      "characters": 268
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[75]/DIV8[7]",
+      "characters": 771
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[77]/DIV8[4]",
+      "characters": 696
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[77]/DIV8[5]",
+      "characters": 4256
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[77]/DIV8[6]",
+      "characters": 2121
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[77]/DIV8[7]",
+      "characters": 11723
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[77]/DIV8[8]",
+      "characters": 420
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[77]/DIV8[9]",
+      "characters": 1165
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[78]/DIV8[4]",
+      "characters": 759
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[78]/DIV8[5]",
+      "characters": 6336
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[78]/DIV8[6]",
+      "characters": 715
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[78]/DIV8[7]",
+      "characters": 4203
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[78]/DIV8[8]",
+      "characters": 4915
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[78]/DIV8[9]",
+      "characters": 245
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV8[4]",
+      "characters": 2049
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV8[5]",
+      "characters": 263
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV8[6]",
+      "characters": 349
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV8[7]",
+      "characters": 486
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV8[8]",
+      "characters": 226
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV8[9]",
+      "characters": 170
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV8[10]",
+      "characters": 8618
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[2]/DIV8[2]",
+      "characters": 966
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[2]/DIV8[3]",
+      "characters": 2489
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[2]/DIV8[4]",
+      "characters": 664
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[2]/DIV8[5]",
+      "characters": 1342
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[2]/DIV8[6]",
+      "characters": 1079
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[3]/DIV8[2]",
+      "characters": 392
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[3]/DIV8[3]",
+      "characters": 440
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[3]/DIV8[4]",
+      "characters": 4995
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[3]/DIV8[5]",
+      "characters": 222
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[4]/DIV8[2]",
+      "characters": 1663
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[4]/DIV8[3]",
+      "characters": 178
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[4]/DIV8[4]",
+      "characters": 1447
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[4]/DIV8[5]",
+      "characters": 320
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[5]/DIV8[2]",
+      "characters": 645
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[5]/DIV8[3]",
+      "characters": 127
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[6]/DIV8[2]",
+      "characters": 3862
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[6]/DIV8[3]",
+      "characters": 946
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[7]/DIV8[2]",
+      "characters": 991
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[7]/DIV8[3]",
+      "characters": 343
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[7]/DIV8[4]",
+      "characters": 854
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[7]/DIV8[5]",
+      "characters": 954
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[2]",
+      "characters": 1082
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[3]",
+      "characters": 1137
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[4]",
+      "characters": 298
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[5]",
+      "characters": 307
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[6]",
+      "characters": 667
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[7]",
+      "characters": 1140
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[8]",
+      "characters": 1501
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[9]",
+      "characters": 1040
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[10]",
+      "characters": 419
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[8]/DIV8[11]",
+      "characters": 230
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[9]/DIV8[2]",
+      "characters": 1585
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[9]/DIV8[3]",
+      "characters": 1020
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[9]/DIV8[4]",
+      "characters": 1070
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[2]",
+      "characters": 355
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[3]",
+      "characters": 343
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[4]",
+      "characters": 1045
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[5]",
+      "characters": 1654
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[6]",
+      "characters": 1978
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[7]",
+      "characters": 438
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[8]",
+      "characters": 1010
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[9]",
+      "characters": 1310
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[10]",
+      "characters": 409
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[11]",
+      "characters": 722
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[12]",
+      "characters": 810
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[13]",
+      "characters": 1732
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[14]",
+      "characters": 1298
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[15]",
+      "characters": 1290
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[16]",
+      "characters": 428
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[10]/DIV8[17]",
+      "characters": 485
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[2]",
+      "characters": 178
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[3]",
+      "characters": 846
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[5]",
+      "characters": 540
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[6]",
+      "characters": 301
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[7]",
+      "characters": 2598
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[8]",
+      "characters": 185
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[9]",
+      "characters": 117
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[10]",
+      "characters": 879
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[11]",
+      "characters": 901
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[12]",
+      "characters": 166
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[13]",
+      "characters": 2390
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[14]",
+      "characters": 138
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[15]",
+      "characters": 1799
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[16]",
+      "characters": 599
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[17]",
+      "characters": 74
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[11]/DIV8[18]",
+      "characters": 704
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[12]/DIV8[2]",
+      "characters": 5049
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[12]/DIV8[3]",
+      "characters": 1357
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[12]/DIV8[4]",
+      "characters": 2155
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[12]/DIV8[5]",
+      "characters": 1595
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[12]/DIV8[6]",
+      "characters": 636
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[12]/DIV8[7]",
+      "characters": 3373
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[12]/DIV8[8]",
+      "characters": 975
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[13]/DIV8[2]",
+      "characters": 457
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[13]/DIV8[3]",
+      "characters": 500
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[13]/DIV8[4]",
+      "characters": 538
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[13]/DIV8[5]",
+      "characters": 1234
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[13]/DIV8[6]",
+      "characters": 919
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[11]/DIV7[13]/DIV8[7]",
+      "characters": 2214
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV8[2]",
+      "characters": 429
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV8[3]",
+      "characters": 763
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV8[4]",
+      "characters": 368
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV7[5]/DIV8[2]",
+      "characters": 1372
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV7[5]/DIV8[3]",
+      "characters": 851
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV7[6]/DIV8[2]",
+      "characters": 557
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV7[7]/DIV8[2]",
+      "characters": 4646
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV7[8]/DIV8[2]",
+      "characters": 1253
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV7[8]/DIV8[3]",
+      "characters": 1777
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV7[9]/DIV8[2]",
+      "characters": 178
+    },
+    {
+      "id": "/DLPSTEXTCLASS/TEXT[2]/BODY[1]/ECFRBRWS[1]/DIV1[2]/DIV3[3]/DIV5[79]/DIV6[12]/DIV7[9]/DIV8[3]",
+      "characters": 253
+    }
+  ],
+  "token_counts": "Not tokenized yet"
+}

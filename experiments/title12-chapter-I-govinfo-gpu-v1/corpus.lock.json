@@ -1,0 +1,6 @@
+{
+  "source_sha256": "4f07ae4f709b90a835d5873830366ef878a3e8f7781781bd1018c8bb41784c87",
+  "documents_sha256": "31aa3e16b4d40f4d786135ee6d23ea43b3cc8113af65d4c17d92396023825011",
+  "inventory_sha256": "0f30a1cb714dec3d1dcfb931bbedbf1008ac1005517ca4650f589a570ec754a0",
+  "exclude_image_sections": true
+}

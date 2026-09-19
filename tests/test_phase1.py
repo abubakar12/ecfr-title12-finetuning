@@ -1,8 +1,10 @@
 import copy
+import io
 import json
 import importlib.util
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 from unittest.mock import patch
 
@@ -54,10 +56,21 @@ class CorpusTests(unittest.TestCase):
         self.assertTrue(any(i["classification"] == "hierarchy_metadata" for i in inventory))
         self.assertEqual(corpus.parse(XML, SNAPSHOT), (docs, inventory, issues))
 
+    def test_govinfo_section_symbol_is_normalized(self):
+        docs = corpus.parse(XML.replace(b'N="1.1"', b'N="\xc2\xa7 1.1"', 1), SNAPSHOT)[0]
+        self.assertEqual(docs[0]["number"], "1.1")
+        self.assertEqual(docs[0]["citation"], "12 CFR § 1.1")
+
     def test_full_appendix_identity_not_duplicated(self):
         raw = XML.replace(b'N="Appendix A"', b'N="Appendix A to Part 1"')
         docs = corpus.parse(raw, SNAPSHOT)[0]
         self.assertEqual(docs[-1]["citation"], "12 CFR Appendix A to Part 1")
+
+    def test_reserved_appendix_group_uses_heading_as_identity(self):
+        raw = XML.replace(b'N="Appendix A"', b'N=""').replace(b'Appendix A to Part 1', b'Appendixes A-I to Part 1 [Reserved]')
+        docs, _, issues = corpus.parse(raw, SNAPSHOT)
+        self.assertFalse(issues)
+        self.assertEqual(docs[-1]["citation"], "12 CFR Appendixes A-I to Part 1 [Reserved]")
 
     def test_unknown_hierarchy_is_blocked(self):
         raw = XML.replace(b'TYPE="SECTION" N="1.2"', b'TYPE="UNKNOWN" N="1.2"')
@@ -69,9 +82,18 @@ class CorpusTests(unittest.TestCase):
         self.assertIn("unknown_structure", {i["reason"] for i in issues})
         self.assertIn("image_requires_transcription", {i["reason"] for i in issues})
 
+    def test_image_sections_can_be_excluded_without_partial_documents(self):
+        raw = XML.replace(b'<P>See section 1.1.</P>', b'<img src="/graphics/formula.gif"/>')
+        docs, inventory, issues = corpus.parse(raw, SNAPSHOT, exclude_image_sections=True)
+        self.assertFalse(issues)
+        self.assertNotIn("12 CFR § 1.2", {document["citation"] for document in docs})
+        exclusions = [row for row in inventory if row.get("reason") == "section contains images"]
+        self.assertEqual(exclusions[0]["image_sources"], ["/graphics/formula.gif"])
+
     def test_download_validation(self):
         cfg = {"ecfr": {"title": 12, "chapter": "I"}}
         corpus.validate_xml(XML, cfg)
+        corpus.validate_xml(XML.replace(b'N="12"', b'N="1" NODE="12:1"', 1), cfg)
         for raw in (b"<html>Error</html>", b"not xml", XML.replace(b'N="12"', b'N="13"')):
             with self.assertRaises(Exception):
                 corpus.validate_xml(raw, cfg)
@@ -91,6 +113,34 @@ class CorpusTests(unittest.TestCase):
             path = Path(temp) / "documents.jsonl"
             path.write_text("{}\n")
             self.assertFalse(corpus.audit(cfg)["passed"])
+
+    def test_configured_full_title_source_filters_chapter(self):
+        with tempfile.TemporaryDirectory() as temp:
+            raw = XML.replace(b'</DIV1>', b'<DIV3 TYPE="CHAPTER" N="II"><HEAD>Other</HEAD><DIV8 TYPE="SECTION" N="200.1"><HEAD>Other rule</HEAD><P>Not in pilot.</P></DIV8></DIV3></DIV1>')
+            source_url = "https://www.govinfo.gov/bulkdata/ECFR/title-12/ECFR-title12.xml"
+            cfg = {"experiment_dir": temp, "ecfr": {"title": 12, "chapter": "I", "date": "latest", "source_url": source_url}}
+            metadata = json.dumps({"titles": [{"number": 12, "up_to_date_as_of": "2026-09-15"}]}).encode()
+            with patch.object(corpus, "get", side_effect=[metadata, raw]) as get:
+                self.assertTrue(corpus.build(cfg)["passed"])
+            self.assertEqual(get.call_args_list[1].args[0], source_url)
+            self.assertEqual(len(corpus.read_rows(Path(temp) / "documents.jsonl")), 4)
+            self.assertEqual(corpus.read_json(Path(temp) / "snapshot.json")["url"], source_url)
+
+    def test_fetch_assets_from_bulk_archive(self):
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp)
+            raw = XML.replace(b'<P>See section 1.1.</P>', b'<img src="/graphics/formula.gif"/>')
+            (directory / "source.xml").write_bytes(raw)
+            corpus.write_json(directory / "snapshot.json", {**SNAPSHOT, "sha256": corpus.digest(raw)})
+            archive_bytes = io.BytesIO()
+            with zipfile.ZipFile(archive_bytes, "w") as archive:
+                archive.writestr("formula.gif", b"GIF89a-test")
+            cfg = {"experiment_dir": temp, "ecfr": {"graphics_url": "https://example.test/graphics.zip"}}
+            with patch.object(corpus, "get", return_value=archive_bytes.getvalue()):
+                corpus.fetch_assets(cfg)
+            row = corpus.read_json(directory / "transcriptions.json")[0]
+            self.assertEqual(row["url"], "https://example.test/graphics.zip#formula.gif")
+            self.assertEqual(corpus.file_hash(directory / "assets" / row["filename"]), row["sha256"])
 
 
 class SegmentTests(unittest.TestCase):
@@ -221,6 +271,51 @@ class BenchmarkTests(unittest.TestCase):
         corpus.write_rows(output / "reviews.jsonl", reviews)
         with self.assertRaisesRegex(ValueError, "was changed"):
             benchmark.score(self.cfg, output / "reviews.jsonl")
+
+    def test_auto_score_with_fake_judge(self):
+        from ecfr_pipeline import autoscore
+        benchmark.freeze(self.cfg, self.source)
+        output = self.directory / "evaluation"
+        blind, mapping = [], []
+        for q in self.rows:
+            for checkpoint in ("base", "cpt"):
+                review_id = f"r{len(blind)}"
+                packet = {k: q[k] for k in ("question", "required_claims", "evidence", "acceptable_citations", "granularity")}
+                # Base cites a nonexistent Chapter I section; CPT cites only the gold section.
+                packet.update(review_id=review_id, question_id=q["id"], answer="12 CFR § 1.1" + (" and 12 CFR § 99.1" if checkpoint == "base" else ""))
+                blind.append(packet)
+                mapping.append({"review_id": review_id, "checkpoint": checkpoint, "question_id": q["id"]})
+        corpus.write_rows(output / "blind_review.jsonl", blind)
+        corpus.write_rows(output / "private_mapping.jsonl", mapping)
+        corpus.write_rows(output / "generations.jsonl", [])
+        corpus.write_json(output / "generation.lock.json", {"blind_sha256": corpus.file_hash(output / "blind_review.jsonl"),
+                          "mapping_sha256": corpus.file_hash(output / "private_mapping.jsonl"),
+                          "generations_sha256": corpus.file_hash(output / "generations.jsonl")})
+        calls = []
+
+        class Judge:
+            name = "fake"
+
+            def __call__(self, prompt):
+                calls.append(prompt)
+                return "contradicts" not in prompt  # claims supported, no contradiction, scope recognised
+        path = autoscore.review(self.cfg, judge=Judge())
+        benchmark.score(self.cfg, path)
+        report = corpus.read_json(output / "results.json")
+        self.assertEqual(report["base"]["citation_accuracy"], 0)
+        self.assertEqual(report["cpt"]["citation_accuracy"], 1)
+        self.assertEqual(report["base"]["nonexistent_citation_count"], 1)
+        self.assertEqual(report["cpt"]["outside_scope_accuracy"], 1)
+        # Cached verdicts: a second pass asks the judge nothing.
+        before = len(calls)
+        autoscore.review(self.cfg, judge=Judge())
+        self.assertEqual(len(calls), before)
+        self.assertTrue(autoscore.parse_verdict("Yes.") and not autoscore.parse_verdict(" no"))
+        self.assertFalse(autoscore.parse_verdict("no://m,"))
+        self.assertTrue(autoscore.parse_verdict("**Yes** - the claim is stated"))
+        for bad in ("maybe", "nothing", "yesterday", ""):
+            with self.assertRaises(ValueError):
+                autoscore.parse_verdict(bad)
 
 
 if __name__ == "__main__":
