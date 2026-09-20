@@ -2,7 +2,7 @@
 
 - Source: eCFR Title 12 (full title)
 - Snapshot date (point-in-time): 2025-01-01
-- Seed: 42  |  Config hash: 61279548b987
+- Seed: 42  |  Config hash: a5b753ded5f2
 
 ## Filtering
 - Dropped reserved sections and sections with < 200 chars of text.

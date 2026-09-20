@@ -108,9 +108,37 @@ train_and_upload.py       train + publish to Hugging Face Hub
 ecfr_pipeline/            pipeline stages and shared utilities
 scripts/                  RESULTS.md and chart generators
 demo_comparison.ipynb     side-by-side base/SFT/DPO/GRPO answers
+model-comparison-ui/      RegBench web UI: live comparisons, history, metrics, presentation mode
+model_gateway.py          local OpenAI-compatible server for base/CPT/SFT/DPO/GRPO adapters
+run_regbench_gateway.sh   safely starts the local gateway after training releases the GPU
 DESIGN.md                 design decisions and evaluation limitations
 data/dataset_card.md      dataset provenance, splits, artifact hashes
 ```
+
+## Interactive model comparison
+
+The private RegBench UI can compare two to five checkpoints on the same prompt,
+record expected-citation accuracy and reference-answer token F1, save history,
+aggregate results, mark a human-preferred answer, and show a presentation view.
+
+For Hugging Face-hosted inference, open **Models** and enter either a model ID
+served by an Inference Provider or a dedicated Inference Endpoint URL. LoRA
+adapter repositories normally need dedicated endpoints.
+
+For inference on the training GPU, wait until `run_all.sh` finishes, then run:
+
+```bash
+tmux new -s regbench-gateway
+cd /root/ecfr-title12-finetuning
+./run_regbench_gateway.sh
+```
+
+The gateway serves an OpenAI-compatible API at `http://127.0.0.1:8090` and
+loads only one checkpoint at a time. This allows all stages to fit on one GPU.
+Its `/health` response shows which adapters are complete. In a local UI checkout,
+copy `model-comparison-ui/.dev.vars.example` to `.dev.vars`, configure the token,
+and select `local://base`, `local://cpt`, `local://sft`, `local://dpo`, or
+`local://grpo` as the corresponding endpoint.
 
 ## Disclaimer
 

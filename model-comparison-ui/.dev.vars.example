@@ -1,0 +1,3 @@
+HF_TOKEN=hf_replace_with_your_token
+LOCAL_INFERENCE_URL=http://127.0.0.1:8090
+REGBENCH_GATEWAY_TOKEN=replace_with_a_long_random_secret
