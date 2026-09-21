@@ -1,0 +1,827 @@
+{
+  "timestamp_utc": "2026-09-20T20:20:05Z",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "smoke": false,
+  "n_eval": 300,
+  "chapters": {
+    "I": "Comptroller Of The Currency, Department Of The Treasury",
+    "XI": "Federal Financial Institutions Examination Council",
+    "VII": "National Credit Union Administration",
+    "XII": "Federal Housing Finance Agency",
+    "II": "Federal Reserve System",
+    "VI": "Farm Credit Administration",
+    "III": "Federal Deposit Insurance Corporation",
+    "X": "Consumer Financial Protection Bureau",
+    "XVIII": "Community Development Financial Institutions Fund, Department Of The Treasury",
+    "IV": "Export-Import Bank Of The United States",
+    "XVII": "Office Of Federal Housing Enterprise Oversight, Department Of Housing And Urban Development",
+    "XIII": "Financial Stability Oversight Council",
+    "XIV": "Farm Credit System Insurance Corporation",
+    "XV": "Department Of The Treasury"
+  },
+  "runtime": {
+    "requested": "cuda",
+    "device": "cuda",
+    "vram_gb": 44.4,
+    "use_4bit": false,
+    "bf16": true,
+    "fp16": false,
+    "torch_dtype": "bfloat16",
+    "optim": "adamw_torch",
+    "attn_implementation": "sdpa",
+    "pin_memory": true,
+    "gradient_checkpointing": true
+  },
+  "checkpoints": {
+    "base": {
+      "overall": {
+        "n": 300,
+        "citation_accuracy": 0.8,
+        "wrong_citation_rate": 0.1833,
+        "token_f1": 0.2822,
+        "rouge_l": 0.2014,
+        "avg_words": 84.2
+      },
+      "per_type": {
+        "citation_lookup": {
+          "n": 60,
+          "citation_accuracy": 0.0167,
+          "wrong_citation_rate": 0.9,
+          "token_f1": 0.4099,
+          "rouge_l": 0.3148,
+          "avg_words": 41.7
+        },
+        "definition": {
+          "n": 28,
+          "citation_accuracy": 1.0,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.2804,
+          "rouge_l": 0.2058,
+          "avg_words": 62.9
+        },
+        "overview": {
+          "n": 101,
+          "citation_accuracy": 1.0,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.2513,
+          "rouge_l": 0.1895,
+          "avg_words": 92.0
+        },
+        "provisions": {
+          "n": 111,
+          "citation_accuracy": 0.991,
+          "wrong_citation_rate": 0.009,
+          "token_f1": 0.2417,
+          "rouge_l": 0.1498,
+          "avg_words": 105.4
+        }
+      },
+      "per_chapter": {
+        "I": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2333,
+          "token_f1": 0.3139,
+          "rouge_l": 0.2191,
+          "avg_words": 89.1
+        },
+        "X": {
+          "n": 29,
+          "citation_accuracy": 0.8966,
+          "wrong_citation_rate": 0.1034,
+          "token_f1": 0.302,
+          "rouge_l": 0.2191,
+          "avg_words": 90.2
+        },
+        "II": {
+          "n": 30,
+          "citation_accuracy": 0.8333,
+          "wrong_citation_rate": 0.1667,
+          "token_f1": 0.2917,
+          "rouge_l": 0.2071,
+          "avg_words": 91.9
+        },
+        "IV": {
+          "n": 30,
+          "citation_accuracy": 0.8667,
+          "wrong_citation_rate": 0.1333,
+          "token_f1": 0.2633,
+          "rouge_l": 0.1783,
+          "avg_words": 96.2
+        },
+        "VI": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2,
+          "token_f1": 0.2707,
+          "rouge_l": 0.2135,
+          "avg_words": 54.2
+        },
+        "XI": {
+          "n": 12,
+          "citation_accuracy": 0.8333,
+          "wrong_citation_rate": 0.1667,
+          "token_f1": 0.3026,
+          "rouge_l": 0.2115,
+          "avg_words": 100.1
+        },
+        "XV": {
+          "n": 3,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.2056,
+          "rouge_l": 0.1394,
+          "avg_words": 61.0
+        },
+        "III": {
+          "n": 30,
+          "citation_accuracy": 0.7667,
+          "wrong_citation_rate": 0.2333,
+          "token_f1": 0.3146,
+          "rouge_l": 0.2201,
+          "avg_words": 89.5
+        },
+        "VII": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2333,
+          "token_f1": 0.2856,
+          "rouge_l": 0.2192,
+          "avg_words": 79.8
+        },
+        "XII": {
+          "n": 29,
+          "citation_accuracy": 0.931,
+          "wrong_citation_rate": 0.069,
+          "token_f1": 0.2613,
+          "rouge_l": 0.1644,
+          "avg_words": 97.6
+        },
+        "XIV": {
+          "n": 9,
+          "citation_accuracy": 0.8889,
+          "wrong_citation_rate": 0.1111,
+          "token_f1": 0.2358,
+          "rouge_l": 0.1711,
+          "avg_words": 59.4
+        },
+        "XIII": {
+          "n": 6,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.3555,
+          "rouge_l": 0.2311,
+          "avg_words": 114.0
+        },
+        "XVII": {
+          "n": 3,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.2514,
+          "rouge_l": 0.1819,
+          "avg_words": 12.7
+        },
+        "XVIII": {
+          "n": 29,
+          "citation_accuracy": 0.7241,
+          "wrong_citation_rate": 0.2414,
+          "token_f1": 0.2369,
+          "rouge_l": 0.1775,
+          "avg_words": 74.4
+        }
+      }
+    },
+    "cpt": {
+      "overall": {
+        "n": 300,
+        "citation_accuracy": 0.7867,
+        "wrong_citation_rate": 0.2,
+        "token_f1": 0.3236,
+        "rouge_l": 0.2757,
+        "avg_words": 64.1
+      },
+      "per_type": {
+        "citation_lookup": {
+          "n": 60,
+          "citation_accuracy": 0.0167,
+          "wrong_citation_rate": 0.9667,
+          "token_f1": 0.3477,
+          "rouge_l": 0.3141,
+          "avg_words": 62.1
+        },
+        "definition": {
+          "n": 28,
+          "citation_accuracy": 1.0,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.3485,
+          "rouge_l": 0.3152,
+          "avg_words": 45.2
+        },
+        "overview": {
+          "n": 101,
+          "citation_accuracy": 0.9802,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.3609,
+          "rouge_l": 0.3304,
+          "avg_words": 31.4
+        },
+        "provisions": {
+          "n": 111,
+          "citation_accuracy": 0.973,
+          "wrong_citation_rate": 0.018,
+          "token_f1": 0.2705,
+          "rouge_l": 0.1952,
+          "avg_words": 99.7
+        }
+      },
+      "per_chapter": {
+        "I": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.3694,
+          "rouge_l": 0.2985,
+          "avg_words": 96.4
+        },
+        "X": {
+          "n": 29,
+          "citation_accuracy": 0.8621,
+          "wrong_citation_rate": 0.1379,
+          "token_f1": 0.3682,
+          "rouge_l": 0.3208,
+          "avg_words": 58.4
+        },
+        "II": {
+          "n": 30,
+          "citation_accuracy": 0.8667,
+          "wrong_citation_rate": 0.1333,
+          "token_f1": 0.3816,
+          "rouge_l": 0.3114,
+          "avg_words": 88.8
+        },
+        "IV": {
+          "n": 30,
+          "citation_accuracy": 0.8333,
+          "wrong_citation_rate": 0.1333,
+          "token_f1": 0.288,
+          "rouge_l": 0.2389,
+          "avg_words": 67.6
+        },
+        "VI": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.3136,
+          "rouge_l": 0.2692,
+          "avg_words": 50.8
+        },
+        "XI": {
+          "n": 12,
+          "citation_accuracy": 0.8333,
+          "wrong_citation_rate": 0.1667,
+          "token_f1": 0.3498,
+          "rouge_l": 0.3003,
+          "avg_words": 68.4
+        },
+        "XV": {
+          "n": 3,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.3062,
+          "rouge_l": 0.2369,
+          "avg_words": 57.3
+        },
+        "III": {
+          "n": 30,
+          "citation_accuracy": 0.7667,
+          "wrong_citation_rate": 0.2333,
+          "token_f1": 0.3206,
+          "rouge_l": 0.2837,
+          "avg_words": 60.0
+        },
+        "VII": {
+          "n": 30,
+          "citation_accuracy": 0.7,
+          "wrong_citation_rate": 0.3,
+          "token_f1": 0.3856,
+          "rouge_l": 0.3432,
+          "avg_words": 58.9
+        },
+        "XII": {
+          "n": 29,
+          "citation_accuracy": 0.8966,
+          "wrong_citation_rate": 0.069,
+          "token_f1": 0.2536,
+          "rouge_l": 0.2223,
+          "avg_words": 33.1
+        },
+        "XIV": {
+          "n": 9,
+          "citation_accuracy": 0.8889,
+          "wrong_citation_rate": 0.1111,
+          "token_f1": 0.2816,
+          "rouge_l": 0.2253,
+          "avg_words": 38.9
+        },
+        "XIII": {
+          "n": 6,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.2603,
+          "rouge_l": 0.2131,
+          "avg_words": 110.7
+        },
+        "XVII": {
+          "n": 3,
+          "citation_accuracy": 0.3333,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.1356,
+          "rouge_l": 0.1202,
+          "avg_words": 24.3
+        },
+        "XVIII": {
+          "n": 29,
+          "citation_accuracy": 0.7241,
+          "wrong_citation_rate": 0.2414,
+          "token_f1": 0.2647,
+          "rouge_l": 0.2286,
+          "avg_words": 62.6
+        }
+      }
+    },
+    "sft": {
+      "overall": {
+        "n": 300,
+        "citation_accuracy": 0.8,
+        "wrong_citation_rate": 0.2,
+        "token_f1": 0.5213,
+        "rouge_l": 0.4524,
+        "avg_words": 93.5
+      },
+      "per_type": {
+        "citation_lookup": {
+          "n": 60,
+          "citation_accuracy": 0.0167,
+          "wrong_citation_rate": 0.9833,
+          "token_f1": 0.6315,
+          "rouge_l": 0.6179,
+          "avg_words": 31.6
+        },
+        "definition": {
+          "n": 28,
+          "citation_accuracy": 1.0,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.5402,
+          "rouge_l": 0.499,
+          "avg_words": 30.1
+        },
+        "overview": {
+          "n": 101,
+          "citation_accuracy": 1.0,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.54,
+          "rouge_l": 0.4861,
+          "avg_words": 64.7
+        },
+        "provisions": {
+          "n": 111,
+          "citation_accuracy": 0.991,
+          "wrong_citation_rate": 0.009,
+          "token_f1": 0.44,
+          "rouge_l": 0.3206,
+          "avg_words": 169.2
+        }
+      },
+      "per_chapter": {
+        "I": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.5594,
+          "rouge_l": 0.492,
+          "avg_words": 102.6
+        },
+        "X": {
+          "n": 29,
+          "citation_accuracy": 0.8621,
+          "wrong_citation_rate": 0.1379,
+          "token_f1": 0.5683,
+          "rouge_l": 0.5126,
+          "avg_words": 84.6
+        },
+        "II": {
+          "n": 30,
+          "citation_accuracy": 0.8667,
+          "wrong_citation_rate": 0.1333,
+          "token_f1": 0.5509,
+          "rouge_l": 0.4666,
+          "avg_words": 111.6
+        },
+        "IV": {
+          "n": 30,
+          "citation_accuracy": 0.8667,
+          "wrong_citation_rate": 0.1333,
+          "token_f1": 0.4477,
+          "rouge_l": 0.3697,
+          "avg_words": 98.3
+        },
+        "VI": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.4824,
+          "rouge_l": 0.4171,
+          "avg_words": 97.4
+        },
+        "XI": {
+          "n": 12,
+          "citation_accuracy": 0.8333,
+          "wrong_citation_rate": 0.1667,
+          "token_f1": 0.4847,
+          "rouge_l": 0.3968,
+          "avg_words": 115.7
+        },
+        "XV": {
+          "n": 3,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.4142,
+          "rouge_l": 0.3309,
+          "avg_words": 88.7
+        },
+        "III": {
+          "n": 30,
+          "citation_accuracy": 0.7667,
+          "wrong_citation_rate": 0.2333,
+          "token_f1": 0.5881,
+          "rouge_l": 0.5356,
+          "avg_words": 72.4
+        },
+        "VII": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.5158,
+          "rouge_l": 0.4544,
+          "avg_words": 86.6
+        },
+        "XII": {
+          "n": 29,
+          "citation_accuracy": 0.931,
+          "wrong_citation_rate": 0.069,
+          "token_f1": 0.5225,
+          "rouge_l": 0.4469,
+          "avg_words": 87.9
+        },
+        "XIV": {
+          "n": 9,
+          "citation_accuracy": 0.8889,
+          "wrong_citation_rate": 0.1111,
+          "token_f1": 0.4562,
+          "rouge_l": 0.3959,
+          "avg_words": 113.6
+        },
+        "XIII": {
+          "n": 6,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.5065,
+          "rouge_l": 0.4375,
+          "avg_words": 94.8
+        },
+        "XVII": {
+          "n": 3,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.5632,
+          "rouge_l": 0.4774,
+          "avg_words": 75.3
+        },
+        "XVIII": {
+          "n": 29,
+          "citation_accuracy": 0.7241,
+          "wrong_citation_rate": 0.2759,
+          "token_f1": 0.5014,
+          "rouge_l": 0.4296,
+          "avg_words": 86.8
+        }
+      }
+    },
+    "dpo": {
+      "overall": {
+        "n": 300,
+        "citation_accuracy": 0.8,
+        "wrong_citation_rate": 0.1967,
+        "token_f1": 0.4986,
+        "rouge_l": 0.4243,
+        "avg_words": 86.5
+      },
+      "per_type": {
+        "citation_lookup": {
+          "n": 60,
+          "citation_accuracy": 0.0167,
+          "wrong_citation_rate": 0.9667,
+          "token_f1": 0.5329,
+          "rouge_l": 0.5048,
+          "avg_words": 49.3
+        },
+        "definition": {
+          "n": 28,
+          "citation_accuracy": 1.0,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.5042,
+          "rouge_l": 0.4586,
+          "avg_words": 42.7
+        },
+        "overview": {
+          "n": 101,
+          "citation_accuracy": 1.0,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.5207,
+          "rouge_l": 0.4616,
+          "avg_words": 62.7
+        },
+        "provisions": {
+          "n": 111,
+          "citation_accuracy": 0.991,
+          "wrong_citation_rate": 0.009,
+          "token_f1": 0.4584,
+          "rouge_l": 0.3382,
+          "avg_words": 139.4
+        }
+      },
+      "per_chapter": {
+        "I": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.5447,
+          "rouge_l": 0.4711,
+          "avg_words": 94.3
+        },
+        "X": {
+          "n": 29,
+          "citation_accuracy": 0.8621,
+          "wrong_citation_rate": 0.1379,
+          "token_f1": 0.525,
+          "rouge_l": 0.4663,
+          "avg_words": 77.4
+        },
+        "II": {
+          "n": 30,
+          "citation_accuracy": 0.8333,
+          "wrong_citation_rate": 0.1667,
+          "token_f1": 0.5128,
+          "rouge_l": 0.4256,
+          "avg_words": 104.4
+        },
+        "IV": {
+          "n": 30,
+          "citation_accuracy": 0.8667,
+          "wrong_citation_rate": 0.1333,
+          "token_f1": 0.4246,
+          "rouge_l": 0.3491,
+          "avg_words": 97.8
+        },
+        "VI": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.4698,
+          "rouge_l": 0.3944,
+          "avg_words": 81.4
+        },
+        "XI": {
+          "n": 12,
+          "citation_accuracy": 0.8333,
+          "wrong_citation_rate": 0.1667,
+          "token_f1": 0.4672,
+          "rouge_l": 0.398,
+          "avg_words": 97.8
+        },
+        "XV": {
+          "n": 3,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.3971,
+          "rouge_l": 0.3116,
+          "avg_words": 77.7
+        },
+        "III": {
+          "n": 30,
+          "citation_accuracy": 0.7667,
+          "wrong_citation_rate": 0.2,
+          "token_f1": 0.5195,
+          "rouge_l": 0.4515,
+          "avg_words": 75.8
+        },
+        "VII": {
+          "n": 30,
+          "citation_accuracy": 0.7667,
+          "wrong_citation_rate": 0.2333,
+          "token_f1": 0.5212,
+          "rouge_l": 0.4533,
+          "avg_words": 79.2
+        },
+        "XII": {
+          "n": 29,
+          "citation_accuracy": 0.931,
+          "wrong_citation_rate": 0.069,
+          "token_f1": 0.5222,
+          "rouge_l": 0.4325,
+          "avg_words": 80.3
+        },
+        "XIV": {
+          "n": 9,
+          "citation_accuracy": 0.8889,
+          "wrong_citation_rate": 0.1111,
+          "token_f1": 0.5022,
+          "rouge_l": 0.4193,
+          "avg_words": 83.3
+        },
+        "XIII": {
+          "n": 6,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.5558,
+          "rouge_l": 0.4833,
+          "avg_words": 94.7
+        },
+        "XVII": {
+          "n": 3,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.3377,
+          "rouge_l": 0.3123,
+          "avg_words": 67.0
+        },
+        "XVIII": {
+          "n": 29,
+          "citation_accuracy": 0.7241,
+          "wrong_citation_rate": 0.2759,
+          "token_f1": 0.4743,
+          "rouge_l": 0.3981,
+          "avg_words": 85.0
+        }
+      }
+    },
+    "grpo": {
+      "overall": {
+        "n": 300,
+        "citation_accuracy": 0.8,
+        "wrong_citation_rate": 0.2,
+        "token_f1": 0.5249,
+        "rouge_l": 0.4558,
+        "avg_words": 92.0
+      },
+      "per_type": {
+        "citation_lookup": {
+          "n": 60,
+          "citation_accuracy": 0.0167,
+          "wrong_citation_rate": 0.9833,
+          "token_f1": 0.6304,
+          "rouge_l": 0.6162,
+          "avg_words": 29.6
+        },
+        "definition": {
+          "n": 28,
+          "citation_accuracy": 1.0,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.5401,
+          "rouge_l": 0.4986,
+          "avg_words": 28.8
+        },
+        "overview": {
+          "n": 101,
+          "citation_accuracy": 1.0,
+          "wrong_citation_rate": 0.0,
+          "token_f1": 0.548,
+          "rouge_l": 0.4972,
+          "avg_words": 60.5
+        },
+        "provisions": {
+          "n": 111,
+          "citation_accuracy": 0.991,
+          "wrong_citation_rate": 0.009,
+          "token_f1": 0.4431,
+          "rouge_l": 0.3207,
+          "avg_words": 170.3
+        }
+      },
+      "per_chapter": {
+        "I": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.5673,
+          "rouge_l": 0.4917,
+          "avg_words": 100.3
+        },
+        "X": {
+          "n": 29,
+          "citation_accuracy": 0.8621,
+          "wrong_citation_rate": 0.1379,
+          "token_f1": 0.5803,
+          "rouge_l": 0.5219,
+          "avg_words": 83.3
+        },
+        "II": {
+          "n": 30,
+          "citation_accuracy": 0.8667,
+          "wrong_citation_rate": 0.1333,
+          "token_f1": 0.5566,
+          "rouge_l": 0.4774,
+          "avg_words": 109.2
+        },
+        "IV": {
+          "n": 30,
+          "citation_accuracy": 0.8667,
+          "wrong_citation_rate": 0.1333,
+          "token_f1": 0.4504,
+          "rouge_l": 0.3839,
+          "avg_words": 96.8
+        },
+        "VI": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.4805,
+          "rouge_l": 0.4186,
+          "avg_words": 94.9
+        },
+        "XI": {
+          "n": 12,
+          "citation_accuracy": 0.8333,
+          "wrong_citation_rate": 0.1667,
+          "token_f1": 0.5029,
+          "rouge_l": 0.4154,
+          "avg_words": 109.2
+        },
+        "XV": {
+          "n": 3,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.4055,
+          "rouge_l": 0.3216,
+          "avg_words": 87.3
+        },
+        "III": {
+          "n": 30,
+          "citation_accuracy": 0.7667,
+          "wrong_citation_rate": 0.2333,
+          "token_f1": 0.5747,
+          "rouge_l": 0.5178,
+          "avg_words": 69.3
+        },
+        "VII": {
+          "n": 30,
+          "citation_accuracy": 0.7333,
+          "wrong_citation_rate": 0.2667,
+          "token_f1": 0.5221,
+          "rouge_l": 0.4583,
+          "avg_words": 88.7
+        },
+        "XII": {
+          "n": 29,
+          "citation_accuracy": 0.931,
+          "wrong_citation_rate": 0.069,
+          "token_f1": 0.5226,
+          "rouge_l": 0.4487,
+          "avg_words": 94.3
+        },
+        "XIV": {
+          "n": 9,
+          "citation_accuracy": 0.8889,
+          "wrong_citation_rate": 0.1111,
+          "token_f1": 0.48,
+          "rouge_l": 0.404,
+          "avg_words": 95.3
+        },
+        "XIII": {
+          "n": 6,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.5491,
+          "rouge_l": 0.4683,
+          "avg_words": 88.0
+        },
+        "XVII": {
+          "n": 3,
+          "citation_accuracy": 0.6667,
+          "wrong_citation_rate": 0.3333,
+          "token_f1": 0.5352,
+          "rouge_l": 0.4822,
+          "avg_words": 74.3
+        },
+        "XVIII": {
+          "n": 29,
+          "citation_accuracy": 0.7241,
+          "wrong_citation_rate": 0.2759,
+          "token_f1": 0.4992,
+          "rouge_l": 0.4247,
+          "avg_words": 85.8
+        }
+      }
+    }
+  }
+}

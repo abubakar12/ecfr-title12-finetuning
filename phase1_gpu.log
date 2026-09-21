@@ -1,4 +1,4 @@
-== python training_models_v1.py check-runtime --config phase1.gpu.json (2026-09-19T19:32:58Z)
+== python training_models_v1.py check-runtime --config phase1.gpu.json (2026-09-20T10:48:38Z)
 {
   "device": "cuda",
   "precision": "bf16",
@@ -10,228 +10,43 @@
   "mps_fallback": false,
   "gpu": "NVIDIA A40"
 }
-== python training_models_v1.py check-hub --config phase1.gpu.json (2026-09-19T19:33:01Z)
+== python training_models_v1.py check-hub --config phase1.gpu.json (2026-09-20T10:48:41Z)
 [hub] destination: abubakarilyas624/ecfr-title12-<stage>-<fingerprint>; private=True
-== python training_models_v1.py audit-corpus --config phase1.gpu.json (2026-09-19T19:33:05Z)
+== python training_models_v1.py audit-corpus --config phase1.gpu.json (2026-09-20T10:48:41Z)
 {
   "passed": true,
   "documents": 1128,
   "inventory_elements": 18747,
   "body_characters": 4196453
 }
-== python training_models_v1.py auto-score-cpt --config phase1.gpu.json (2026-09-19T19:33:09Z)
-`torch_dtype` is deprecated! Use `dtype` instead!
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 134.75it/s]
-response-001: claims 2/3 contradiction=False citations 0/9 nonexistent=0
-response-002: claims 2/3 contradiction=False citations 0/5 nonexistent=0
-response-003: claims 0/2 contradiction=False citations 0/5 nonexistent=0
-response-005: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-006: claims 0/5 contradiction=False citations 0/1 nonexistent=0
-response-007: claims 0/2 contradiction=False citations 1/3 nonexistent=0
-response-008: claims 0/2 contradiction=False citations 0/3 nonexistent=0
-response-009: claims 0/3 contradiction=False citations 0/2 nonexistent=0
-response-010: claims 0/2 contradiction=True citations 0/3 nonexistent=0
-response-011: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-012: claims 3/3 contradiction=False citations 0/2 nonexistent=1
-response-013: claims 4/4 contradiction=False citations 0/9 nonexistent=0
-response-014: claims 1/2 contradiction=False citations 1/11 nonexistent=0
-response-015: claims 2/2 contradiction=False citations 0/4 nonexistent=0
-response-016: claims 2/3 contradiction=False citations 0/5 nonexistent=3
-response-017: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-018: claims 0/2 contradiction=False citations 0/1 nonexistent=0
-response-019: claims 0/2 contradiction=False citations 0/3 nonexistent=0
-response-020: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-021: claims 0/2 contradiction=False citations 0/1 nonexistent=0
-response-022: claims 0/2 contradiction=False citations 0/20 nonexistent=0
-response-023: claims 0/3 contradiction=False citations 0/4 nonexistent=0
-response-024: claims 0/4 contradiction=False citations 0/3 nonexistent=0
-response-025: claims 3/3 contradiction=False citations 0/0 nonexistent=0
-response-026: claims 3/3 contradiction=False citations 0/7 nonexistent=0
-response-027: claims 2/2 contradiction=False citations 0/8 nonexistent=0
-response-028: claims 0/2 contradiction=False citations 0/1 nonexistent=0
-response-029: claims 0/2 contradiction=False citations 0/2 nonexistent=0
-response-031: claims 0/4 contradiction=False citations 0/6 nonexistent=0
-response-032: claims 0/1 contradiction=False citations 0/1 nonexistent=0
-response-033: claims 0/2 contradiction=False citations 1/3 nonexistent=0
-response-034: claims 0/3 contradiction=False citations 0/1 nonexistent=1
-response-035: claims 0/2 contradiction=False citations 0/0 nonexistent=0
-response-036: claims 0/2 contradiction=False citations 0/4 nonexistent=4
-response-037: claims 0/4 contradiction=False citations 0/3 nonexistent=0
-response-039: claims 0/3 contradiction=False citations 0/4 nonexistent=0
-response-040: claims 2/3 contradiction=False citations 0/2 nonexistent=0
-response-041: claims 0/1 contradiction=True citations 0/1 nonexistent=0
-response-042: claims 0/3 contradiction=False citations 0/3 nonexistent=0
-response-043: claims 0/2 contradiction=False citations 0/3 nonexistent=0
-response-044: claims 0/2 contradiction=False citations 0/1 nonexistent=0
-response-045: claims 1/3 contradiction=False citations 0/1 nonexistent=0
-response-046: claims 0/3 contradiction=False citations 0/7 nonexistent=0
-response-047: claims 0/3 contradiction=False citations 0/3 nonexistent=0
-response-048: claims 1/2 contradiction=False citations 0/1 nonexistent=0
-response-049: claims 0/2 contradiction=False citations 0/6 nonexistent=0
-response-050: claims 0/2 contradiction=False citations 0/1 nonexistent=0
-response-051: claims 0/2 contradiction=False citations 0/1 nonexistent=1
-response-053: claims 0/3 contradiction=False citations 0/2 nonexistent=2
-response-054: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-055: claims 0/3 contradiction=True citations 0/1 nonexistent=0
-response-056: claims 0/2 contradiction=False citations 0/14 nonexistent=0
-response-057: claims 0/4 contradiction=True citations 0/1 nonexistent=0
-response-059: claims 0/2 contradiction=False citations 0/0 nonexistent=0
-response-060: claims 3/3 contradiction=False citations 0/2 nonexistent=0
-response-061: claims 0/2 contradiction=True citations 0/1 nonexistent=0
-response-062: claims 0/3 contradiction=False citations 0/2 nonexistent=0
-response-063: claims 0/3 contradiction=False citations 0/3 nonexistent=0
-response-064: claims 1/2 contradiction=False citations 0/9 nonexistent=0
-response-065: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-066: claims 1/3 contradiction=True citations 0/17 nonexistent=0
-response-067: claims 0/2 contradiction=False citations 0/1 nonexistent=1
-response-068: claims 2/2 contradiction=False citations 0/7 nonexistent=0
-response-069: claims 0/3 contradiction=False citations 0/2 nonexistent=0
-response-070: claims 3/3 contradiction=False citations 0/6 nonexistent=0
-response-071: claims 2/3 contradiction=False citations 0/3 nonexistent=0
-response-072: claims 3/3 contradiction=False citations 0/21 nonexistent=18
-response-073: claims 2/3 contradiction=False citations 0/3 nonexistent=0
-response-074: claims 3/3 contradiction=False citations 0/6 nonexistent=0
-response-075: claims 0/3 contradiction=True citations 0/14 nonexistent=0
-response-076: claims 1/3 contradiction=False citations 0/4 nonexistent=0
-response-077: claims 0/3 contradiction=False citations 0/0 nonexistent=0
-response-078: claims 0/3 contradiction=False citations 0/11 nonexistent=0
-response-079: claims 0/2 contradiction=False citations 0/2 nonexistent=0
-response-081: claims 1/3 contradiction=True citations 0/5 nonexistent=0
-response-082: claims 0/2 contradiction=False citations 0/0 nonexistent=0
-response-083: claims 0/2 contradiction=False citations 0/1 nonexistent=0
-response-084: claims 0/6 contradiction=False citations 0/1 nonexistent=0
-response-085: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-086: claims 0/6 contradiction=False citations 0/8 nonexistent=0
-response-087: claims 0/2 contradiction=False citations 0/0 nonexistent=0
-response-088: claims 1/3 contradiction=False citations 1/2 nonexistent=0
-response-089: claims 0/5 contradiction=True citations 0/1 nonexistent=0
-response-090: claims 1/3 contradiction=False citations 0/0 nonexistent=0
-response-091: claims 0/2 contradiction=False citations 0/1 nonexistent=1
-response-092: claims 0/3 contradiction=True citations 0/1 nonexistent=0
-response-093: claims 1/2 contradiction=False citations 0/2 nonexistent=0
-response-094: claims 0/2 contradiction=False citations 1/11 nonexistent=0
-response-095: claims 0/3 contradiction=False citations 1/9 nonexistent=0
-response-096: claims 1/3 contradiction=False citations 0/14 nonexistent=0
-response-097: claims 1/3 contradiction=False citations 0/1 nonexistent=0
-response-098: claims 3/3 contradiction=False citations 0/0 nonexistent=0
-response-099: claims 1/2 contradiction=False citations 0/1 nonexistent=0
-response-100: claims 0/1 contradiction=False citations 0/3 nonexistent=0
-response-101: claims 0/2 contradiction=False citations 0/2 nonexistent=0
-response-102: claims 0/3 contradiction=False citations 0/0 nonexistent=0
-response-103: claims 3/3 contradiction=False citations 0/12 nonexistent=0
-response-104: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-107: claims 0/2 contradiction=True citations 0/7 nonexistent=0
-response-108: claims 0/2 contradiction=False citations 0/23 nonexistent=0
-response-110: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-111: claims 2/3 contradiction=False citations 0/1 nonexistent=0
-response-112: claims 0/1 contradiction=False citations 0/0 nonexistent=0
-response-113: claims 0/3 contradiction=False citations 0/4 nonexistent=0
-response-114: claims 0/2 contradiction=False citations 0/7 nonexistent=0
-response-115: claims 1/2 contradiction=False citations 0/2 nonexistent=0
-response-116: claims 0/3 contradiction=False citations 0/0 nonexistent=0
-response-117: claims 0/2 contradiction=True citations 0/18 nonexistent=0
-response-118: claims 0/3 contradiction=False citations 0/0 nonexistent=0
-response-119: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-120: claims 0/5 contradiction=False citations 0/15 nonexistent=0
-response-121: claims 1/3 contradiction=False citations 0/5 nonexistent=0
-response-122: claims 3/3 contradiction=False citations 0/12 nonexistent=1
-response-123: claims 1/2 contradiction=False citations 0/6 nonexistent=3
-response-124: claims 0/3 contradiction=False citations 0/2 nonexistent=0
-response-125: claims 1/3 contradiction=False citations 0/2 nonexistent=1
-response-126: claims 0/2 contradiction=True citations 0/1 nonexistent=0
-response-127: claims 0/3 contradiction=False citations 0/4 nonexistent=3
-response-128: claims 0/2 contradiction=False citations 0/4 nonexistent=0
-response-129: claims 0/2 contradiction=False citations 0/0 nonexistent=0
-response-132: claims 1/2 contradiction=False citations 0/3 nonexistent=0
-response-134: claims 0/2 contradiction=False citations 0/0 nonexistent=0
-response-136: claims 0/2 contradiction=False citations 0/0 nonexistent=0
-response-137: claims 0/3 contradiction=True citations 0/8 nonexistent=0
-response-138: claims 3/3 contradiction=False citations 0/0 nonexistent=0
-response-139: claims 2/2 contradiction=False citations 0/8 nonexistent=6
-response-140: claims 0/2 contradiction=False citations 0/5 nonexistent=0
-response-141: claims 1/2 contradiction=False citations 0/1 nonexistent=0
-response-142: claims 0/3 contradiction=True citations 1/7 nonexistent=0
-response-143: claims 0/3 contradiction=False citations 0/8 nonexistent=0
-response-144: claims 0/2 contradiction=False citations 0/9 nonexistent=0
-response-146: claims 1/3 contradiction=False citations 0/8 nonexistent=0
-response-147: claims 0/2 contradiction=False citations 0/1 nonexistent=0
-response-148: claims 0/1 contradiction=False citations 0/0 nonexistent=0
-response-150: claims 0/2 contradiction=False citations 0/7 nonexistent=0
-response-151: claims 0/4 contradiction=True citations 0/1 nonexistent=0
-response-152: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-153: claims 0/3 contradiction=False citations 0/6 nonexistent=0
-response-154: claims 0/3 contradiction=False citations 0/4 nonexistent=0
-response-155: claims 0/3 contradiction=False citations 0/6 nonexistent=0
-response-157: claims 0/2 contradiction=False citations 0/6 nonexistent=0
-response-159: claims 1/3 contradiction=False citations 0/1 nonexistent=0
-response-161: claims 2/3 contradiction=False citations 0/11 nonexistent=0
-response-162: claims 2/3 contradiction=False citations 0/0 nonexistent=0
-response-163: claims 0/3 contradiction=False citations 0/0 nonexistent=0
-response-164: claims 0/2 contradiction=False citations 0/0 nonexistent=0
-response-165: claims 1/3 contradiction=False citations 0/5 nonexistent=0
-response-166: claims 1/3 contradiction=False citations 0/5 nonexistent=0
-response-167: claims 0/3 contradiction=False citations 0/9 nonexistent=0
-response-168: claims 1/2 contradiction=False citations 0/20 nonexistent=20
-response-169: claims 0/1 contradiction=False citations 0/8 nonexistent=0
-response-170: claims 0/2 contradiction=False citations 0/1 nonexistent=0
-response-171: claims 0/3 contradiction=False citations 0/0 nonexistent=0
-response-172: claims 0/3 contradiction=True citations 0/2 nonexistent=0
-response-173: claims 0/3 contradiction=True citations 0/31 nonexistent=1
-response-175: claims 0/3 contradiction=False citations 0/5 nonexistent=0
-response-176: claims 1/2 contradiction=False citations 0/2 nonexistent=0
-response-177: claims 0/3 contradiction=False citations 0/2 nonexistent=0
-response-179: claims 0/2 contradiction=False citations 0/1 nonexistent=0
-response-180: claims 0/3 contradiction=False citations 0/1 nonexistent=0
-response-181: claims 0/2 contradiction=False citations 0/2 nonexistent=0
-response-182: claims 0/3 contradiction=False citations 0/7 nonexistent=3
-response-183: claims 0/5 contradiction=False citations 0/9 nonexistent=0
-response-184: claims 0/3 contradiction=False citations 0/11 nonexistent=0
-response-185: claims 2/5 contradiction=False citations 0/10 nonexistent=0
-response-186: claims 0/5 contradiction=True citations 0/17 nonexistent=0
-response-187: claims 0/1 contradiction=False citations 0/1 nonexistent=0
-response-188: claims 0/1 contradiction=False citations 0/0 nonexistent=0
-response-189: claims 0/3 contradiction=False citations 0/1 nonexistent=1
-response-190: claims 1/2 contradiction=False citations 0/4 nonexistent=1
-response-191: claims 0/4 contradiction=True citations 0/13 nonexistent=0
-response-192: claims 1/3 contradiction=False citations 0/7 nonexistent=7
-response-193: claims 0/3 contradiction=False citations 0/0 nonexistent=0
-response-194: claims 2/2 contradiction=False citations 0/8 nonexistent=0
-response-195: claims 1/3 contradiction=False citations 0/9 nonexistent=0
-response-196: claims 3/3 contradiction=False citations 0/7 nonexistent=0
-response-197: claims 0/3 contradiction=True citations 0/15 nonexistent=0
-response-198: claims 1/2 contradiction=False citations 0/2 nonexistent=0
-response-199: claims 4/4 contradiction=False citations 0/9 nonexistent=0
-response-200: claims 0/2 contradiction=False citations 0/0 nonexistent=0
-{'base': {'citation_accuracy': 0.0, 'citation_precision': 0.008417508417508417, 'citation_coverage': 0.19888888888888887, 'substantive_accuracy': 0.1, 'section_accuracy': 0.022222222222222223, 'paragraph_accuracy': None, 'nonexistent_citation_count': 0.4, 'unresolved_section_citation_count': 2.7666666666666666, 'outside_scope_accuracy': 0.1}, 'cpt': {'citation_accuracy': 0.0, 'citation_precision': 0.009387526054192722, 'citation_coverage': 0.2148148148148148, 'substantive_accuracy': 0.1111111111111111, 'section_accuracy': 0.022222222222222223, 'paragraph_accuracy': None, 'nonexistent_citation_count': 0.4777777777777778, 'unresolved_section_citation_count': 1.6666666666666667, 'outside_scope_accuracy': 0.0}, 'paired_primary_95_percent_ci': {'delta': 0.0, 'lower': 0.0, 'upper': 0.0}, 'review_sha256': '8611b54477256ed02c28a17291456b021dbd213a54a88144f501f8445fbc2f48'}
-[auto-score] completed review: experiments/title12-chapter-I-govinfo-gpu-v1/evaluation/auto_review.jsonl
-== done: experiments/title12-chapter-I-govinfo-gpu-v1/evaluation/results.json
+== python training_models_v1.py pretrain --smoke --config phase1.gpu.json (2026-09-20T10:48:45Z)
 {
-  "base": {
-    "citation_accuracy": 0.0,
-    "citation_precision": 0.008417508417508417,
-    "citation_coverage": 0.19888888888888887,
-    "substantive_accuracy": 0.1,
-    "section_accuracy": 0.022222222222222223,
-    "paragraph_accuracy": null,
-    "nonexistent_citation_count": 0.4,
-    "unresolved_section_citation_count": 2.7666666666666666,
-    "outside_scope_accuracy": 0.1
-  },
-  "cpt": {
-    "citation_accuracy": 0.0,
-    "citation_precision": 0.009387526054192722,
-    "citation_coverage": 0.2148148148148148,
-    "substantive_accuracy": 0.1111111111111111,
-    "section_accuracy": 0.022222222222222223,
-    "paragraph_accuracy": null,
-    "nonexistent_citation_count": 0.4777777777777778,
-    "unresolved_section_citation_count": 1.6666666666666667,
-    "outside_scope_accuracy": 0.0
-  },
-  "paired_primary_95_percent_ci": {
-    "delta": 0.0,
-    "lower": 0.0,
-    "upper": 0.0
-  },
-  "review_sha256": "8611b54477256ed02c28a17291456b021dbd213a54a88144f501f8445fbc2f48"
+  "passed": true,
+  "documents": 1128,
+  "inventory_elements": 18747,
+  "body_characters": 4196453
 }
+`torch_dtype` is deprecated! Use `dtype` instead!
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:00<00:00,  1.90it/s]                                             {'loss': 1.5006, 'grad_norm': 0.4916999638080597, 'learning_rate': 0.0, 'epoch': 0.08}
+ 50%|█████     | 1/2 [00:00<00:00,  1.90it/s]100%|██████████| 2/2 [00:01<00:00,  1.67it/s]                                             {'loss': 2.1578, 'grad_norm': 0.5993685722351074, 'learning_rate': 0.0001, 'epoch': 0.17}
+100%|██████████| 2/2 [00:01<00:00,  1.67it/s]/usr/local/lib/python3.12/dist-packages/transformers/trainer.py:4380: UserWarning: mtime may not be reliable on this filesystem, falling back to numerical ordering
+  warnings.warn("mtime may not be reliable on this filesystem, falling back to numerical ordering")
+                                             {'train_runtime': 1.4604, 'train_samples_per_second': 1.369, 'train_steps_per_second': 1.369, 'train_loss': 1.8292338848114014, 'epoch': 0.17}
+100%|██████████| 2/2 [00:01<00:00,  1.67it/s]100%|██████████| 2/2 [00:01<00:00,  1.37it/s]
+== python training_models_v1.py pretrain --config phase1.gpu.json (2026-09-20T10:49:09Z)
+[hub] destination: abubakarilyas624/ecfr-title12-<stage>-<fingerprint>; private=True
+{
+  "passed": true,
+  "documents": 1128,
+  "inventory_elements": 18747,
+  "body_characters": 4196453
+}
+{
+  "passed": true,
+  "documents": 1128,
+  "inventory_elements": 18747,
+  "body_characters": 4196453
+}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 88.27it/s]
+  0%|          | 0/360 [00:00<?, ?it/s]  0%|          | 1/360 [00:17<1:45:42, 17.67s/it]  1%|          | 2/360 [00:29<1:23:36, 14.01s/it]

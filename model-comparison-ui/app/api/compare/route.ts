@@ -36,7 +36,7 @@ export async function POST(request:Request){
   try{
     const payload=await request.json() as CompareRequest,prompt=payload.prompt?.trim()??"",systemPrompt=payload.systemPrompt?.trim()??"";
     const models=payload.models?.filter((model)=>model.name&&(model.modelId||model.endpointUrl))??[];
-    const temperature=Math.max(0,Math.min(2,Number(payload.temperature??0))),maxTokens=Math.max(32,Math.min(1024,Number(payload.maxTokens??256)));
+    const temperature=Math.max(0,Math.min(2,Number(payload.temperature??0))),maxTokens=Math.max(8,Math.min(1024,Number(payload.maxTokens??16)));
     if(!prompt||!systemPrompt)return Response.json({error:"Prompt and system prompt are required."},{status:400});
     if(models.length<2||models.length>5)return Response.json({error:"Select between two and five configured models."},{status:400});
     const id=crypto.randomUUID(),results=await Promise.all(models.map((model)=>runModel(model,{prompt,systemPrompt,temperature,maxTokens})));
